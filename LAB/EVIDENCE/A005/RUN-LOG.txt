@@ -1,0 +1,103 @@
+=== 2026-08-27T11:07:43-03:00  ar0_no_eixo
+//mumax 3.11.1 [linux_amd64 go1.22.6(gc) CUDA-11.8]
+//commit hash: 
+//CPU info: 13th Gen Intel(R) Core(TM) i7-13650HX, Cores: 14, MHz: 2254.427
+//GPU info: NVIDIA GeForce RTX 4050 Laptop GPU(5905MB), CUDA Driver 12.2, cc=8.9, using cc=89 PTX
+//OS  info: Debian GNU/Linux 12 (bookworm), Hostname: Landau
+//Timestamp: 2026-08-27 11:07:43
+//(c) Arne Vansteenkiste, Dynamat LAB, Ghent University, Belgium
+//This is free software without any warranty. See license.txt
+//********************************************************************//
+//  If you use mumax in any work or publication,                      //
+//  we kindly ask you to cite the references in references.bib        //
+//********************************************************************//
+//output directory: /tmp/claude-1000/-home-rodrigo-pesquisa-SAF/471574db-345c-43d2-a045-35b73207a394/scratchpad/ar0_no_eixo.out/
+//starting GUI at http://127.0.0.1:35367
+SetGridSize(100, 100, 2)
+SetCellSize(1e-9, 1e-9, 0.4e-9)
+SetPBC(2, 2, 0)
+//resizing...
+EnableDemag = false
+Msat = 0.58e6
+Aex = 15e-12
+Ku1 = 0.6e6
+anisU = vector(0, 0, 1)
+defregion(1, zrange(-1e-9, 0))
+defregion(2, zrange(0, 1e-9))
+Dind.SetRegion(1, 3.05e-3)
+Dind.SetRegion(2, -3.05e-3)
+ext_InterDind(1, 2, 0)
+ext_InterExchange(1, 2, -4e-15)
+m.SetRegion(1, neelskyrmion(1, -1).Transl(-5e-9, 0, 0))
+m.SetRegion(2, neelskyrmion(1, 1).Transl(5e-9, 0, 0))
+relax()
+minimize()
+minimize()
+print("AR-0 relaxado  maxTorque =", MaxTorque, "  E_total =", E_total)
+//AR-0 relaxado  maxTorque = 4.534243387915812e-05   E_total = -4.985440256e-18
+alpha = 0.02
+autosave(m, 1e-9)
+run(20e-9)
+print("AR-0 fim       maxTorque =", MaxTorque)
+//AR-0 fim       maxTorque = 0.036577094985358626
+//********************************************************************//
+//Please cite the following references, relevant for your simulation. //
+//See bibtex file in output folder for justification.                 //
+//********************************************************************//
+//   * Vansteenkiste et al., AIP Adv. 4, 107133 (2014).
+//   * Exl et al., J. Appl. Phys. 115, 17D118 (2014).
+//   * Mulkers et al., Phys. Rev. B 95, 144401 (2017).
+WALL 140.05 s
+--- ovf gravados: 20
+=== 2026-08-27T11:10:03-03:00  ar1_fora_eixo
+//mumax 3.11.1 [linux_amd64 go1.22.6(gc) CUDA-11.8]
+//commit hash: 
+//CPU info: 13th Gen Intel(R) Core(TM) i7-13650HX, Cores: 14, MHz: 3160.218
+//GPU info: NVIDIA GeForce RTX 4050 Laptop GPU(5905MB), CUDA Driver 12.2, cc=8.9, using cc=89 PTX
+//OS  info: Debian GNU/Linux 12 (bookworm), Hostname: Landau
+//Timestamp: 2026-08-27 11:10:03
+//(c) Arne Vansteenkiste, Dynamat LAB, Ghent University, Belgium
+//This is free software without any warranty. See license.txt
+//********************************************************************//
+//  If you use mumax in any work or publication,                      //
+//  we kindly ask you to cite the references in references.bib        //
+//********************************************************************//
+//output directory: /tmp/claude-1000/-home-rodrigo-pesquisa-SAF/471574db-345c-43d2-a045-35b73207a394/scratchpad/ar1_fora_eixo.out/
+//starting GUI at http://127.0.0.1:35367
+SetGridSize(100, 100, 2)
+SetCellSize(1e-9, 1e-9, 0.4e-9)
+SetPBC(2, 2, 0)
+//resizing...
+EnableDemag = false
+Msat = 0.58e6
+Aex = 15e-12
+Ku1 = 0.6e6
+anisU = vector(0, 0, 1)
+defregion(1, zrange(-1e-9, 0))
+defregion(2, zrange(0, 1e-9))
+Dind.SetRegion(1, 3.05e-3)
+Dind.SetRegion(2, -3.05e-3)
+ext_InterDind(1, 2, 0)
+ext_InterExchange(1, 2, -4e-15)
+m.SetRegion(1, neelskyrmion(1, -1).Transl(-4.330127019e-9, -2.5e-9, 0))
+m.SetRegion(2, neelskyrmion(1, 1).Transl(4.330127019e-9, 2.5e-9, 0))
+relax()
+minimize()
+minimize()
+print("AR-1 relaxado  maxTorque =", MaxTorque, "  E_total =", E_total)
+//AR-1 relaxado  maxTorque = 5.626214956873399e-05   E_total = -4.9854396928e-18
+alpha = 0.02
+autosave(m, 1e-9)
+run(20e-9)
+print("AR-1 fim       maxTorque =", MaxTorque)
+//AR-1 fim       maxTorque = 0.03679367250175877
+//********************************************************************//
+//Please cite the following references, relevant for your simulation. //
+//See bibtex file in output folder for justification.                 //
+//********************************************************************//
+//   * Vansteenkiste et al., AIP Adv. 4, 107133 (2014).
+//   * Exl et al., J. Appl. Phys. 115, 17D118 (2014).
+//   * Mulkers et al., Phys. Rev. B 95, 144401 (2017).
+WALL 137.85 s
+--- ovf gravados: 20
+=== 2026-08-27T11:12:21-03:00  LOTE A005 COMPLETO

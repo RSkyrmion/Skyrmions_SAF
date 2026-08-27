@@ -1,0 +1,61 @@
+==============================================================================
+MISSION-E002 — criterios PRE-REGISTRADOS (MISSION-E002.md §5, §6)
+==============================================================================
+
+--- PV-1  piso de ruido (excitacao DESLIGADA, 200 ns)
+  pp(l) na corrida inteira (o numero PRE-REGISTRADO) = 0.8680 pm
+    Fig.2(c) SBM exige < 0.40 pm  -> FALHOU
+    Fig.2(d) ABM exige < 0.02 pm  -> FALHOU
+  [exploratorio, NAO repara criterio] pp(l) sem tendencia, ultimos 50 ns = 0.0005 pm
+  deriva espuria na janela de ajuste: v_perp = +0.000071 cm/s  v_par = +0.000000 cm/s
+
+--- SBM  18.00 GHz   (ligacao a -180.00 deg)
+  EP-1  |v_par|/|v_perp| = 0.0000   criterio < 0.05   -> PASSOU
+        v_perp = -3.5400 cm/s      v_par = +0.000000 cm/s
+        angulo da deriva vs ligacao = -90.000 deg  (esperado +-90)
+        ligacao no inicio da janela -180.000 deg, giro na janela -0.0000 deg
+        rota independente (projecao instantanea): v_perp = -3.5429  v_par = +0.000000 cm/s
+  EP-2  |v_perp| = 3.5400 cm/s   alvo 3.5 cm/s   banda [2.45, 4.55]  -> PASSOU
+        desvio do alvo = +1.1 %
+  EP-4  pico de l(t) em 17.9993 GHz;  f_drive = 18.0000, 2*f_drive = 36.0000
+        esperado: f_drive (SBM)   -> PASSOU
+        amplitude pp de l no estacionario = 2.0868 pm
+  [exploratorio, NAO pre-registrado] l_barra no estacionario = 10.3936 nm
+  EP-5  |v_sp| pela Eq.(4) = 3.9065 cm/s   vs |CTC| 3.5400 cm/s   razao = 1.1035   (EXPLORATORIO, so magnitude:
+        |Q| descarta o sinal.)  estabilidade: com metade dos ciclos = 3.8850 cm/s  (desvio 0.55 %)
+
+--- ABM  19.24 GHz   (ligacao a +180.00 deg)
+  EP-1  |v_par|/|v_perp| = 0.0000   criterio < 0.05   -> PASSOU
+        v_perp = -2.0322 cm/s      v_par = +0.000000 cm/s
+        angulo da deriva vs ligacao = -90.000 deg  (esperado +-90)
+        ligacao no inicio da janela -180.000 deg, giro na janela +0.0000 deg
+        rota independente (projecao instantanea): v_perp = -2.0321  v_par = -0.000000 cm/s
+  EP-2  |v_perp| = 2.0322 cm/s   alvo 2.03 cm/s   banda [1.02, 3.05]  -> PASSOU
+        desvio do alvo = +0.1 %
+  EP-4  pico de l(t) em 38.4785 GHz;  f_drive = 19.2400, 2*f_drive = 38.4800
+        esperado: 2*f_drive (ABM)   -> PASSOU
+        amplitude pp de l no estacionario = 0.1259 pm
+  [exploratorio, NAO pre-registrado] l_barra no estacionario = 10.9824 nm
+  EP-5  |v_sp| pela Eq.(4) = 0.0116 cm/s   vs |CTC| 2.0322 cm/s   razao = 0.0057   (EXPLORATORIO, so magnitude:
+        |Q| descarta o sinal.)  estabilidade: com metade dos ciclos = 0.0126 cm/s  (desvio 8.63 %)
+
+--- ABM  19.40 GHz   (ligacao a +180.00 deg)
+  EP-1  |v_par|/|v_perp| = 0.0000   criterio < 0.05   -> PASSOU
+        v_perp = -2.0166 cm/s      v_par = +0.000000 cm/s
+        angulo da deriva vs ligacao = -90.000 deg  (esperado +-90)
+        ligacao no inicio da janela -180.000 deg, giro na janela +0.0000 deg
+        rota independente (projecao instantanea): v_perp = -2.0165  v_par = -0.000000 cm/s
+  EP-4  pico de l(t) em 38.7984 GHz;  f_drive = 19.4000, 2*f_drive = 38.8000
+        esperado: 2*f_drive (ABM)   -> PASSOU
+        amplitude pp de l no estacionario = 0.1268 pm
+  [exploratorio, NAO pre-registrado] l_barra no estacionario = 10.9837 nm
+  EP-5  |v_sp| pela Eq.(4) = 0.0112 cm/s   vs |CTC| 2.0166 cm/s   razao = 0.0056   (EXPLORATORIO, so magnitude:
+        |Q| descarta o sinal.)  estabilidade: com metade dos ciclos = 0.0123 cm/s  (desvio 9.41 %)
+
+--- EP-3  dessintonia:  v(19.40) = 2.0166  vs  v(19.24) = 2.0322 cm/s
+        predicao registrada v(19.40) > v(19.24)  -> FALHOU   razao = 0.9923
+
+--- PV-2  controle de passo (janela 10.0-20.0 ns)
+  dt = 10 fs: v_perp = +30.28211 cm/s
+  dt =  5 fs: v_perp = +30.28211 cm/s
+  diferenca = 0.000 %   criterio < 2 %   -> PASSOU

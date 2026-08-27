@@ -1,0 +1,42 @@
+# MIF 2.1
+# Sanidade da malha periodica para troca + DMI (camada unica).
+Parameter px 50        ;# posicao x da celula perturbada
+Parameter py 50
+set Ms 0.58e6
+
+Specify Oxs_BoxAtlas:atlas {
+  xrange {0 100e-9}  yrange {0 100e-9}  zrange {0 0.4e-9}
+}
+Specify Oxs_PeriodicRectangularMesh:mesh {
+  cellsize {1e-9 1e-9 0.4e-9}
+  atlas :atlas
+  periodic xy
+}
+Specify Oxs_UniformExchange { A 15e-12 }
+Specify Oxs_DMExchange6Ngbr { atlas :atlas  default_D 3.05e-3  D { atlas atlas 3.05e-3 } }
+
+proc Pert { x y z } {
+  global px py
+  set i [expr {int(floor($x*100))}]
+  set j [expr {int(floor($y*100))}]
+  if {$i==$px && $j==$py} { return [list 1 0 0] }
+  return [list 0 0 1]
+}
+Specify Oxs_ScriptVectorField:init [subst {
+  script Pert
+  atlas :atlas
+  norm 1.0
+}]
+
+Specify Oxs_CGEvolve:evolve {}
+Specify Oxs_MinDriver [subst {
+  basename pbc_${px}_${py}
+  evolver :evolve
+  stopping_mxHxm 1e-8
+  total_iteration_limit 1
+  mesh :mesh
+  Ms $Ms
+  m0 :init
+}]
+Destination archive mmArchive
+Schedule DataTable archive Stage 1

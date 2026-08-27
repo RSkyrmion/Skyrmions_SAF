@@ -1,0 +1,22 @@
+OVF: grid 100x100x1  |m| med=1.000000
+
+=== MV-0.2  quiralidade que o Dind=+3.05e-3 do mumax3 SELECIONA ===
+  nucleo em (49.50, 49.50) nm; 172 celulas com mz<0
+   eixo +x, r=+3 nm:  m_x = +0.5950   m_z = -0.7992
+   eixo +x, r=+5 nm:  m_x = +0.8866   m_z = -0.4556
+   eixo +x, r=+7 nm:  m_x = +0.9973   m_z = +0.0330
+   eixo +y, r=+3 nm:  m_y = +0.5950   m_z = -0.7992
+   eixo +y, r=+5 nm:  m_y = +0.8866   m_z = -0.4556
+   eixo +y, r=+7 nm:  m_y = +0.9973   m_z = +0.0330
+
+=== MV-1  skyrmion unico ===
+  mumax3 : Q = -1.000000   raio(mz=0) = 7.3889 nm
+  saf.cu : Q = -1.000000   raio(mz=0) = 5.9459 nm   [camada 1 do PAR acoplado]
+
+=== MV-1  skyrmion ISOLADO, comparacao CASADA (Aint=0, PBC, malha 1 nm) ===
+  mumax3 : Q = -1.000000   raio(mz=0) = 7.3889 nm
+  saf.cu : Q = -1.000000   raio(mz=0) = 7.3903 nm
+  diferenca de raio = -0.019 %      criterio pre-registrado: < 2 %
+  MV-1: PASSOU
+
+  quiralidade: saf.cu escolheu phi0=0 (radial p/ FORA); mumax3 idem (m_x>0 em +x).

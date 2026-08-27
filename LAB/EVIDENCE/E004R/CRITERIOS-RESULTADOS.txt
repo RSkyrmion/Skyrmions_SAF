@@ -1,0 +1,21 @@
+==========================================================================
+MISSION-E004R — criterios PRE-REGISTRADOS (MISSION-E004R.md §4)
+==========================================================================
+
+--- RF-2  ressonancia de breathing SBM, janela de 40 ns
+  pico = 17.9491 GHz   centroide (>= meia altura) = f_SBM = 17.9609 GHz
+  resolucao 0.0250 GHz  ->  sigma(f_SBM) = 0.0125 GHz
+  [E001, janela de 10 ns, resolucao 0.1 GHz, dava 18.00 — era um BIN]
+
+--- RF-0  estacionariedade por frequencia (criterio: |razao-1| < 1%)
+   17.00 GHz  v(150-225)= 1.16351  v(225-300)= 1.14790  |razao-1|= 1.342 %  -> FALHOU
+   17.50 GHz  v(150-225)= 2.94251  v(225-300)= 2.87532  |razao-1|= 2.283 %  -> FALHOU
+   17.75 GHz  v(150-225)= 3.76173  v(225-300)= 3.70388  |razao-1|= 1.538 %  -> FALHOU
+   18.00 GHz  v(150-225)= 3.52654  v(225-300)= 3.49936  |razao-1|= 0.771 %  -> PASSOU
+   18.25 GHz  v(150-225)= 2.81475  v(225-300)= 2.79791  |razao-1|= 0.598 %  -> PASSOU
+  frequencias estacionarias: 2 de 5   (criterio §4: >=3 para haver parabola)
+
+--- RF-0.1  escala de ruido GENUINA (media dos desvios) = 1.3064 %
+  [no E004 essa mesma quantidade dava 129.5 %, porque media o TRANSIENTE]
+
+--- RF-1: sem parabola (menos de 3 frequencias estacionarias). Sem veredito.

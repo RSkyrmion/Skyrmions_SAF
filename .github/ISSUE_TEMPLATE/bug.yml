@@ -1,0 +1,34 @@
+name: Erro ou falha de reprodução
+description: Relate um erro no código, documentação ou procedimento reprodutível.
+title: "[Erro]: "
+labels: ["bug"]
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: Descrição
+      description: O que aconteceu e o que era esperado?
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Como reproduzir
+      description: Informe comandos, parâmetros, versões e, se aplicável, a missão relacionada.
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Ambiente
+      description: Sistema, GPU, CUDA, Python e demais versões relevantes.
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Verificações
+      options:
+        - label: Removi tokens, credenciais e dados pessoais do relato.
+          required: true
+        - label: Este relato não requer a substituição de uma evidência selada.
+          required: true
+

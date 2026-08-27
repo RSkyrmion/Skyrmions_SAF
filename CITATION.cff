@@ -1,0 +1,33 @@
+cff-version: 1.2.0
+message: "Se você usar este repositório, cite esta implementação e o artigo de referência."
+title: "SAF-Skyrmion: re-implementação independente do PRL 135, 086701"
+type: software
+authors:
+  - family-names: "da Costa"
+    given-names: "Rodrigo Thor"
+repository-code: "https://github.com/RSkyrmion/Skyrmions_SAF"
+url: "https://github.com/RSkyrmion/Skyrmions_SAF"
+version: 0.1.0
+date-released: 2026-08-27
+keywords:
+  - skyrmion
+  - synthetic antiferromagnet
+  - micromagnetics
+  - reproducible research
+references:
+  - type: article
+    title: "Emergent Self-Propulsion of Skyrmionic Matter in Synthetic Antiferromagnets"
+    authors:
+      - family-names: "de Souza Silva"
+        given-names: "Clécio C."
+      - family-names: "Correia"
+        given-names: "Matheus V."
+      - family-names: "Piña Velásquez"
+        given-names: "J. C."
+    journal: "Physical Review Letters"
+    volume: 135
+    issue: 8
+    start: 086701
+    year: 2025
+    doi: "10.1103/c2y9-3cc9"
+

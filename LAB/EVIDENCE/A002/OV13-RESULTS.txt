@@ -1,0 +1,4 @@
+OV-1  Q(caixa)=-0.9353  Q(central 60x60)=-1.0000  mz_min=-0.9928  nucleo em x=49 nm (posto em 45)
+      |m_perp| borda=0.4647  volume=0.0878
+OV-3  L=100  l(caixa)= 11.3896 nm Q=-0.9405/+0.9405 | l(central)= 10.7115 nm Q=-1.0000/+1.0000
+OV-3  L=140  l(caixa)= 11.6505 nm Q=-0.9405/+0.9405 | l(central)= 10.9566 nm Q=-1.0000/+1.0000

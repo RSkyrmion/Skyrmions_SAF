@@ -1,0 +1,27 @@
+// MV-0.2 — O SINAL DO DMI. O AUDIT-001 identificou este como o risco DISCRIMINANTE:
+// o meu pick_chirality escolhe a quiralidade por energia, e portanto AUTOCORRIGIRIA um
+// erro de sinal meu, tornando-o invisivel em l. Aqui o mumax3 escolhe sozinho.
+//
+// Uma camada so, parametros da camada 1 do R001: Dind = +3.05e-3, fundo mz=+1, nucleo mz=-1.
+// Relaxa a partir das DUAS quiralidades; a de menor energia e' a que o DMI do mumax3 prefere.
+SetGridSize(100, 100, 1)
+SetCellSize(1e-9, 1e-9, 0.4e-9)
+SetPBC(2, 2, 0)
+EnableDemag = false
+Msat  = 0.58e6
+Aex   = 15e-12
+Ku1   = 0.6e6
+anisU = vector(0, 0, 1)
+Dind  = 3.05e-3
+
+// quiralidade A: plano radial para FORA (= o nosso phi0=0), nucleo para baixo
+m = neelskyrmion(1, -1)
+relax()
+print("MV-0.2  quiralidade A: E_total =", E_total, "  E_exch =", E_exch, "  <mz> =", m.average())
+save(m)
+
+// quiralidade B: plano radial para DENTRO (espelhada). Mesmo Q, helicidade oposta.
+m = neelskyrmion(-1, -1)
+relax()
+print("MV-0.2  quiralidade B: E_total =", E_total, "  E_exch =", E_exch, "  <mz> =", m.average())
+save(m)

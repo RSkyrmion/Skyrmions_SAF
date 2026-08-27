@@ -1,0 +1,5 @@
+tracejado    K0 = -3.933*Aint + 0.6157   (143 pts, Aint 0.0081..0.1066)
+banda inf    K0 = -2.499*Aint + 0.4255
+banda sup    K0 = -2.498*Aint + 0.8837
+centro       K0 = -2.499*Aint + 0.6546      Eq.(S1): -2.500*Aint + 0.6500
+ultimo dash desenhado em Aint = 0.1066  (eixo vai ate 0.120)

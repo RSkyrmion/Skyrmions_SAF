@@ -1,0 +1,30 @@
+==========================================================================
+MISSION-A004 — 𝒟 do mumax3 contra 𝒟 do saf.cu (ambos SELADOS)
+==========================================================================
+
+saf.cu   (mfinal_weak.dat)
+   l = 10.9529 nm   Q1 = -1.000000   Q2 = +1.000000
+   I (adimensional) = 14.747793      𝒟 = 19.4308 e-15 N s/m
+   |Ixx-Iyy|/Ixx = 0.00206   |Ixy|/Ixx = 7.96e-11
+
+mumax3   (mfinal_par_mumax3.dat)
+   l = 10.9278 nm   Q1 = -1.000000   Q2 = +1.000000
+   I (adimensional) = 14.748240      𝒟 = 19.4314 e-15 N s/m
+   |Ixx-Iyy|/Ixx = 0.00207   |Ixy|/Ixx = 1.16e-09
+
+--- AD-0  os estados sao comparaveis?
+   l: 10.9529 vs 10.9278 nm  ->  -0.229 %
+   (registrado ANTES: a comparacao de 𝒟 herda essa diferenca; abaixo de ~1 %
+    uma diferenca de 𝒟 nao e' distinguivel dela)
+
+--- AD-1  PRIMARIO: razao I_mumax3 / I_saf.cu = 1.000030  (+0.003 %)
+   referencia medida: o MV-1 deu 0.019 % de diferenca no raio;
+   o C-12 mediu que 3.2 % de diferenca de tamanho ja e' detectavel.
+   ==> as duas formas sao as MESMAS -> sob R1 seriam OS DOIS codigos a diferir do artigo em ~30 %.
+   R1 fica MENOS PLAUSIVEL. O D-1 segue ABERTO.
+
+--- para o registro: as duas leituras do eixo da Fig. 2(c)
+   R1 (eixo em 1e-15): artigo I = 11.385   nosso 14.748  -> +29.5 %
+   R2 (gamma0=2.21276e+05, eixo em 1e-9): artigo I = 14.307   nosso 14.748  -> +3.1 %
+
+   NENHUMA das duas e' fechada por esta missao. So os autores fechariam.

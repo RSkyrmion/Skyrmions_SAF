@@ -1,0 +1,44 @@
+[resolucao] (Aint=0.08, K0=0.3): AMBIGUOUS -> NONCOAXIAL (orcamento maior, l=2.3019 nm). scan_full.csv preservado.
+==============================================================================
+MISSION-R002 — resultado contra criterios pre-registrados
+==============================================================================
+
+[PRIMARIO] pontos publicados dentro da regiao STABLE
+  (Aint=0.02, K0=0.60) -> NONCOAXIAL  l=10.9529 nm   PASSA
+  (Aint=0.12, K0=0.35) -> NONCOAXIAL  l=15.0060 nm   PASSA
+  => PRIMARIO: PASSOU
+
+[estrutura por coluna]
+    Aint      janela STABLE  semi-larg   centro  S1 preve  fronteira cox/nao
+    0.02  [0.400, 0.825]       0.212    0.613     0.600               0.5375
+    0.04  [0.350, 0.750]       0.200    0.550     0.550               0.4625
+    0.06  [0.300, 0.725]       0.212    0.512     0.500               0.3875
+    0.08  [0.250, 0.675]       0.213    0.463     0.450               0.2875
+    0.10  [0.200, 0.650]       0.225    0.425     0.400               0.2125
+    0.12  [0.125, 0.600]       0.237    0.362     0.350              ausente
+
+[TERCIARIO] janela desce em K0 monotonicamente com Aint
+  centros: ['0.613', '0.550', '0.512', '0.463', '0.425', '0.362']
+  => TERCIARIO: PASSOU (monotono decrescente)
+
+[SECUNDARIO] ajuste da linha de centro
+  semi-larguras: ['0.212', '0.200', '0.212', '0.213', '0.225', '0.237']  (media 0.217)
+  => NAO-DISCRIMINANTE por pre-registro (janela >= +-0.15). Nao usado como evidencia.
+  (so para registro, NAO como sucesso) inclinacao=-2.393 (S1: -2.5), intercepto=0.655 (S1: 0.65)
+
+[ramo COAXIAL: largura por coluna]
+  Aint=0.02  coaxial em [0.400, 0.525]  largura 0.125  (6 pontos)
+  Aint=0.04  coaxial em [0.350, 0.450]  largura 0.100  (5 pontos)
+  Aint=0.06  coaxial em [0.300, 0.375]  largura 0.075  (4 pontos)
+  Aint=0.08  coaxial em [0.250, 0.275]  largura 0.025  (2 pontos)
+  Aint=0.10  coaxial em [0.200, 0.200]  largura 0.000  (1 pontos)
+  Aint=0.12  ramo coaxial AUSENTE na faixa varrida
+
+[TESTE NOVO] fronteira coaxial<->nao-coaxial  (DISCOVERY_ONLY em Aint=0.02)
+  existe em 5/6 colunas: ['0.02', '0.04', '0.06', '0.08', '0.10']
+  valores: ['0.5375', '0.4625', '0.3875', '0.2875', '0.2125']
+  desce monotonicamente com Aint: SIM
+  inclinacao da fronteira: -4.125  (linha de centro: ver acima) -> observaveis NAO redundantes
+  NOTA: teste estrutural/qualitativo. Nao ha valores numericos extraiveis da
+        linha tracejada da Fig. 5(c); isto pode REFUTAR a leitura, nao confirma-la
+        com precisao numerica.

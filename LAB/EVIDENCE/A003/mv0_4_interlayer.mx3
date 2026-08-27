@@ -1,0 +1,41 @@
+// MV-0.4 — QA-02: calibrar ext_InterExchange contra o nosso termo AREAL A_int*m1*m2.
+// Alvo: dE = E(paralelo) - E(antiparalelo) = 2*A_int*Area = 4.000000e-19 J
+// (o MESMO numero que o OV-2 do A002 verificou contra o OOMMF).
+// Isola o termo: sem DMI, sem anisotropia, sem Zeeman, sem demag.
+// dE e' LINEAR em A_inter, entao dois valores calibram e testam a linearidade.
+SetGridSize(100, 100, 2)
+SetCellSize(1e-9, 1e-9, 0.4e-9)
+SetPBC(2, 2, 0)
+EnableDemag = false
+Msat = 0.58e6
+Aex  = 15e-12
+Ku1  = 0
+Dind = 0
+defregion(1, zrange(-1e-9, 0))
+defregion(2, zrange(0, 1e-9))
+ext_InterDind(1, 2, 0)          // sem DMI entre camadas no nosso modelo
+
+// --- ponto 1: A_inter = -4e-15 J/m  (o que a minha derivacao preve) ---
+ext_InterExchange(1, 2, -4e-15)
+m.SetRegion(1, uniform(0, 0, 1)); m.SetRegion(2, uniform(0, 0, 1))
+print("Ep1 =", E_total)
+m.SetRegion(1, uniform(0, 0, 1)); m.SetRegion(2, uniform(0, 0, -1))
+print("Eap1 =", E_total)
+print("--- fim ponto 1 (A_inter=-4e-15)")
+
+// --- ponto 2: A_inter = -8e-15 J/m  (dobro: dE deve dobrar se for linear) ---
+ext_InterExchange(1, 2, -8e-15)
+m.SetRegion(1, uniform(0, 0, 1)); m.SetRegion(2, uniform(0, 0, 1))
+print("Ep2 =", E_total)
+m.SetRegion(1, uniform(0, 0, 1)); m.SetRegion(2, uniform(0, 0, -1))
+print("Eap2 =", E_total)
+print("--- fim ponto 2 (A_inter=-8e-15)")
+
+// --- controle: A_inter = 0 -> as camadas ficam desacopladas? ---
+ext_InterExchange(1, 2, 0)
+ext_ScaleExchange(1, 2, 0)
+m.SetRegion(1, uniform(0, 0, 1)); m.SetRegion(2, uniform(0, 0, 1))
+print("Ep0 =", E_total)
+m.SetRegion(1, uniform(0, 0, 1)); m.SetRegion(2, uniform(0, 0, -1))
+print("Eap0 =", E_total)
+print("--- fim controle desacoplado")

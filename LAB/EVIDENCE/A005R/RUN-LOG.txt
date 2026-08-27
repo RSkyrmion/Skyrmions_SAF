@@ -1,0 +1,111 @@
+=== 2026-08-27T11:19:06-03:00  ac3_par
+//mumax 3.11.1 [linux_amd64 go1.22.6(gc) CUDA-11.8]
+//commit hash: 
+//CPU info: 13th Gen Intel(R) Core(TM) i7-13650HX, Cores: 14, MHz: 799.579
+//GPU info: NVIDIA GeForce RTX 4050 Laptop GPU(5905MB), CUDA Driver 12.2, cc=8.9, using cc=89 PTX
+//OS  info: Debian GNU/Linux 12 (bookworm), Hostname: Landau
+//Timestamp: 2026-08-27 11:19:06
+//(c) Arne Vansteenkiste, Dynamat LAB, Ghent University, Belgium
+//This is free software without any warranty. See license.txt
+//********************************************************************//
+//  If you use mumax in any work or publication,                      //
+//  we kindly ask you to cite the references in references.bib        //
+//********************************************************************//
+//output directory: /tmp/claude-1000/-home-rodrigo-pesquisa-SAF/471574db-345c-43d2-a045-35b73207a394/scratchpad/ac3_par.out/
+//starting GUI at http://127.0.0.1:35367
+SetGridSize(100, 100, 2)
+SetCellSize(1e-9, 1e-9, 0.4e-9)
+SetPBC(2, 2, 0)
+//resizing...
+EnableDemag = false
+Msat = 0.58e6
+Aex = 15e-12
+Ku1 = 0.6e6
+anisU = vector(0, 0, 1)
+defregion(1, zrange(-1e-9, 0))
+defregion(2, zrange(0, 1e-9))
+Dind.SetRegion(1, 3.05e-3)
+Dind.SetRegion(2, -3.05e-3)
+ext_InterDind(1, 2, 0)
+ext_InterExchange(1, 2, -4e-15)
+RelaxTorqueThreshold = 1e-6
+MinimizerStop = 1e-9
+m.SetRegion(1, neelskyrmion(1, -1).Transl(-5e-9, 0, 0))
+m.SetRegion(2, neelskyrmion(1, 1).Transl(5e-9, 0, 0))
+relax()
+Command exited with non-zero status 124
+WALL 3600.01 s
+--- ovf: 0
+=== 2026-08-27T12:19:06-03:00  ac1_theta0
+//mumax 3.11.1 [linux_amd64 go1.22.6(gc) CUDA-11.8]
+//commit hash: 
+//CPU info: 13th Gen Intel(R) Core(TM) i7-13650HX, Cores: 14, MHz: 2842.962
+//GPU info: NVIDIA GeForce RTX 4050 Laptop GPU(5905MB), CUDA Driver 12.2, cc=8.9, using cc=89 PTX
+//OS  info: Debian GNU/Linux 12 (bookworm), Hostname: Landau
+//Timestamp: 2026-08-27 12:19:06
+//(c) Arne Vansteenkiste, Dynamat LAB, Ghent University, Belgium
+//This is free software without any warranty. See license.txt
+//********************************************************************//
+//  If you use mumax in any work or publication,                      //
+//  we kindly ask you to cite the references in references.bib        //
+//********************************************************************//
+//output directory: /tmp/claude-1000/-home-rodrigo-pesquisa-SAF/471574db-345c-43d2-a045-35b73207a394/scratchpad/ac1_theta0.out/
+//starting GUI at http://127.0.0.1:35367
+SetGridSize(100, 100, 2)
+SetCellSize(1e-9, 1e-9, 0.4e-9)
+SetPBC(2, 2, 0)
+//resizing...
+EnableDemag = false
+Msat = 0.58e6
+Aex = 15e-12
+Ku1 = 0.6e6
+anisU = vector(0, 0, 1)
+defregion(1, zrange(-1e-9, 0))
+defregion(2, zrange(0, 1e-9))
+Dind.SetRegion(1, 3.05e-3)
+Dind.SetRegion(2, -3.05e-3)
+ext_InterDind(1, 2, 0)
+ext_InterExchange(1, 2, -4e-15)
+RelaxTorqueThreshold = 1e-6
+MinimizerStop = 1e-9
+m.SetRegion(1, neelskyrmion(1, -1).Transl(-5e-9, 0, 0))
+m.SetRegion(2, neelskyrmion(1, 1).Transl(5e-9, 0, 0))
+relax()
+Command exited with non-zero status 124
+WALL 3600.01 s
+--- ovf: 0
+=== 2026-08-27T13:19:06-03:00  ac2_theta30
+//mumax 3.11.1 [linux_amd64 go1.22.6(gc) CUDA-11.8]
+//commit hash: 
+//CPU info: 13th Gen Intel(R) Core(TM) i7-13650HX, Cores: 14, MHz: 799.702
+//GPU info: NVIDIA GeForce RTX 4050 Laptop GPU(5905MB), CUDA Driver 12.2, cc=8.9, using cc=89 PTX
+//OS  info: Debian GNU/Linux 12 (bookworm), Hostname: Landau
+//Timestamp: 2026-08-27 13:19:06
+//(c) Arne Vansteenkiste, Dynamat LAB, Ghent University, Belgium
+//This is free software without any warranty. See license.txt
+//********************************************************************//
+//  If you use mumax in any work or publication,                      //
+//  we kindly ask you to cite the references in references.bib        //
+//********************************************************************//
+//output directory: /tmp/claude-1000/-home-rodrigo-pesquisa-SAF/471574db-345c-43d2-a045-35b73207a394/scratchpad/ac2_theta30.out/
+//starting GUI at http://127.0.0.1:35367
+SetGridSize(100, 100, 2)
+SetCellSize(1e-9, 1e-9, 0.4e-9)
+SetPBC(2, 2, 0)
+//resizing...
+EnableDemag = false
+Msat = 0.58e6
+Aex = 15e-12
+Ku1 = 0.6e6
+anisU = vector(0, 0, 1)
+defregion(1, zrange(-1e-9, 0))
+defregion(2, zrange(0, 1e-9))
+Dind.SetRegion(1, 3.05e-3)
+Dind.SetRegion(2, -3.05e-3)
+ext_InterDind(1, 2, 0)
+ext_InterExchange(1, 2, -4e-15)
+RelaxTorqueThreshold = 1e-6
+MinimizerStop = 1e-9
+m.SetRegion(1, neelskyrmion(1, -1).Transl(-4.330127019e-9, -2.5e-9, 0))
+m.SetRegion(2, neelskyrmion(1, 1).Transl(4.330127019e-9, 2.5e-9, 0))
+relax()

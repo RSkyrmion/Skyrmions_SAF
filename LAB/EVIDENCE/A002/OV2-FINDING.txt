@@ -1,0 +1,44 @@
+OV-2 — resultado e um bug de ferramenta
+=======================================
+Data: 2026-08-24 · OOMMF 2.0b0 · MISSION-A002
+
+1) CALIBRACAO DA TRADUCAO: sigma = -A_int/2
+-------------------------------------------
+A fonte (twosurfaceexchange.cc) documenta a densidade como sigma*(1-mi.mj)/cellsize,
+o que sugeriria sigma = -A_int. ERRADO por um fator 2: a energia do link e' somada as
+DUAS celulas (linhas 423-424) e a soma final e' multiplicada por 2*Volume (linha 448),
+e o campo usa hcoef = 2/MU0 (linha 394). Energia e campo sao mutuamente consistentes
+com sigma_eff = 2*sigma.
+
+Medido com sigma = -A_int/2 = -1e-5 J/m^2, malha NAO periodica:
+  |E_par - E_anti| = 4.000000e-19 J   alvo 2*A_int*A_box = 4.0000e-19   ->  +0.0000 %
+  campo de torque  = 0.086207 T       alvo A_int/(Ms*d)  = 0.086207     ->  -0.0001 %
+  campo uniforme: 1 unico valor distinto em 10000 celulas
+
+O campo cheio reportado e' 0.172414 T porque a implementacao usa
+  B_i = -(2*sigma/(Ms*t_z)) * (m_i - m_j),
+e o termo em m_i e' paralelo a m_i: nao gera torque e nao move o ponto fixo.
+A parte que governa o equilibrio e' a metade, e ela bate.
+
+=> OV-2 PASSA nos dois criterios pre-registrados em MISSION-A002 §3.
+
+Isto fecha SL-2 (o fator 1/d) por um QUARTO caminho, e o primeiro por codigo
+independente escrito por humanos.
+
+2) BUG: Oxs_TwoSurfaceExchange x Oxs_PeriodicRectangularMesh
+------------------------------------------------------------
+Com malha periodica (periodic xy), 1164 das 10000 celulas da interface perdem o link:
+o campo assume 3 valores distintos em vez de 1, e a energia total fica 11.6 % curta.
+
+  malha            celulas fracas   valores distintos   E_anti (sigma=-A_int)
+  Oxs_Rectangular          0               1            -8.0000000000000017e-19  <- exato
+  Oxs_PeriodicRect      1164               3            -7.0746304987791074e-19  <- 11.6% curto
+
+Identico com -threads 1 e -threads 4 => deterministico, nao e' condicao de corrida.
+As celulas afetadas nao formam borda; formam padrao espalhado e periodico.
+
+CONSEQUENCIA: a malha periodica NAO pode ser usada com Oxs_TwoSurfaceExchange nesta
+versao. Sem a escada de validacao, o OV-3 teria rodado com 11.6% do acoplamento
+faltando, em posicoes espalhadas, e produzido uma discrepancia FALSA contra o saf.cu.
+Este e' precisamente o cenario que a taxonomia de falha pre-registrada (MISSION-A002 §4)
+classifica como erro de traducao, nao como evidencia.

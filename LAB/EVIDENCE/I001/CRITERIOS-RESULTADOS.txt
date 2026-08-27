@@ -1,0 +1,30 @@
+==========================================================================
+MISSION-I001 — criterios PRE-REGISTRADOS
+==========================================================================
+
+--- IV-1  rastreador sobre ESTADO CONGELADO (§2, o teste decisivo)
+  theta= 30.0 deg, magnetizacao IMOVEL, 10001 chamadas:
+     (a) realimentado       2.0149e-11 cm/s
+     (b) origem fixa        4.9991e-12 cm/s
+     (c) centroide nucleo   2.6568e-12 cm/s
+  theta=  0.0 deg, magnetizacao IMOVEL, 10001 chamadas:
+     (a) realimentado       2.7665e-12 cm/s
+     (b) origem fixa        3.1228e-12 cm/s
+     (c) centroide nucleo   6.3018e-12 cm/s
+
+  ao vivo no E003 (mesma condicao, COM dinamica): 0.917 cm/s
+  razao congelado/vivo = 2.197e-11   criterio §2: <1% -> C-real
+  ==> VEREDITO IV-1: C-REAL. O instrumento esta limpo.
+
+--- IV-2  tres localizadores na corrida VIVA (§3), theta=30, sem excitacao
+  (a) realimentado       |v| = 0.91745 cm/s   angulo = -153.875 deg
+  (b) origem fixa        |v| = 0.91745 cm/s   angulo = -153.875 deg
+  (c) centroide nucleo   |v| = 0.91745 cm/s   angulo = -153.875 deg
+
+  (b)/(a) = 1.0000    (c)/(a) = 1.0000
+  concordancia (b) vs (c): 0.00 % de (a)
+
+  Leitura registrada §3: (b) e (c) derivam JUNTO com (a) -> C-real, confirmado
+  por dois localizadores SEM realimentacao, um deles ((c)) sem carga topologica.
+
+--- GATE G-I001: IV-1 conclusivo E (b),(c) concordantes  ->  PASSOU

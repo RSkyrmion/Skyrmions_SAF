@@ -1,0 +1,104 @@
+=== INICIO 2026-08-26T06:55:44-03:00
+=== 2026-08-26T06:55:44-03:00  rf3
+MISSION-R001/R002 — PRL 135, 086701 (2025)
+grade 100x100 celulas de 1.0 nm, PBC | d=0.4 nm A=15 pJ/m K=0.60 MJ/m^3 Ms=0.58 MA/m D=3.05 mJ/m^2 Aint=0.020 mJ/m^2 B=0.0 T
+Beff = -(1/(Ms*d*a^2)) dH/dm   |   Aint/(Ms*d) = 0.0862 T   | tol_torque=1.0e-05 T
+
+=== RF-3  regua na travessia da fronteira periodica (L5.3) ===
+  par no CENTRO da caixa     l=10.960705784 nm  Q1=-1.000000 Q2=1.000000  (iters=189825 torque=9.996e-07 conv=sim)
+  par na FRONTEIRA (x=0)     l=10.960705637 nm  Q1=-1.000000 Q2=1.000000  (iters=189850 torque=9.997e-07 conv=sim)
+
+  |Delta l| = 0.000000147 nm      criterio < 0.001 nm
+  |Q| exatos nos dois?  sim
+  RF-3: PASSOU
+WALL 10.35 s
+=== 2026-08-26T06:55:55-03:00  ev3 sbm 40
+MISSION-R001/R002 — PRL 135, 086701 (2025)
+grade 100x100 celulas de 1.0 nm, PBC | d=0.4 nm A=15 pJ/m K=0.60 MJ/m^3 Ms=0.58 MA/m D=3.05 mJ/m^2 Aint=0.020 mJ/m^2 B=0.0 T
+Beff = -(1/(Ms*d*a^2)) dH/dm   |   Aint/(Ms*d) = 0.0862 T   | tol_torque=1.0e-05 T
+
+=== EV-3  espectro de breathing — SBM (dK), janela 40.0 ns ===
+  equilibrio: iters=124875 torque=9.997e-06 T convergiu=sim
+  <mz>_eq camada1=+0.969784894  camada2=-0.969784894
+  alpha=0.020 B0=4.0 mT dK/K0=0.004 fc=100 GHz  amostragem 2 ps
+  serie em LAB/EVIDENCE/E004R/ev3_sbm_40ns.dat
+WALL 431.63 s
+=== 2026-08-26T07:03:06-03:00  prop none 18.00 20 10 rf4_mesh05_th30 30.0 0.5
+MISSION-R001/R002 — PRL 135, 086701 (2025)
+grade 100x100 celulas de 1.0 nm, PBC | d=0.4 nm A=15 pJ/m K=0.60 MJ/m^3 Ms=0.58 MA/m D=3.05 mJ/m^2 Aint=0.020 mJ/m^2 B=0.0 T
+Beff = -(1/(Ms*d*a^2)) dH/dm   |   Aint/(Ms*d) = 0.0862 T   | tol_torque=1.0e-05 T
+  RF-4: malha 0.50 nm -> grade 200x200
+
+=== E002  autopropulsao — NENHUMA (piso de ruido), f=18.0000 GHz, janela 20.0 ns, dt=10.0 fs ===
+  equilibrio: iters=2000000 torque=2.755e-06 T convergiu=NAO  l_eq=10.848334 nm
+  EO-0.1: theta_init=+30.0000 deg  ->  theta_bond apos relaxar=-150.2283 deg  (giro -0.2283)   Q1=-1.0000 Q2=1.0000
+  max||m|-1| ao longo da corrida = 3.331e-16   (PV-2 exige < 1e-9)
+  serie em LAB/EVIDENCE/E004R/prop_rf4_mesh05_th30.dat
+WALL 993.23 s
+=== 2026-08-26T07:19:40-03:00  prop none 18.00 20 10 rf4_mesh10_th30 30.0 1.0
+MISSION-R001/R002 — PRL 135, 086701 (2025)
+grade 100x100 celulas de 1.0 nm, PBC | d=0.4 nm A=15 pJ/m K=0.60 MJ/m^3 Ms=0.58 MA/m D=3.05 mJ/m^2 Aint=0.020 mJ/m^2 B=0.0 T
+Beff = -(1/(Ms*d*a^2)) dH/dm   |   Aint/(Ms*d) = 0.0862 T   | tol_torque=1.0e-05 T
+
+=== E002  autopropulsao — NENHUMA (piso de ruido), f=18.0000 GHz, janela 20.0 ns, dt=10.0 fs ===
+  equilibrio: iters=2000000 torque=1.256e-05 T convergiu=NAO  l_eq=10.953118 nm
+  EO-0.1: theta_init=+30.0000 deg  ->  theta_bond apos relaxar=-153.9803 deg  (giro -3.9803)   Q1=-1.0000 Q2=1.0000
+  max||m|-1| ao longo da corrida = 2.220e-16   (PV-2 exige < 1e-9)
+  serie em LAB/EVIDENCE/E004R/prop_rf4_mesh10_th30.dat
+WALL 276.61 s
+=== 2026-08-26T07:24:16-03:00  prop sbm 17.00 300 10 sbm_17.00GHz 0.0
+MISSION-R001/R002 — PRL 135, 086701 (2025)
+grade 100x100 celulas de 1.0 nm, PBC | d=0.4 nm A=15 pJ/m K=0.60 MJ/m^3 Ms=0.58 MA/m D=3.05 mJ/m^2 Aint=0.020 mJ/m^2 B=0.0 T
+Beff = -(1/(Ms*d*a^2)) dH/dm   |   Aint/(Ms*d) = 0.0862 T   | tol_torque=1.0e-05 T
+
+=== E002  autopropulsao — SBM (dK), f=17.0000 GHz, janela 300.0 ns, dt=10.0 fs ===
+  equilibrio: iters=189825 torque=9.996e-07 T convergiu=sim  l_eq=10.960706 nm
+  EO-0.1: theta_init=+0.0000 deg  ->  theta_bond apos relaxar=-180.0000 deg  (giro +0.0000)   Q1=-1.0000 Q2=1.0000
+  max||m|-1| ao longo da corrida = 2.220e-16   (PV-2 exige < 1e-9)
+  serie em LAB/EVIDENCE/E004R/prop_sbm_17.00GHz.dat
+WALL 3334.85 s
+=== 2026-08-26T08:19:51-03:00  prop sbm 17.50 300 10 sbm_17.50GHz 0.0
+MISSION-R001/R002 — PRL 135, 086701 (2025)
+grade 100x100 celulas de 1.0 nm, PBC | d=0.4 nm A=15 pJ/m K=0.60 MJ/m^3 Ms=0.58 MA/m D=3.05 mJ/m^2 Aint=0.020 mJ/m^2 B=0.0 T
+Beff = -(1/(Ms*d*a^2)) dH/dm   |   Aint/(Ms*d) = 0.0862 T   | tol_torque=1.0e-05 T
+
+=== E002  autopropulsao — SBM (dK), f=17.5000 GHz, janela 300.0 ns, dt=10.0 fs ===
+  equilibrio: iters=189825 torque=9.996e-07 T convergiu=sim  l_eq=10.960706 nm
+  EO-0.1: theta_init=+0.0000 deg  ->  theta_bond apos relaxar=-180.0000 deg  (giro +0.0000)   Q1=-1.0000 Q2=1.0000
+  max||m|-1| ao longo da corrida = 2.220e-16   (PV-2 exige < 1e-9)
+  serie em LAB/EVIDENCE/E004R/prop_sbm_17.50GHz.dat
+WALL 3349.97 s
+=== 2026-08-26T09:15:41-03:00  prop sbm 17.75 300 10 sbm_17.75GHz 0.0
+MISSION-R001/R002 — PRL 135, 086701 (2025)
+grade 100x100 celulas de 1.0 nm, PBC | d=0.4 nm A=15 pJ/m K=0.60 MJ/m^3 Ms=0.58 MA/m D=3.05 mJ/m^2 Aint=0.020 mJ/m^2 B=0.0 T
+Beff = -(1/(Ms*d*a^2)) dH/dm   |   Aint/(Ms*d) = 0.0862 T   | tol_torque=1.0e-05 T
+
+=== E002  autopropulsao — SBM (dK), f=17.7500 GHz, janela 300.0 ns, dt=10.0 fs ===
+  equilibrio: iters=189825 torque=9.996e-07 T convergiu=sim  l_eq=10.960706 nm
+  EO-0.1: theta_init=+0.0000 deg  ->  theta_bond apos relaxar=-180.0000 deg  (giro +0.0000)   Q1=-1.0000 Q2=1.0000
+  max||m|-1| ao longo da corrida = 2.220e-16   (PV-2 exige < 1e-9)
+  serie em LAB/EVIDENCE/E004R/prop_sbm_17.75GHz.dat
+WALL 3334.00 s
+=== 2026-08-26T10:11:15-03:00  prop sbm 18.00 300 10 sbm_18.00GHz 0.0
+MISSION-R001/R002 — PRL 135, 086701 (2025)
+grade 100x100 celulas de 1.0 nm, PBC | d=0.4 nm A=15 pJ/m K=0.60 MJ/m^3 Ms=0.58 MA/m D=3.05 mJ/m^2 Aint=0.020 mJ/m^2 B=0.0 T
+Beff = -(1/(Ms*d*a^2)) dH/dm   |   Aint/(Ms*d) = 0.0862 T   | tol_torque=1.0e-05 T
+
+=== E002  autopropulsao — SBM (dK), f=18.0000 GHz, janela 300.0 ns, dt=10.0 fs ===
+  equilibrio: iters=189825 torque=9.996e-07 T convergiu=sim  l_eq=10.960706 nm
+  EO-0.1: theta_init=+0.0000 deg  ->  theta_bond apos relaxar=-180.0000 deg  (giro +0.0000)   Q1=-1.0000 Q2=1.0000
+  max||m|-1| ao longo da corrida = 2.220e-16   (PV-2 exige < 1e-9)
+  serie em LAB/EVIDENCE/E004R/prop_sbm_18.00GHz.dat
+WALL 3334.59 s
+=== 2026-08-26T11:06:50-03:00  prop sbm 18.25 300 10 sbm_18.25GHz 0.0
+MISSION-R001/R002 — PRL 135, 086701 (2025)
+grade 100x100 celulas de 1.0 nm, PBC | d=0.4 nm A=15 pJ/m K=0.60 MJ/m^3 Ms=0.58 MA/m D=3.05 mJ/m^2 Aint=0.020 mJ/m^2 B=0.0 T
+Beff = -(1/(Ms*d*a^2)) dH/dm   |   Aint/(Ms*d) = 0.0862 T   | tol_torque=1.0e-05 T
+
+=== E002  autopropulsao — SBM (dK), f=18.2500 GHz, janela 300.0 ns, dt=10.0 fs ===
+  equilibrio: iters=189825 torque=9.996e-07 T convergiu=sim  l_eq=10.960706 nm
+  EO-0.1: theta_init=+0.0000 deg  ->  theta_bond apos relaxar=-180.0000 deg  (giro +0.0000)   Q1=-1.0000 Q2=1.0000
+  max||m|-1| ao longo da corrida = 2.220e-16   (PV-2 exige < 1e-9)
+  serie em LAB/EVIDENCE/E004R/prop_sbm_18.25GHz.dat
+WALL 3334.52 s
+=== 2026-08-26T12:02:24-03:00  LOTE E004R COMPLETO

@@ -1,0 +1,55 @@
+============================================================================
+MISSION-E003 — criterios PRE-REGISTRADOS (MISSION-E003.md §4-§6)
+============================================================================
+
+--- EO-0  controle SEM excitacao (§4). Decide M-config vs M-rede.
+  referencia casada, theta=0 (E002 PV-1): 3.99e-02 cm/s em 10-20 ns,
+  decaindo para 7.1e-05 cm/s em 150-200 ns.
+  theta_init= 30.0: |v_espuria| = 0.91745 cm/s, a +0.140 deg da ligacao -> AO LONGO dela
+                 0-4 ns: 0.91697   16-20 ns: 0.91756   -> CONSTANTE, nao decai
+  theta_init= 22.5: |v_espuria| = 0.90379 cm/s, a +0.138 deg da ligacao -> AO LONGO dela
+                 0-4 ns: 0.90436   16-20 ns: 0.90365   -> CONSTANTE, nao decai
+
+  LEITURA DO MECANISMO (regra registrada em §4.2): a deriva espuria fora do eixo
+  e' ~23x a de theta=0 na mesma janela e NAO decai  ->  **M-rede**.
+
+--- EO-1  PRIMARIO (§5): a deriva acompanha a LIGACAO ou a REDE?
+  desvio da perpendicularidade medido contra o +-90 mais proximo (convencao do E002: -90).
+
+  theta  janela      |v|[cm/s]   desvio medido   previsto pela EO-0   razao
+   30.0  25-50 ns     14.4490     +3.2844 deg     +3.6332 deg      0.904
+   30.0  50-100 ns     6.0841     +7.7138 deg     +8.5754 deg      0.900
+   22.5  25-50 ns     14.4565     +3.2280 deg     +3.5773 deg      0.902
+   22.5  50-100 ns     6.0869     +7.5573 deg     +8.4456 deg      0.895
+
+  A contaminacao medida no EO-0 preve o desvio em 2 angulos x 2 janelas,
+  com razao 0.90 nas quatro. O que ela NAO explica sao ~10% (0.8 deg em 50-100 ns).
+
+--- EO-1  o discriminante: teste de INCLINACAO (§5, dois angulos)
+  theta_bond (orientacao da linha): 25.8556 e 18.0881 deg
+  phi_drift medido:                 123.5695 e 115.6454 deg
+  d(phi_drift)/d(theta_bond) = +1.0201
+     H_ligacao prediz +1.0000  |  H_rede prediz 0.0000   ->  H_LIGACAO
+  equivalentemente dR/dtheta = +0.0201  (H_ligacao: 0 ; H_rede: -1)
+  A inclinacao e' IMUNE a contaminacao do EO-0, que e' ao longo da ligacao nos
+  dois angulos e portanto desloca o offset, nao a inclinacao.
+
+--- EO-0.1  estado comparavel? (§4)
+  l_eq: theta=0: 10.960706 nm | theta=30: 10.953118 (-0.069%) | theta=22.5: 10.956750 (-0.036%)   criterio <1% -> PASSOU
+  Q1=-1.0000 Q2=+1.0000 nos dois -> PASSOU
+  aprisionamento: ligacao girou -3.98 e -4.25 deg, parando em 25.86 e 18.09 deg,
+  longe de 0/45/90 -> NAO houve aprisionamento em eixo; EO-1 tem veredito.
+  MAS a relaxacao NAO convergiu fora do eixo: 2e6 iteracoes, torque parado em
+  1.26e-05 T (contra 1e-06 em theta=0). Ver §defeito no release.
+
+--- convergencia da direcao (§6)
+  theta= 30.0: desvio 25-50 = +3.2844, 50-100 = +7.7138, dif = 4.4294 deg
+  theta= 22.5: desvio 25-50 = +3.2280, 50-100 = +7.5573, dif = 4.3293 deg
+  A diferenca NAO e' ruido: e' a contaminacao constante do EO-0 dividida por um
+  sinal que decai (14.4 -> 6.1 cm/s). Prevista: 4.94 deg. Medida: 4.43 e 4.33.
+
+--- EO-2  magnitude sob rotacao (exploratorio, janela casada 50-100 ns)
+  theta= 0.0 (E002): |v| = 6.0385 cm/s
+  theta= 30.0:       |v| = 6.0841 cm/s   (+0.75 %)
+  theta= 22.5:       |v| = 6.0869 cm/s   (+0.80 %)
+  Parte disso e' a propria contaminacao somada em quadratura; nao e' criterio.

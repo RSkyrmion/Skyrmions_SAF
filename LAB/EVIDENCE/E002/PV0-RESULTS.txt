@@ -1,0 +1,14 @@
+MISSION-R001/R002 — PRL 135, 086701 (2025)
+grade 100x100 celulas de 1.0 nm, PBC | d=0.4 nm A=15 pJ/m K=0.60 MJ/m^3 Ms=0.58 MA/m D=3.05 mJ/m^2 Aint=0.020 mJ/m^2 B=0.0 T
+Beff = -(1/(Ms*d*a^2)) dH/dm   |   Aint/(Ms*d) = 0.0862 T   | tol_torque=1.0e-05 T
+
+=== PV-0  tensor de dissipacao no equilibrio (Eq. 2) ===
+  equilibrio: iters=124875 torque=9.997e-06 T convergiu=sim   l=10.952888 nm  Q=-1.0000/1.0000
+  Ms*d/gamma = 1.317539e-15 N s/m
+  camada 1: Dxx=1.945083e-14 Dyy=1.941077e-14 Dxy=4.281926e-26  sqrt(det)=1.943079e-14 N s/m
+  camada 2: Dxx=1.945083e-14 Dyy=1.941077e-14 Dxy=4.282019e-26  sqrt(det)=1.943079e-14 N s/m
+
+  1/2(D1+D2) = 19.4308 e-15 N s/m      criterio [13.5, 16.5]
+  |Dxx-Dyy|/Dxx = 0.0021                criterio < 0.05
+  |Dxy|/Dxx     = 0.0000                criterio < 0.05
+  PV-0: FALHOU

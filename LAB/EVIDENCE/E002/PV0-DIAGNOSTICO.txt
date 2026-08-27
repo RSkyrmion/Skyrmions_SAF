@@ -1,0 +1,21 @@
+Ms*d/gamma = 1.317539e-15 N s/m      (gamma em rad/s/T; e' o que fecha N s/m)
+
+--- camada 1
+  int|dx m|^2 d2r (centrada) = 14.763001   (avancada) = 15.022146
+  int|dy m|^2 d2r (centrada) = 14.732601   (avancada) = 14.994854
+  Dxx=1.945083e-14  Dyy=1.941077e-14  Dxy=-1.548e-24   sqrt(det)=1.943079e-14 N s/m
+  ROTA 1 (tensor, centrada) Dxx+Dyy      = 3.886159892e-14
+  ROTA 2 (energia de troca) Ms*Eex/(g*A) = 3.954856120e-14
+  razao rota2/rota1 = 1.017677   (a diferenca esperada e' so o stencil: avancada vs centrada)
+  E_ex = 1.801020e-19 J
+--- camada 2
+  int|dx m|^2 d2r (centrada) = 14.763001   (avancada) = 15.022146
+  int|dy m|^2 d2r (centrada) = 14.732601   (avancada) = 14.994854
+  Dxx=1.945083e-14  Dyy=1.941077e-14  Dxy=-5.251e-24   sqrt(det)=1.943079e-14 N s/m
+  ROTA 1 (tensor, centrada) Dxx+Dyy      = 3.886159892e-14
+  ROTA 2 (energia de troca) Ms*Eex/(g*A) = 3.954856120e-14
+  razao rota2/rota1 = 1.017677   (a diferenca esperada e' so o stencil: avancada vs centrada)
+  E_ex = 1.801020e-19 J
+
+raio do skyrmion (mz=0), camada 1 = 5.9459 nm    area do nucleo = 110 celulas
+comprimento de parede  Delta = sqrt(A/K) = 5.0000 nm

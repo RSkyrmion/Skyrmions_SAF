@@ -1,0 +1,16 @@
+calibracao: f(x) = 0.027027*x + -0.1430   (0.02703 GHz/px)
+
+  dK/K0   n col   f do pico (grade)   f_pico (parabola em log v)
+  0.008    334       17.4514          17.4649
+  0.004    334       17.7487          17.7487
+  0.002    324       17.9108          17.9176
+
+--- ALVO SELADO (RA-3), extraido ANTES de qualquer corrida do E005 ---
+  dK/K0 = 0.008  ->  f_pico = 17.4649 GHz
+  dK/K0 = 0.004  ->  f_pico = 17.7487 GHz
+  dK/K0 = 0.002  ->  f_pico = 17.9176 GHz
+
+  inclinacao do artigo  df_pico/d(dK/K0) = -74.806 GHz por unidade
+  ou seja -0.4488 GHz indo de dK/K0 = 0.002 a 0.008
+  linha de ressonancia marcada na figura: 18 GHz
+  nossa f_SBM medida (C-11): 17.9609 +- 0.0125 GHz

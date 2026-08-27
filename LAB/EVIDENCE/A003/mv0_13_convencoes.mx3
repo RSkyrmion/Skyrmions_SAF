@@ -1,0 +1,27 @@
+// MV-0.1 (demag) e MV-0.3 (Ku1) — convencoes do mumax3, MEDIDAS.
+// Volume total = 100nm x 100nm x 0.4nm x 2 camadas = 8e-24 m^3
+SetGridSize(100, 100, 2)
+SetCellSize(1e-9, 1e-9, 0.4e-9)
+SetPBC(2, 2, 0)
+EnableDemag = false
+Aex = 15e-12
+Dind = 0
+Ku1 = 0
+anisU = vector(0, 0, 1)
+
+// --- MV-0.1: com demag DESLIGADO, a energia nao pode depender de Msat ---
+m = uniform(0, 0, 1)
+Msat = 0.58e6
+print("MV-0.1  Msat=0.58e6  E_total =", E_total, "  E_demag =", E_demag)
+Msat = 1.16e6
+print("MV-0.1  Msat=1.16e6  E_total =", E_total, "  E_demag =", E_demag)
+Msat = 0.58e6
+
+// --- MV-0.3: convencao de Ku1.  Esperado: E_anis = -Ku1*(m.u)^2*V ---
+Ku1 = 0.6e6
+m = uniform(0, 0, 1)
+print("MV-0.3  mz=1     E_anis =", E_anis, "   esperado -Ku1*V = -4.8e-18")
+m = uniform(0.7071067812, 0, 0.7071067812)
+print("MV-0.3  45 graus E_anis =", E_anis, "   esperado -Ku1*V/2 = -2.4e-18")
+m = uniform(1, 0, 0)
+print("MV-0.3  mz=0     E_anis =", E_anis, "   esperado 0")

@@ -1,0 +1,29 @@
+// MV-2 — O PAR, E O NUMERO. Ataque ao L-G.
+// Ponto do C-1: Aint=0.02 mJ/m2, K0=0.6 MJ/m3, malha 1 nm, caixa 100 nm, PBC, T=0.
+// Convencoes TODAS medidas no MV-0, nenhuma suposta:
+//   ext_InterExchange(1,2,-4e-15)  <- calibrado: dE = 4.000000e-19 J (alvo do OV-2/A002)
+//   ext_InterDind(1,2,0)           <- nao ha DMI entre camadas no nosso modelo
+//   EnableDemag=false              <- QA-01: demag absorvido em K0
+SetGridSize(100, 100, 2)
+SetCellSize(1e-9, 1e-9, 0.4e-9)
+SetPBC(2, 2, 0)
+EnableDemag = false
+Msat  = 0.58e6
+Aex   = 15e-12
+Ku1   = 0.6e6
+anisU = vector(0, 0, 1)
+
+defregion(1, zrange(-1e-9, 0))      // camada 1 (= h0 do saf.cu): D1 = +3.05, nucleo p/ baixo
+defregion(2, zrange(0, 1e-9))       // camada 2 (= h1 do saf.cu): D2 = -3.05, nucleo p/ cima
+Dind.SetRegion(1,  3.05e-3)
+Dind.SetRegion(2, -3.05e-3)
+ext_InterDind(1, 2, 0)
+ext_InterExchange(1, 2, -4e-15)
+
+// inicializacao declarada no artigo: separacao de 10 nm, cargas e quiralidades opostas
+m.SetRegion(1, neelskyrmion( 1, -1).Transl(-5e-9, 0, 0))
+m.SetRegion(2, neelskyrmion( 1,  1).Transl( 5e-9, 0, 0))   // charge=+1: radial p/ FORA, MEDIDO no estado selado do R001
+print("MV-2 inicial   <m> =", m.average())
+relax()
+print("MV-2 relaxado  <m> =", m.average(), "  E_total =", E_total)
+save(m)

@@ -1,0 +1,64 @@
+# MIF 2.1
+# MISSION-A002 — OV-1 (single 1) e OV-3 (single 0). Fronteiras livres (ver adendo B/C).
+Parameter L      100      ;# lado da caixa em nm
+Parameter single 0        ;# 1 = so camada 1 (OV-1, sem acoplamento)
+Parameter tag    ov3
+
+set d    0.4e-9
+set Ms   0.58e6
+set Aint 2e-5
+set sig  [expr {$single ? 0.0 : -0.5*$Aint}]
+set Lm   [expr {$L*1e-9}]
+set cx   [expr {$Lm/2.0}]
+set cy   [expr {$Lm/2.0}]
+set sep  10e-9
+set Rsk  4e-9
+set wsk  3e-9
+
+Specify Oxs_MultiAtlas:atlas [subst {
+  atlas { Oxs_BoxAtlas { name bottom xrange {0 $Lm} yrange {0 $Lm} zrange {0 $d} } }
+  atlas { Oxs_BoxAtlas { name spacer xrange {0 $Lm} yrange {0 $Lm} zrange {$d [expr {2*$d}]} } }
+  atlas { Oxs_BoxAtlas { name top    xrange {0 $Lm} yrange {0 $Lm} zrange {[expr {2*$d}] [expr {3*$d}]} } }
+}]
+Specify Oxs_RectangularMesh:mesh [subst { cellsize {1e-9 1e-9 $d}  atlas :atlas }]
+
+Specify Oxs_UniformExchange { A 15e-12 }
+Specify Oxs_UniaxialAnisotropy { K1 0.6e6  axis {0 0 1} }
+Specify Oxs_DMExchange6Ngbr:dmi [subst {
+  default_D 0.0
+  atlas :atlas
+  D { bottom bottom 3.05e-3    top top -3.05e-3 }
+}]
+Specify Oxs_LinearScalarField:zheight { vector {0 0 1}  norm 1.0 }
+Specify Oxs_TwoSurfaceExchange:interlayer [subst {
+  sigma $sig
+  surface1 { atlas :atlas region bottom scalarfield :zheight scalarvalue $d           scalarside <= }
+  surface2 { atlas :atlas region top    scalarfield :zheight scalarvalue [expr {2*$d}] scalarside >= }
+}]
+
+proc Sky { x y z } {
+  global cx cy sep Rsk wsk d single
+  if { $z < $d } { set c [expr {$cx-$sep/2.0}] ; set bg  1 } \
+  else           { set c [expr {$cx+$sep/2.0}] ; set bg -1 }
+  if { $single && $z > $d } { return [list 0 0 -1] }
+  set dx [expr {$x-$c}] ; set dy [expr {$y-$cy}]
+  set r  [expr {sqrt($dx*$dx+$dy*$dy)}]
+  if { $r < 1e-12 } { set r 1e-12 }
+  set th [expr {2.0*atan2(sinh($Rsk/$wsk), sinh($r/$wsk))}]
+  set g  [expr {atan2($dy,$dx)}]
+  return [list [expr {sin($th)*cos($g)}] [expr {sin($th)*sin($g)}] [expr {$bg*cos($th)}]]
+}
+Specify Oxs_ScriptVectorField:init { script Sky  script_args rawpt  atlas :atlas  norm 1.0 }
+
+Specify Oxs_CGEvolve:evolve {}
+Specify Oxs_MinDriver [subst {
+  basename ${tag}_L${L}
+  evolver :evolve
+  stopping_mxHxm 1e-4
+  mesh :mesh
+  Ms { Oxs_AtlasScalarField { atlas :atlas  default_value 0  values { bottom $Ms  top $Ms } } }
+  m0 :init
+}]
+Destination archive mmArchive
+Schedule Oxs_MinDriver::Magnetization archive Stage 1
+Schedule DataTable archive Stage 1

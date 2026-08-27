@@ -1,0 +1,17 @@
+MISSION-R001 — PRL 135, 086701 (2025)
+grade 100x100 celulas de 1.0 nm, PBC | d=0.4 nm A=15 pJ/m K=0.60 MJ/m^3 Ms=0.58 MA/m D=3.05 mJ/m^2 Aint=0.020 mJ/m^2 B=0.0 T
+Beff = -(1/(Ms*d*a^2)) dH/dm   |   Aint/(Ms*d) = 0.0862 T
+
+=== VL-4  par acoplado  [weak]  Aint=0.020 mJ/m^2  K0=0.60 MJ/m^3 ===
+  camada 1: D1=+3.05 mJ/m^2  -> phi0=  0 deg  [E(0)=-9.813e-20  E(pi)=+9.813e-20]
+  camada 2: D2=-3.05 mJ/m^2  -> phi0=  0 deg  [E(0)=-9.813e-20  E(pi)=+9.813e-20]
+  inicial: l=10.0000 nm  Q1=-1.0000  Q2=+1.0000
+  relaxado: iters=124875 torque=9.997e-06 T  E=-4.785440e-18 J  convergiu=sim
+  ----> l = 10.9529 nm   Q1=-1.0000  Q2=+1.0000
+  ----> serie l(t) em LAB/EVIDENCE/R001/l_of_t_weak.dat
+  ----> estado final em LAB/EVIDENCE/R001/mfinal_weak.dat
+  carga topologica Q1=-Q2, |Q|~1 ...... ok
+  ramo nao-coaxial (l nao vai a 0) .... ok
+  l em [10.43, 11.53] nm .............. ok
+
+RESULTADO: escada completa passou.

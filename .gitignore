@@ -1,0 +1,57 @@
+# Ambientes e configurações locais de agentes
+.agents/
+.claude/
+.codex/
+CLAUDE.md
+
+# Toolchains, dependências construídas e arquivo morto
+TOOLS/
+ARCHIVE/
+
+# Insumos que não devem ser redistribuídos pelo GitHub
+SOURCES/paper/
+SOURCES/fpm/
+*.zip
+*.tar
+*.tar.gz
+
+# Dados brutos e estados de simulação. Os hashes e fontes permanecem versionados.
+LAB/EVIDENCE/**/*.dat
+LAB/EVIDENCE/**/*.omf
+LAB/EVIDENCE/**/*.ohf
+LAB/EVIDENCE/**/*.ovf
+LAB/EVIDENCE/**/*.jsonl
+LAB/EVIDENCE/**/*.png
+LAB/EVIDENCE/**/stderr.log
+LAB/EVIDENCE/AUDIT-*/
+LAB/EVIDENCE/LAB/
+
+# Binários compilados nas pastas de evidência
+LAB/EVIDENCE/**/saf
+LAB/EVIDENCE/**/saf_*
+!LAB/EVIDENCE/**/*.cu
+
+# Produtos de compilação e caches
+*.o
+*.so
+*.a
+*.out
+*.exe
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Ambientes, credenciais e arquivos locais
+.env
+.env.*
+!.env.example
+.venv/
+venv/
+*.pem
+*.key
+*.p12
+*.pfx
+.DS_Store
+*~

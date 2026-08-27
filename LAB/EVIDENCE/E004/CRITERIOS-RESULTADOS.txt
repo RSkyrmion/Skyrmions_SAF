@@ -1,0 +1,35 @@
+==========================================================================
+MISSION-E004 — criterios PRE-REGISTRADOS (+ ADENDO-001)
+==========================================================================
+
+  f[GHz]   v_perp(25-50)   v_perp(50-100)   dispersao entre janelas
+   16.50        2.38432         0.99876     138.73 %
+   17.00        4.94765         2.14465     130.70 %
+   17.50       12.56961         5.76662     117.97 %
+   17.75       16.18337         7.09631     128.05 %
+   18.00       14.42991         6.03852     138.96 %
+   18.25       10.91722         4.59667     137.50 %
+   18.50        7.80953         3.36051     132.39 %
+   19.00        3.95357         1.76925     123.46 %
+   19.50        2.20086         1.01133     117.62 %
+
+--- EF-0 (revisto, ADENDO-001 A1): contraste vs dispersao entre janelas
+  25-50 ns   contraste = 86.401 %   dispersao media = 129.488 %   razao = 0.67x   (criterio: > 5x)
+  50-100 ns  contraste = 85.926 %   dispersao media = 129.488 %   razao = 0.66x   (criterio: > 5x)
+  ==> curva PLANA; EF-1 INDETERMINADO
+
+--- EF-1: posicao do pico nas duas janelas (convergencia da grandeza discriminante)
+  25-50 ns   maximo no ponto 17.75 GHz  ->  f_pico ajustado = 17.7933 GHz
+  50-100 ns  maximo no ponto 17.75 GHz  ->  f_pico ajustado = 17.7642 GHz
+  |f_pico(25-50) - f_pico(50-100)| = 0.0291 GHz   (criterio §3: <= 0.125)
+  ==> CONVERGIDA
+
+  sigma(f_pico) por propagacao da dispersao = 0.2906 GHz   (criterio A2: < 0.25 para haver veredito)
+
+  EF-1: INDETERMINADO (EF-0 plano, nao convergido, ou sigma grande)
+
+--- EF-2 largura (exploratorio; nao medido se EF-0 declarar plano)
+  NAO MEDIDO: EF-0 declarou a curva plana.
+
+--- EF-3 (sem criterio): a curva inteira acima e' o remedio ao EP-3 do E002,
+    que tentou localizar ressonancia com dois pontos e falhou.

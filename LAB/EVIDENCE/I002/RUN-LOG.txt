@@ -1,0 +1,49 @@
+=== 2026-08-26T12:46:37-03:00  K0=0.55 MJ/m3, theta=30, SEM excitacao
+MISSION-R001/R002 — PRL 135, 086701 (2025)
+grade 100x100 celulas de 1.0 nm, PBC | d=0.4 nm A=15 pJ/m K=0.60 MJ/m^3 Ms=0.58 MA/m D=3.05 mJ/m^2 Aint=0.020 mJ/m^2 B=0.0 T
+Beff = -(1/(Ms*d*a^2)) dH/dm   |   Aint/(Ms*d) = 0.0862 T   | tol_torque=1.0e-05 T
+  I002: K0 = 0.5500 MJ/m^3
+
+=== E002  autopropulsao — NENHUMA (piso de ruido), f=18.0000 GHz, janela 20.0 ns, dt=10.0 fs ===
+  equilibrio: iters=2000000 torque=2.858e-06 T convergiu=NAO  l_eq=6.487760 nm
+  EO-0.1: theta_init=+30.0000 deg  ->  theta_bond apos relaxar=-151.8477 deg  (giro -1.8477)   Q1=-1.0000 Q2=1.0000
+  max||m|-1| ao longo da corrida = 2.220e-16   (PV-2 exige < 1e-9)
+  serie em LAB/EVIDENCE/I002/prop_il_K0.55_th30.dat
+WALL 277.13 s
+=== 2026-08-26T12:51:14-03:00  K0=0.60 MJ/m3, theta=30, SEM excitacao
+MISSION-R001/R002 — PRL 135, 086701 (2025)
+grade 100x100 celulas de 1.0 nm, PBC | d=0.4 nm A=15 pJ/m K=0.60 MJ/m^3 Ms=0.58 MA/m D=3.05 mJ/m^2 Aint=0.020 mJ/m^2 B=0.0 T
+Beff = -(1/(Ms*d*a^2)) dH/dm   |   Aint/(Ms*d) = 0.0862 T   | tol_torque=1.0e-05 T
+  I002: K0 = 0.6000 MJ/m^3
+
+=== E002  autopropulsao — NENHUMA (piso de ruido), f=18.0000 GHz, janela 20.0 ns, dt=10.0 fs ===
+  equilibrio: iters=2000000 torque=1.256e-05 T convergiu=NAO  l_eq=10.953118 nm
+  EO-0.1: theta_init=+30.0000 deg  ->  theta_bond apos relaxar=-153.9803 deg  (giro -3.9803)   Q1=-1.0000 Q2=1.0000
+  max||m|-1| ao longo da corrida = 2.220e-16   (PV-2 exige < 1e-9)
+  serie em LAB/EVIDENCE/I002/prop_il_K0.60_th30.dat
+WALL 279.07 s
+=== 2026-08-26T12:55:54-03:00  K0=0.65 MJ/m3, theta=30, SEM excitacao
+MISSION-R001/R002 — PRL 135, 086701 (2025)
+grade 100x100 celulas de 1.0 nm, PBC | d=0.4 nm A=15 pJ/m K=0.60 MJ/m^3 Ms=0.58 MA/m D=3.05 mJ/m^2 Aint=0.020 mJ/m^2 B=0.0 T
+Beff = -(1/(Ms*d*a^2)) dH/dm   |   Aint/(Ms*d) = 0.0862 T   | tol_torque=1.0e-05 T
+  I002: K0 = 0.6500 MJ/m^3
+
+=== E002  autopropulsao — NENHUMA (piso de ruido), f=18.0000 GHz, janela 20.0 ns, dt=10.0 fs ===
+  equilibrio: iters=2000000 torque=1.159e-05 T convergiu=NAO  l_eq=11.593349 nm
+  EO-0.1: theta_init=+30.0000 deg  ->  theta_bond apos relaxar=-153.0830 deg  (giro -3.0830)   Q1=-1.0000 Q2=1.0000
+  max||m|-1| ao longo da corrida = 2.220e-16   (PV-2 exige < 1e-9)
+  serie em LAB/EVIDENCE/I002/prop_il_K0.65_th30.dat
+WALL 278.61 s
+=== 2026-08-26T13:00:32-03:00  K0=0.70 MJ/m3, theta=30, SEM excitacao
+MISSION-R001/R002 — PRL 135, 086701 (2025)
+grade 100x100 celulas de 1.0 nm, PBC | d=0.4 nm A=15 pJ/m K=0.60 MJ/m^3 Ms=0.58 MA/m D=3.05 mJ/m^2 Aint=0.020 mJ/m^2 B=0.0 T
+Beff = -(1/(Ms*d*a^2)) dH/dm   |   Aint/(Ms*d) = 0.0862 T   | tol_torque=1.0e-05 T
+  I002: K0 = 0.7000 MJ/m^3
+
+=== E002  autopropulsao — NENHUMA (piso de ruido), f=18.0000 GHz, janela 20.0 ns, dt=10.0 fs ===
+  equilibrio: iters=2000000 torque=8.050e-06 T convergiu=NAO  l_eq=11.587490 nm
+  EO-0.1: theta_init=+30.0000 deg  ->  theta_bond apos relaxar=-151.8808 deg  (giro -1.8808)   Q1=-1.0000 Q2=1.0000
+  max||m|-1| ao longo da corrida = 2.220e-16   (PV-2 exige < 1e-9)
+  serie em LAB/EVIDENCE/I002/prop_il_K0.70_th30.dat
+WALL 279.14 s
+=== 2026-08-26T13:05:11-03:00  LOTE I002 COMPLETO

@@ -1,0 +1,25 @@
+==========================================================================
+MISSION-A005 — o artefato de rede aparece no mumax3?
+==========================================================================
+
+AR-0  theta=0 (no eixo)   (20 estados, t = 0.0..19.0 ns)
+   theta_ligacao = -180.000 deg   (inicial +0.0)
+   |v| = 1.75489 cm/s     v_par = +0.00000   v_perp = +1.75489
+   angulo da deriva vs ligacao = +90.00 deg
+
+AR-1  theta=30 (fora do eixo)   (20 estados, t = 0.0..19.0 ns)
+   theta_ligacao = -150.196 deg   (inicial +30.0)
+   |v| = 1.90013 cm/s     v_par = +0.82177   v_perp = +1.71323
+   angulo da deriva vs ligacao = +64.37 deg
+
+--- AR-0  criterio: |v| < 0.05 cm/s (o mumax3 preserva estado estatico?)
+   |v| = 1.75489 cm/s   -> FALHOU — A007 BLOQUEADA
+   referencia: o E003 mediu 7.1e-05 cm/s aqui com o saf.cu
+
+--- AR-1  PRIMARIO
+   |v_par| mumax3 = 0.82177 cm/s
+   |v_par| saf.cu (E003, mesma condicao) = 0.91745 cm/s
+   razao mumax3/saf.cu = 0.8957
+
+   H_comum previa ~0.9 cm/s ao longo da ligacao;  H_nosso previa ~0
+   ==> H_COMUM: o artefato aparece nos DOIS codigos. E' discretizacao, nao nosso.

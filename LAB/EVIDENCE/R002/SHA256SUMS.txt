@@ -1,0 +1,24 @@
+# Integridade dos artefatos de EVIDENCE/R002/.
+# ATENCAO: este arquivo registra integridade de arquivo, NAO proveniencia de
+# binario. A proveniencia governante e RELEASE-R002.md §8: o binario A
+# (fonte 2dff5804...8a67) produziu scan_full.csv; o binario B (fonte
+# f6eb9775...601b) produziu ambiguous_resolved.csv. O saf.cu/saf abaixo sao B.
+
+# --- binario B (fonte atual em disco) e o que ele produziu ---
+18d599b453aab4da2c5eb0ec9c271c191fdb90cbd93b6acc613382d799bef5e1  saf.cu
+a9bac7076693da9631958266b972219a5fc1feb91bc1b8b57684c55224de3029  saf
+6143994c2a0a6fce842528b3401d10e77fdea0982b00638c9889e3aa9b86ecc7  ambiguous_resolved.csv
+
+# --- produzidos pelo binario A (RELEASE-R002 §8) e sua analise ---
+eebb9d5884d6be764080dd3546397e7fed019b1fd17d901d69ff65071050e569  scan_full.csv
+33071a531d5383eb8a536e0c5d567e8e67499022cb2cbd251e012f5e567e7c11  power_check_aint0.02.csv
+db3cf9f98ca0446159df86c7978690a857b51418293a3b19d892d01965d1e77f  analyse.py
+441a24677383f0469ca766352d542df7208ef0a9c875e819a0feaf1caab43b77  analysis_output.txt
+
+# --- artefatos do ADENDO-001 (teste de bacia + extracao da Fig. 5c) ---
+2f83ef2d91fb8368c350899e905bf4d47e9c60a3b3b61a6e92a53413d7a07675  basin_test.csv
+2354c8432b3edfa4f977de2e6b1a80252cf12baff3b9e3ff1ec626f313af318e  basin_test_fine.csv
+5ae4925008d23053ed9db9bd09e4de4a9bb74cdb53cf45cbffc070fd29fac33f  extract_fig5c.py
+71dc6d1f493fecc5de63278d5216ac3c2fe4acb3d0da9c029abbe785d2244f78  fig5c_rendered.png
+83cf31851ffbdc19b4b124058530830b4e7d15346a63a56ff6823771e49c6f02  fig5c_extraction.txt
+60defb5d2b8951e0a45568ff865137cefed43766b1a57d724f93917316bbbb76  phase_diagram.png

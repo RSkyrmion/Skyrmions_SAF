@@ -1,0 +1,25 @@
+=== 2026-08-26T16:03:34-03:00  malha 0.5 nm, dt=10 fs, theta=30, SEM excitacao, 4 ns
+MISSION-R001/R002 — PRL 135, 086701 (2025)
+grade 100x100 celulas de 1.0 nm, PBC | d=0.4 nm A=15 pJ/m K=0.60 MJ/m^3 Ms=0.58 MA/m D=3.05 mJ/m^2 Aint=0.020 mJ/m^2 B=0.0 T
+Beff = -(1/(Ms*d*a^2)) dH/dm   |   Aint/(Ms*d) = 0.0862 T   | tol_torque=1.0e-05 T
+  RF-4: malha 0.50 nm -> grade 200x200
+
+=== E002  autopropulsao — NENHUMA (piso de ruido), f=18.0000 GHz, janela 4.0 ns, dt=10.0 fs ===
+  equilibrio: iters=2000000 torque=2.755e-06 T convergiu=NAO  l_eq=10.848334 nm
+  EO-0.1: theta_init=+30.0000 deg  ->  theta_bond apos relaxar=-150.2283 deg  (giro -0.2283)   Q1=-1.0000 Q2=1.0000
+  max||m|-1| ao longo da corrida = 3.331e-16   (PV-2 exige < 1e-9)
+  serie em LAB/EVIDENCE/I003/prop_id1_mesh05_dt10fs.dat
+WALL 351.86 s
+=== 2026-08-26T16:09:26-03:00  malha 0.5 nm, dt=2.5 fs, theta=30, SEM excitacao, 4 ns
+MISSION-R001/R002 — PRL 135, 086701 (2025)
+grade 100x100 celulas de 1.0 nm, PBC | d=0.4 nm A=15 pJ/m K=0.60 MJ/m^3 Ms=0.58 MA/m D=3.05 mJ/m^2 Aint=0.020 mJ/m^2 B=0.0 T
+Beff = -(1/(Ms*d*a^2)) dH/dm   |   Aint/(Ms*d) = 0.0862 T   | tol_torque=1.0e-05 T
+  RF-4: malha 0.50 nm -> grade 200x200
+
+=== E002  autopropulsao — NENHUMA (piso de ruido), f=18.0000 GHz, janela 4.0 ns, dt=2.5 fs ===
+  equilibrio: iters=2000000 torque=2.755e-06 T convergiu=NAO  l_eq=10.848334 nm
+  EO-0.1: theta_init=+30.0000 deg  ->  theta_bond apos relaxar=-150.2283 deg  (giro -0.2283)   Q1=-1.0000 Q2=1.0000
+  max||m|-1| ao longo da corrida = 2.220e-16   (PV-2 exige < 1e-9)
+  serie em LAB/EVIDENCE/I003/prop_id1_mesh05_dt2.5fs.dat
+WALL 813.59 s
+=== 2026-08-26T16:22:59-03:00  LOTE I003 COMPLETO

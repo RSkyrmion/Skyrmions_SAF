@@ -1,0 +1,38 @@
+MISSION-R001 — PRL 135, 086701 (2025)
+grade 100x100 celulas de 1.0 nm, PBC | d=0.4 nm A=15 pJ/m K=0.60 MJ/m^3 Ms=0.58 MA/m D=3.05 mJ/m^2 Aint=0.020 mJ/m^2 B=0.0 T
+Beff = -(1/(Ms*d*a^2)) dH/dm   |   Aint/(Ms*d) = 0.0862 T   | tol_torque=1.0e-05 T
+
+=== VL-1  FD field-vs-energy (grade 12x10, nao-quadrada de proposito) ===
+  troca        pior erro abs  1.260e-05   escala  3.091e+02   rel  4.08e-08   PASSA
+  anisotropia  pior erro abs  3.269e-08   escala  1.927e+00   rel  1.70e-08   PASSA
+  DMI          pior erro abs  5.299e-08   escala  1.318e+01   rel  4.02e-09   PASSA
+  interlayer   pior erro abs  4.298e-10   escala  7.478e-02   rel  5.75e-09   PASSA
+  Zeeman       pior erro abs  1.596e-09   escala  3.500e-01   rel  4.56e-09   PASSA
+  TUDO JUNTO   pior erro abs  1.540e-05   escala  3.109e+02   rel  4.95e-08   PASSA
+  VL-1: PASSOU
+
+RESULTADO: escada completa passou.
+MISSION-R001 — PRL 135, 086701 (2025)
+grade 100x100 celulas de 1.0 nm, PBC | d=0.4 nm A=15 pJ/m K=0.60 MJ/m^3 Ms=0.58 MA/m D=3.05 mJ/m^2 Aint=0.020 mJ/m^2 B=0.0 T
+Beff = -(1/(Ms*d*a^2)) dH/dm   |   Aint/(Ms*d) = 0.0862 T   | tol_torque=1.0e-05 T
+
+=== VL-2  estado uniforme, energia interlayer ===
+  m1=+z, m2=+z (paralelo)    H_int = +2.000000e-19 J   esperado +2.000000e-19 J   rel  1.2e-16  PASSA
+  m1=+z, m2=-z (antipar.)    H_int = -2.000000e-19 J   esperado -2.000000e-19 J   rel  1.2e-16  PASSA
+  |Beff_int| = 0.086207 T   esperado Aint/(Ms*d) = 0.086207 T   PASSA
+  VL-2: PASSOU
+
+RESULTADO: escada completa passou.
+MISSION-R001 — PRL 135, 086701 (2025)
+grade 100x100 celulas de 1.0 nm, PBC | d=0.4 nm A=15 pJ/m K=0.60 MJ/m^3 Ms=0.58 MA/m D=3.05 mJ/m^2 Aint=0.020 mJ/m^2 B=0.0 T
+Beff = -(1/(Ms*d*a^2)) dH/dm   |   Aint/(Ms*d) = 0.0862 T   | tol_torque=1.0e-05 T
+
+=== VL-3  skyrmion unico, Aint=0 ===
+  Dc = 4*sqrt(A*K)/pi = 3.8197 mJ/m^2 ;  kappa = D/Dc = 0.7985
+  chiralidade escolhida (camada 1, D1=+3.05 mJ/m^2): phi0=0 deg  [E_DMI(0)=-9.813e-20 J, E_DMI(pi)=+9.813e-20 J]
+  Q inicial = -1.0000
+  relaxado: iters=15150 torque=9.844e-06 T  E=-4.699163e-18 J  convergiu=sim
+  Q final = -1.0000   (alvo |Q|=1)   mz minimo = -0.9929
+  VL-3: PASSOU
+
+RESULTADO: escada completa passou.

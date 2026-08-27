@@ -1,0 +1,51 @@
+=== 2026-08-25T10:55:07-03:00  none 18.00 200 10 pv1_noise200ns
+MISSION-R001/R002 — PRL 135, 086701 (2025)
+grade 100x100 celulas de 1.0 nm, PBC | d=0.4 nm A=15 pJ/m K=0.60 MJ/m^3 Ms=0.58 MA/m D=3.05 mJ/m^2 Aint=0.020 mJ/m^2 B=0.0 T
+Beff = -(1/(Ms*d*a^2)) dH/dm   |   Aint/(Ms*d) = 0.0862 T   | tol_torque=1.0e-05 T
+
+=== E002  autopropulsao — NENHUMA (piso de ruido), f=18.0000 GHz, janela 200.0 ns, dt=10.0 fs ===
+  equilibrio: iters=189825 torque=9.996e-07 T convergiu=sim  l_eq=10.960706 nm
+  max||m|-1| ao longo da corrida = 2.220e-16   (PV-2 exige < 1e-9)
+  serie em LAB/EVIDENCE/E002/prop_pv1_noise200ns.dat
+WALL 2233.88 s
+=== 2026-08-25T11:32:20-03:00  sbm 18.00 200 10 sbm_18.00GHz
+MISSION-R001/R002 — PRL 135, 086701 (2025)
+grade 100x100 celulas de 1.0 nm, PBC | d=0.4 nm A=15 pJ/m K=0.60 MJ/m^3 Ms=0.58 MA/m D=3.05 mJ/m^2 Aint=0.020 mJ/m^2 B=0.0 T
+Beff = -(1/(Ms*d*a^2)) dH/dm   |   Aint/(Ms*d) = 0.0862 T   | tol_torque=1.0e-05 T
+
+=== E002  autopropulsao — SBM (dK), f=18.0000 GHz, janela 200.0 ns, dt=10.0 fs ===
+  equilibrio: iters=189825 torque=9.996e-07 T convergiu=sim  l_eq=10.960706 nm
+  max||m|-1| ao longo da corrida = 2.220e-16   (PV-2 exige < 1e-9)
+  serie em LAB/EVIDENCE/E002/prop_sbm_18.00GHz.dat
+WALL 2233.62 s
+=== 2026-08-25T12:09:34-03:00  abm 19.24 200 10 abm_19.24GHz
+MISSION-R001/R002 — PRL 135, 086701 (2025)
+grade 100x100 celulas de 1.0 nm, PBC | d=0.4 nm A=15 pJ/m K=0.60 MJ/m^3 Ms=0.58 MA/m D=3.05 mJ/m^2 Aint=0.020 mJ/m^2 B=0.0 T
+Beff = -(1/(Ms*d*a^2)) dH/dm   |   Aint/(Ms*d) = 0.0862 T   | tol_torque=1.0e-05 T
+
+=== E002  autopropulsao — ABM (Bz), f=19.2400 GHz, janela 200.0 ns, dt=10.0 fs ===
+  equilibrio: iters=189825 torque=9.996e-07 T convergiu=sim  l_eq=10.960706 nm
+  max||m|-1| ao longo da corrida = 2.220e-16   (PV-2 exige < 1e-9)
+  serie em LAB/EVIDENCE/E002/prop_abm_19.24GHz.dat
+WALL 2233.23 s
+=== 2026-08-25T12:46:47-03:00  abm 19.40 200 10 abm_19.40GHz
+MISSION-R001/R002 — PRL 135, 086701 (2025)
+grade 100x100 celulas de 1.0 nm, PBC | d=0.4 nm A=15 pJ/m K=0.60 MJ/m^3 Ms=0.58 MA/m D=3.05 mJ/m^2 Aint=0.020 mJ/m^2 B=0.0 T
+Beff = -(1/(Ms*d*a^2)) dH/dm   |   Aint/(Ms*d) = 0.0862 T   | tol_torque=1.0e-05 T
+
+=== E002  autopropulsao — ABM (Bz), f=19.4000 GHz, janela 200.0 ns, dt=10.0 fs ===
+  equilibrio: iters=189825 torque=9.996e-07 T convergiu=sim  l_eq=10.960706 nm
+  max||m|-1| ao longo da corrida = 2.220e-16   (PV-2 exige < 1e-9)
+  serie em LAB/EVIDENCE/E002/prop_abm_19.40GHz.dat
+WALL 2236.89 s
+=== 2026-08-25T13:24:04-03:00  sbm 18.00 20 5 pv2_sbm_dt5fs
+MISSION-R001/R002 — PRL 135, 086701 (2025)
+grade 100x100 celulas de 1.0 nm, PBC | d=0.4 nm A=15 pJ/m K=0.60 MJ/m^3 Ms=0.58 MA/m D=3.05 mJ/m^2 Aint=0.020 mJ/m^2 B=0.0 T
+Beff = -(1/(Ms*d*a^2)) dH/dm   |   Aint/(Ms*d) = 0.0862 T   | tol_torque=1.0e-05 T
+
+=== E002  autopropulsao — SBM (dK), f=18.0000 GHz, janela 20.0 ns, dt=5.0 fs ===
+  equilibrio: iters=189825 torque=9.996e-07 T convergiu=sim  l_eq=10.960706 nm
+  max||m|-1| ao longo da corrida = 2.220e-16   (PV-2 exige < 1e-9)
+  serie em LAB/EVIDENCE/E002/prop_pv2_sbm_dt5fs.dat
+WALL 441.93 s
+=== 2026-08-25T13:31:26-03:00  LOTE COMPLETO

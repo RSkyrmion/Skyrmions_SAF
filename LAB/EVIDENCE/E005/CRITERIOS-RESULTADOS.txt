@@ -1,0 +1,30 @@
+============================================================================
+MISSION-E005 — criterios PRE-REGISTRADOS
+============================================================================
+
+ALVO (RA-3, selado antes das corridas): 0.002->17.9176  0.004->17.7487  0.008->17.4649
+  inclinacao do artigo = -74.807 GHz por unidade de dK/K0
+  banda do RA-1 (fator 3): [-224.4, -24.9]
+
+--- RA-0  convergencia de f_pico (a SAIDA), por amplitude
+  dK/K0=0.002  (7 pts)  f_pico(150-225)=17.9656  f_pico(225-300)=17.9664  dif=0.0009 GHz  -> PASSOU
+                  dispersao entre janelas = 0.853 %   sigma(f_pico) = 0.0061 GHz  (ok)
+  dK/K0=0.005  (5 pts)  f_pico(150-225)=17.8192  f_pico(225-300)=17.8255  dif=0.0063 GHz  -> PASSOU
+                  dispersao entre janelas = 1.306 %   sigma(f_pico) = 0.0108 GHz  (ok)
+  dK/K0=0.008  (7 pts)  f_pico(150-225)=17.5485  f_pico(225-300)=17.5796  dif=0.0311 GHz  -> PASSOU
+                  dispersao entre janelas = 2.775 %   sigma(f_pico) = 0.0336 GHz  (ok)
+
+  amplitudes utilizaveis: [0.002, 0.005, 0.008]   (§4 exige >= 2)
+
+--- RA-1  PRIMARIO: df_pico/d(dK/K0)
+     dK/K0=0.002  f_pico = 17.9664 +- 0.0061 GHz    (artigo: 17.9176)
+     dK/K0=0.005  f_pico = 17.8255 +- 0.0108 GHz    (artigo: interpolado)
+     dK/K0=0.008  f_pico = 17.5796 +- 0.0336 GHz    (artigo: 17.4649)
+  inclinacao medida = -64.470 GHz/unidade   artigo = -74.807
+  razao medida/artigo = 0.862
+  H_amplitude exige: negativa E dentro do fator 3  -> PASSOU
+  H_fixo previa inclinacao ~0
+
+--- RA-2  (exploratorio) pico de menor amplitude vs f_SBM
+  f_pico(0.002) = 17.9664 +- 0.0061   f_SBM = 17.9609 +- 0.0125
+  diferenca = 0.0055 GHz = 0.40 sigma
