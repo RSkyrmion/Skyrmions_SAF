@@ -1,0 +1,56 @@
+{
+  "command": [
+    "tar",
+    "--sort=name",
+    "--format=posix",
+    "-cf",
+    "-",
+    "-C",
+    "/home/rodrigo/pesquisa/SAF",
+    "LAB/EVIDENCE/R001",
+    "|",
+    "zstd",
+    "-1",
+    "-T0",
+    "-o",
+    "/tmp/fpm-storage-001-20260828/packages/R001.tar.zst"
+  ],
+  "cwd": "/home/rodrigo/pesquisa/SAF",
+  "determinism": "source payload identity is deterministic; compressed byte identity is recorded, not assumed across tool versions",
+  "duration_seconds": 0.011385858000721782,
+  "environment": {
+    "platform": "Linux 6.1.0-52-amd64",
+    "python": "3.11.2",
+    "zstd": "*** Zstandard CLI (64-bit) v1.5.4, by Yann Collet ***"
+  },
+  "executor": {
+    "kind": "AI",
+    "name": "Codex",
+    "role": "PACKAGER"
+  },
+  "exit_code": 0,
+  "finished_at": "2026-08-28T13:49:45.186688Z",
+  "inputs": [
+    {
+      "files": 13,
+      "path": "LAB/EVIDENCE/R001"
+    }
+  ],
+  "mission_id": "MISSION-STORAGE-001",
+  "outputs": [
+    {
+      "bytes": 1343176,
+      "path": "/tmp/fpm-storage-001-20260828/packages/R001.tar.zst",
+      "sha256": "8556de1596a46c00a3ab8257fb132d6ef84e8b602d4adc113ba184816c8a4bee"
+    }
+  ],
+  "parameters": {
+    "archive": "GNU tar pax",
+    "compression": "zstd level 1"
+  },
+  "run_id": "package-R001",
+  "schema_version": 1,
+  "started_at": "2026-08-28T13:49:45.175294Z",
+  "state": "COMPLETE",
+  "timeout_seconds": 0
+}

@@ -1,0 +1,244 @@
+{
+  "archive_bytes": 1729487,
+  "archive_file": "A002.tar.zst",
+  "archive_format": "POSIX pax tar compressed by Zstandard",
+  "archive_sha256": "f872f2a451ee7e48f96eaa412ef86b00c15a49738138a6a9f60f12d3b37e05e8",
+  "command": [
+    "tar",
+    "--sort=name",
+    "--format=posix",
+    "-cf",
+    "-",
+    "-C",
+    "/home/rodrigo/pesquisa/SAF",
+    "LAB/EVIDENCE/A002",
+    "|",
+    "zstd",
+    "-1",
+    "-T0",
+    "-o",
+    "/tmp/fpm-storage-001-20260828/packages/A002.tar.zst"
+  ],
+  "compression_lossless": true,
+  "created_at": "2026-08-28T13:49:44.409939Z",
+  "historical_seal_authority": "LAB/EVIDENCE/A002/SHA256SUMS.txt",
+  "historical_seal_rederived": false,
+  "mission_id": "MISSION-STORAGE-001",
+  "payloads": [
+    {
+      "bytes": 331,
+      "kind": "file",
+      "mode": 420,
+      "mtime_ns": 1787586871315109801,
+      "path": "A002/OV13-RESULTS.txt",
+      "sha256": "2ab5933ade737732632f1afcaee68ab41057461e732a693a300df233c0a48a96"
+    },
+    {
+      "bytes": 2423,
+      "kind": "file",
+      "mode": 420,
+      "mtime_ns": 1787586527613911613,
+      "path": "A002/OV2-FINDING.txt",
+      "sha256": "3a6bc8bf7d7df5ca8a6531a622e11b1c6796a83c50d8625c84d28956d6fde7cb"
+    },
+    {
+      "bytes": 2329,
+      "kind": "file",
+      "mode": 420,
+      "mtime_ns": 1787586871331109834,
+      "path": "A002/SHA256SUMS.txt",
+      "sha256": "fb7c9d6c6a286b669efd8a40f90530ad17a6279927b3310b946ceb44b6ead0de"
+    },
+    {
+      "bytes": 720993,
+      "kind": "file",
+      "mode": 420,
+      "mtime_ns": 1787586527613911613,
+      "path": "A002/cal_anti-Oxs_TwoSurfaceExchange-interlayer-Field-00-0000000.ohf",
+      "sha256": "950e192646673fe137acac2c4c43761209e521712632b687ad6d38d2fcfa0dc6"
+    },
+    {
+      "bytes": 1665,
+      "kind": "file",
+      "mode": 420,
+      "mtime_ns": 1787586527613911613,
+      "path": "A002/cal_anti.odt",
+      "sha256": "262300bd8f74dc87c40c15dadc5287489d8f506368afe8b997d0d08ec92ebdb6"
+    },
+    {
+      "bytes": 720993,
+      "kind": "file",
+      "mode": 420,
+      "mtime_ns": 1787586527613911613,
+      "path": "A002/cal_par-Oxs_TwoSurfaceExchange-interlayer-Field-00-0000000.ohf",
+      "sha256": "03e196fd96484cf63e413eddbb9916edec5e7852c44c6bcf909cf144475e3f8f"
+    },
+    {
+      "bytes": 1656,
+      "kind": "file",
+      "mode": 420,
+      "mtime_ns": 1787586527613911613,
+      "path": "A002/cal_par.odt",
+      "sha256": "1a9704896242b9ae57910ceff2cb063ba245419f76f81149c3edaccc98bf420c"
+    },
+    {
+      "bytes": 1581,
+      "kind": "file",
+      "mode": 420,
+      "mtime_ns": 1787586871251109672,
+      "path": "A002/est.py",
+      "sha256": "c8eece31893db5be6b068994e13e8dff73f56307b6ef1899b990c67f97fd9c1d"
+    },
+    {
+      "bytes": 720994,
+      "kind": "file",
+      "mode": 420,
+      "mtime_ns": 1787586527613911613,
+      "path": "A002/npbc_anti-Oxs_TwoSurfaceExchange-interlayer-Field-00-0000000.ohf",
+      "sha256": "b977dd466f5ebf9b016ef47fa49c6ea58a808590bab6fa5a398c58a54c00b085"
+    },
+    {
+      "bytes": 1665,
+      "kind": "file",
+      "mode": 420,
+      "mtime_ns": 1787586527613911613,
+      "path": "A002/npbc_anti.odt",
+      "sha256": "6b0d521403a959df770794a97f5d395bb0dfa110f440aee968270aa6e569fd83"
+    },
+    {
+      "bytes": 721014,
+      "kind": "file",
+      "mode": 420,
+      "mtime_ns": 1787586871255109681,
+      "path": "A002/ov1_L100-Oxs_MinDriver-Magnetization-00-0011866.omf",
+      "sha256": "231926d4c74c5e65a58d7d71e28eff59c3b97032eb682690a1a0b46803e23102"
+    },
+    {
+      "bytes": 2302,
+      "kind": "file",
+      "mode": 420,
+      "mtime_ns": 1787586871255109681,
+      "path": "A002/ov1_L100.odt",
+      "sha256": "bd0df0c9a7b887f5d2fa7663bdc008d7df6a85b3fb099850239b763d3f5f1ceb"
+    },
+    {
+      "bytes": 1830,
+      "kind": "file",
+      "mode": 420,
+      "mtime_ns": 1787586527613911613,
+      "path": "A002/ov2.mif",
+      "sha256": "4be0ee7afc8ce81e723ad2aa733f3af3395ede4d3bc68339fbea7078d3906370"
+    },
+    {
+      "bytes": 720989,
+      "kind": "file",
+      "mode": 420,
+      "mtime_ns": 1787586527613911613,
+      "path": "A002/ov2_anti-Oxs_TwoSurfaceExchange-interlayer-Field-00-0000000.ohf",
+      "sha256": "701429bd299b1ae95f6eb43909719453d24e905659c24f1554104525ad676fa4"
+    },
+    {
+      "bytes": 3322,
+      "kind": "file",
+      "mode": 420,
+      "mtime_ns": 1787586527613911613,
+      "path": "A002/ov2_anti.odt",
+      "sha256": "17550328717678ddd09fdec82aa92d852e7e82b51224460848ecf258c023e94c"
+    },
+    {
+      "bytes": 1808,
+      "kind": "file",
+      "mode": 420,
+      "mtime_ns": 1787586527613911613,
+      "path": "A002/ov2_cal.mif",
+      "sha256": "d3aecf742dcc2bad080f21ca5d297018b668ee024a2cc90746cf84d89e0ff5ae"
+    },
+    {
+      "bytes": 1809,
+      "kind": "file",
+      "mode": 420,
+      "mtime_ns": 1787586527613911613,
+      "path": "A002/ov2_npbc.mif",
+      "sha256": "1fb37ef908bbd491ea4af991ebe858444db06ba31653965bf27793b4841e9645"
+    },
+    {
+      "bytes": 720989,
+      "kind": "file",
+      "mode": 420,
+      "mtime_ns": 1787586527613911613,
+      "path": "A002/ov2_par-Oxs_TwoSurfaceExchange-interlayer-Field-00-0000000.ohf",
+      "sha256": "47c06fed726077490aaf2c0e7ae31a4a276ba86d5c9aa273ed7c87c6b51371ce"
+    },
+    {
+      "bytes": 1656,
+      "kind": "file",
+      "mode": 420,
+      "mtime_ns": 1787586527613911613,
+      "path": "A002/ov2_par.odt",
+      "sha256": "7e3e99795c1a35f6c8c0aa1b84c3c0f3cedaf6d5bd5faca8f55017d922f16ce9"
+    },
+    {
+      "bytes": 721011,
+      "kind": "file",
+      "mode": 420,
+      "mtime_ns": 1787586871255109681,
+      "path": "A002/ov3_L100-Oxs_MinDriver-Magnetization-00-0002032.omf",
+      "sha256": "09c7a88190ff6987d1d9cb1953428501575ab3a6467833de476874ae8e3ea8ec"
+    },
+    {
+      "bytes": 2307,
+      "kind": "file",
+      "mode": 420,
+      "mtime_ns": 1787586871255109681,
+      "path": "A002/ov3_L100.odt",
+      "sha256": "d215b67288f3f8e67f71269cc23843cf877c389899f3bf53f9fba4d9a7ab9d61"
+    },
+    {
+      "bytes": 1412211,
+      "kind": "file",
+      "mode": 420,
+      "mtime_ns": 1787586871255109681,
+      "path": "A002/ov3_L140-Oxs_MinDriver-Magnetization-00-0002202.omf",
+      "sha256": "34188b0113d7e8533780719552b508376f4f317dfba02d35671e2b6772cdc9c6"
+    },
+    {
+      "bytes": 2309,
+      "kind": "file",
+      "mode": 420,
+      "mtime_ns": 1787586871255109681,
+      "path": "A002/ov3_L140.odt",
+      "sha256": "35f8d8c415c5251c2eea2907c166d6858aad9c1e0c24b81b45ddc98122c12e6e"
+    },
+    {
+      "bytes": 1737,
+      "kind": "file",
+      "mode": 420,
+      "mtime_ns": 1787586527613911613,
+      "path": "A002/ovf.py",
+      "sha256": "d14fab274d35b16ce7129efa0491d9debbdbbd58716dda2339fb322ef1afac4e"
+    },
+    {
+      "bytes": 2438,
+      "kind": "file",
+      "mode": 420,
+      "mtime_ns": 1787586871251109672,
+      "path": "A002/pair.mif",
+      "sha256": "377e20a57094c42fea8178d16ac6957c365584dc1e1c5f1f957438fa46d69135"
+    },
+    {
+      "bytes": 1014,
+      "kind": "file",
+      "mode": 420,
+      "mtime_ns": 1787586871251109672,
+      "path": "A002/pbctest.mif",
+      "sha256": "3e37d3bb969311e2b3ff3e59b283ccc644bd7268d0d747edaabbfe5adcbb40cf"
+    }
+  ],
+  "retention": "TEMPORARY_COLD_COPY",
+  "schema_version": 1,
+  "source_bytes": 6493376,
+  "source_directory": "LAB/EVIDENCE/A002",
+  "source_file_count": 26,
+  "source_seal_status": "SEALED_VALID",
+  "temporary_location": "/tmp/fpm-storage-001-20260828/packages/A002.tar.zst"
+}

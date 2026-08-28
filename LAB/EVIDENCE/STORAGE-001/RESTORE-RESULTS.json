@@ -1,0 +1,247 @@
+{
+  "directories": [
+    {
+      "directory": "A002",
+      "errors": [],
+      "extract_exit": {
+        "tar": 0,
+        "zstd": 0
+      },
+      "historical_sha256sums": "PASS",
+      "historical_sha256sums_stderr": "",
+      "member_safety": "PASS",
+      "path_set_equal": true,
+      "payload_and_metadata_equal": true,
+      "zstd_test": "PASS"
+    },
+    {
+      "directory": "A004",
+      "errors": [],
+      "extract_exit": {
+        "tar": 0,
+        "zstd": 0
+      },
+      "historical_sha256sums": "PASS",
+      "historical_sha256sums_stderr": "",
+      "member_safety": "PASS",
+      "path_set_equal": true,
+      "payload_and_metadata_equal": true,
+      "zstd_test": "PASS"
+    },
+    {
+      "directory": "A005R2",
+      "errors": [],
+      "extract_exit": {
+        "tar": 0,
+        "zstd": 0
+      },
+      "historical_sha256sums": "PASS",
+      "historical_sha256sums_stderr": "",
+      "member_safety": "PASS",
+      "path_set_equal": true,
+      "payload_and_metadata_equal": true,
+      "zstd_test": "PASS"
+    },
+    {
+      "directory": "AUDIT-001",
+      "errors": [],
+      "extract_exit": {
+        "tar": 0,
+        "zstd": 0
+      },
+      "historical_sha256sums": "PASS",
+      "historical_sha256sums_stderr": "",
+      "member_safety": "PASS",
+      "path_set_equal": true,
+      "payload_and_metadata_equal": true,
+      "zstd_test": "PASS"
+    },
+    {
+      "directory": "AUDIT-002",
+      "errors": [],
+      "extract_exit": {
+        "tar": 0,
+        "zstd": 0
+      },
+      "historical_sha256sums": "PASS",
+      "historical_sha256sums_stderr": "",
+      "member_safety": "PASS",
+      "path_set_equal": true,
+      "payload_and_metadata_equal": true,
+      "zstd_test": "PASS"
+    },
+    {
+      "directory": "DATA-001",
+      "errors": [],
+      "extract_exit": {
+        "tar": 0,
+        "zstd": 0
+      },
+      "historical_sha256sums": "PASS",
+      "historical_sha256sums_stderr": "",
+      "member_safety": "PASS",
+      "path_set_equal": true,
+      "payload_and_metadata_equal": true,
+      "zstd_test": "PASS"
+    },
+    {
+      "directory": "E001",
+      "errors": [],
+      "extract_exit": {
+        "tar": 0,
+        "zstd": 0
+      },
+      "historical_sha256sums": "PASS",
+      "historical_sha256sums_stderr": "",
+      "member_safety": "PASS",
+      "path_set_equal": true,
+      "payload_and_metadata_equal": true,
+      "zstd_test": "PASS"
+    },
+    {
+      "directory": "E002",
+      "errors": [],
+      "extract_exit": {
+        "tar": 0,
+        "zstd": 0
+      },
+      "historical_sha256sums": "PASS",
+      "historical_sha256sums_stderr": "",
+      "member_safety": "PASS",
+      "path_set_equal": true,
+      "payload_and_metadata_equal": true,
+      "zstd_test": "PASS"
+    },
+    {
+      "directory": "E003",
+      "errors": [],
+      "extract_exit": {
+        "tar": 0,
+        "zstd": 0
+      },
+      "historical_sha256sums": "PASS",
+      "historical_sha256sums_stderr": "",
+      "member_safety": "PASS",
+      "path_set_equal": true,
+      "payload_and_metadata_equal": true,
+      "zstd_test": "PASS"
+    },
+    {
+      "directory": "E004",
+      "errors": [],
+      "extract_exit": {
+        "tar": 0,
+        "zstd": 0
+      },
+      "historical_sha256sums": "PASS",
+      "historical_sha256sums_stderr": "",
+      "member_safety": "PASS",
+      "path_set_equal": true,
+      "payload_and_metadata_equal": true,
+      "zstd_test": "PASS"
+    },
+    {
+      "directory": "E004R",
+      "errors": [],
+      "extract_exit": {
+        "tar": 0,
+        "zstd": 0
+      },
+      "historical_sha256sums": "PASS",
+      "historical_sha256sums_stderr": "",
+      "member_safety": "PASS",
+      "path_set_equal": true,
+      "payload_and_metadata_equal": true,
+      "zstd_test": "PASS"
+    },
+    {
+      "directory": "E005",
+      "errors": [],
+      "extract_exit": {
+        "tar": 0,
+        "zstd": 0
+      },
+      "historical_sha256sums": "PASS",
+      "historical_sha256sums_stderr": "",
+      "member_safety": "PASS",
+      "path_set_equal": true,
+      "payload_and_metadata_equal": true,
+      "zstd_test": "PASS"
+    },
+    {
+      "directory": "I001",
+      "errors": [],
+      "extract_exit": {
+        "tar": 0,
+        "zstd": 0
+      },
+      "historical_sha256sums": "PASS",
+      "historical_sha256sums_stderr": "",
+      "member_safety": "PASS",
+      "path_set_equal": true,
+      "payload_and_metadata_equal": true,
+      "zstd_test": "PASS"
+    },
+    {
+      "directory": "I002",
+      "errors": [],
+      "extract_exit": {
+        "tar": 0,
+        "zstd": 0
+      },
+      "historical_sha256sums": "PASS",
+      "historical_sha256sums_stderr": "",
+      "member_safety": "PASS",
+      "path_set_equal": true,
+      "payload_and_metadata_equal": true,
+      "zstd_test": "PASS"
+    },
+    {
+      "directory": "I003",
+      "errors": [],
+      "extract_exit": {
+        "tar": 0,
+        "zstd": 0
+      },
+      "historical_sha256sums": "PASS",
+      "historical_sha256sums_stderr": "",
+      "member_safety": "PASS",
+      "path_set_equal": true,
+      "payload_and_metadata_equal": true,
+      "zstd_test": "PASS"
+    },
+    {
+      "directory": "R001",
+      "errors": [],
+      "extract_exit": {
+        "tar": 0,
+        "zstd": 0
+      },
+      "historical_sha256sums": "PASS",
+      "historical_sha256sums_stderr": "",
+      "member_safety": "PASS",
+      "path_set_equal": true,
+      "payload_and_metadata_equal": true,
+      "zstd_test": "PASS"
+    },
+    {
+      "directory": "R002",
+      "errors": [],
+      "extract_exit": {
+        "tar": 0,
+        "zstd": 0
+      },
+      "historical_sha256sums": "PASS",
+      "historical_sha256sums_stderr": "",
+      "member_safety": "PASS",
+      "path_set_equal": true,
+      "payload_and_metadata_equal": true,
+      "zstd_test": "PASS"
+    }
+  ],
+  "lineage_assessment": "SELF_VALIDATION",
+  "reason": "PACKAGER and RESTORE_VALIDATOR share the same Codex lineage; technical checks do not promote SC-4",
+  "restore_root": "/tmp/fpm-storage-001-20260828/restore",
+  "st_2_verdict": "UNEVALUATED",
+  "technical_restore": "PASS"
+}

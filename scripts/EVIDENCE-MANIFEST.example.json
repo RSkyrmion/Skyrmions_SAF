@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "mission_id": "MISSION-EXAMPLE",
+  "title": "Short evidence package title",
+  "operational_state": "COMPLETE",
+  "created_at": "YYYY-MM-DDTHH:MM:SSZ",
+  "resources": [
+    {
+      "path": "result.txt",
+      "role": "DERIVED",
+      "media_type": "text/plain",
+      "bytes": 0,
+      "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+      "generated_by": "RUN-RECEIPT.json",
+      "derived_from": ["input.txt"],
+      "supports_criterion": ["EX-1"]
+    }
+  ],
+  "access": "LOCAL",
+  "rights": "UNDECIDED",
+  "retention": "PRESERVE",
+  "expected_outputs": [{"path": "result.txt", "status": "PRODUCED"}],
+  "links": {
+    "mission": "LAB/MISSIONS/MISSION-EXAMPLE.md",
+    "release": "LAB/RELEASES/RELEASE-EXAMPLE.md",
+    "decision": "LAB/DECISIONS/WRITEBACK-NNN.md",
+    "ai_provenance": "AI-PROVENANCE.json"
+  }
+}
+

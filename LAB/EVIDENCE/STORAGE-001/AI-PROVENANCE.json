@@ -1,0 +1,74 @@
+{
+  "schema_version": 1,
+  "mission_id": "MISSION-STORAGE-001",
+  "created_at": "2026-08-28T10:45:37-03:00",
+  "ai_involvement": "MATERIAL",
+  "research_stages": [
+    "SPECIFICATION",
+    "IMPLEMENTATION",
+    "VALIDATION",
+    "DOCUMENTATION"
+  ],
+  "systems": [
+    {
+      "name": "Codex",
+      "provider": "OpenAI",
+      "version_or_access_date": "2026-08-28",
+      "roles": [
+        "PACKAGER",
+        "SELF_VALIDATOR"
+      ]
+    }
+  ],
+  "persistent_context": [
+    {
+      "path_or_identifier": "LAB/MISSIONS/MISSION-STORAGE-001.md",
+      "integrity": "6055132ef4c56e74cf94155ba39549ad684a3a1c29b55b2922d1f8968c28a97d"
+    },
+    {
+      "path_or_identifier": "LAB/DECISIONS/WRITEBACK-038.md",
+      "integrity": "ae64b2c0475a99b152687120eedab4767eca302533efa72004f4a6860fca8471"
+    }
+  ],
+  "executable_actions": [
+    {
+      "actor": "Codex",
+      "action": "execute authorized ST-0 through ST-5 with temporary packages only",
+      "artifact": "GATE-RESULTS.json"
+    }
+  ],
+  "retrieval_sources": [],
+  "human_checkpoints": [
+    {
+      "checkpoint": "PREREGISTRATION_REVIEW_AND_LIMITED_EXECUTION_AUTHORIZATION",
+      "authority": "Rodrigo",
+      "record": "LAB/DECISIONS/WRITEBACK-038.md"
+    }
+  ],
+  "validation_layers": [
+    {
+      "validator": "SHA-256 and standard archive tools",
+      "method": "exact path and payload comparison after restoration",
+      "independent_axes": [
+        "digest algorithm",
+        "standard decompressor"
+      ],
+      "shared_axes": [
+        "executor session",
+        "criteria interpretation",
+        "local filesystem"
+      ]
+    }
+  ],
+  "independence_limits": [
+    "PACKAGER and validator are the same Codex lineage (SELF_VALIDATION).",
+    "No distinct validating lineage or external backup destination was authorized."
+  ],
+  "known_limits": [
+    "ST-6 and every removal remain not authorized.",
+    "Packages are temporary under /tmp and do not constitute a second failure-independent copy.",
+    "PERMANENT-FAILURE-HOLD must remain uncompressed and untouched.",
+    "No scientific claim, seal history, release or acceptance may change."
+  ],
+  "disclosure_summary": "Codex executed the non-destructive storage appraisal and temporary packaging workflow under a human-reviewed preregistration; validation remains SELF_VALIDATION and no removal was authorized."
+}

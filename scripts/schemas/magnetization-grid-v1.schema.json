@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "name": "magnetization-grid-v1",
+  "description": "Indexed magnetization components for both SAF layers.",
+  "delimiter": "whitespace",
+  "fields": [
+    {"name": "ix", "type": "integer", "unit": "1", "nullable": false, "minimum": 0},
+    {"name": "iy", "type": "integer", "unit": "1", "nullable": false, "minimum": 0},
+    {"name": "layer", "type": "integer", "unit": "1", "nullable": false, "enum": [1, 2]},
+    {"name": "mx", "type": "number", "unit": "1", "nullable": false, "finite": true, "minimum": -1, "maximum": 1},
+    {"name": "my", "type": "number", "unit": "1", "nullable": false, "finite": true, "minimum": -1, "maximum": 1},
+    {"name": "mz", "type": "number", "unit": "1", "nullable": false, "finite": true, "minimum": -1, "maximum": 1}
+  ]
+}
+

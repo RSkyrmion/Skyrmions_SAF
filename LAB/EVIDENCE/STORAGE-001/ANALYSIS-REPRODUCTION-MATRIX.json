@@ -1,0 +1,80 @@
+{
+  "created_at": "2026-08-28T13:50:08.662638Z",
+  "entries": [
+    {
+      "analyzer": "LAB/EVIDENCE/E002/analyze.py",
+      "analyzer_sha256": "51d2d9a82b49fb2f30c6e8e773930ed18e01cd0e291dc3c994bb8cbb6b053337",
+      "command": [
+        "/usr/bin/python3",
+        "-B",
+        "LAB/EVIDENCE/E002/analyze.py"
+      ],
+      "cwd": "/tmp/fpm-storage-001-20260828/restore",
+      "designated_output": "LAB/EVIDENCE/E002/CRITERIOS-RESULTADOS.txt",
+      "directory": "E002",
+      "expected_sha256": "e913063bb65f0545402f7fd1d75aabaa0e6c7d4c3fd7563514aa644b88e784cc",
+      "inputs": "restored LAB/EVIDENCE tree; cross-mission dependencies retained",
+      "volatile_exclusions": []
+    },
+    {
+      "analyzer": "LAB/EVIDENCE/E003/analyze3.py",
+      "analyzer_sha256": "cad347284d51cd1a50312a705a22ee8a9276b5ed8e9d516e84930536d337daab",
+      "command": [
+        "/usr/bin/python3",
+        "-B",
+        "LAB/EVIDENCE/E003/analyze3.py"
+      ],
+      "cwd": "/tmp/fpm-storage-001-20260828/restore",
+      "designated_output": "LAB/EVIDENCE/E003/CRITERIOS-RESULTADOS.txt",
+      "directory": "E003",
+      "expected_sha256": "c9935526c388e3954aacc10fabda45bf49ffecbc71a350b236471bf38d15f6ab",
+      "inputs": "restored LAB/EVIDENCE tree; cross-mission dependencies retained",
+      "volatile_exclusions": []
+    },
+    {
+      "analyzer": "LAB/EVIDENCE/E004/analyze4.py",
+      "analyzer_sha256": "74e517018905a7e6facc985fbfa99557f5eeb1a638b4c6cec335bc2b9f82c4f4",
+      "command": [
+        "/usr/bin/python3",
+        "-B",
+        "LAB/EVIDENCE/E004/analyze4.py"
+      ],
+      "cwd": "/tmp/fpm-storage-001-20260828/restore",
+      "designated_output": "LAB/EVIDENCE/E004/CRITERIOS-RESULTADOS.txt",
+      "directory": "E004",
+      "expected_sha256": "f394ccd55ff4372b2ea07df55d0d616e02001a5f9484d2e7888a4a9844101752",
+      "inputs": "restored LAB/EVIDENCE tree; cross-mission dependencies retained",
+      "volatile_exclusions": []
+    },
+    {
+      "analyzer": "LAB/EVIDENCE/E004R/analyze4r.py",
+      "analyzer_sha256": "034d6291141fd120ae7ce4f0e7d61e7c49a24264e2eb792657aef068c74a4be1",
+      "command": [
+        "/usr/bin/python3",
+        "-B",
+        "LAB/EVIDENCE/E004R/analyze4r.py"
+      ],
+      "cwd": "/tmp/fpm-storage-001-20260828/restore",
+      "designated_output": "LAB/EVIDENCE/E004R/CRITERIOS-RESULTADOS.txt",
+      "directory": "E004R",
+      "expected_sha256": "aaa127016ffe9836a754ca1814e8f39a9c2dccba2d75b53997af676758f48998",
+      "inputs": "restored LAB/EVIDENCE tree; cross-mission dependencies retained",
+      "volatile_exclusions": []
+    },
+    {
+      "analyzer": "LAB/EVIDENCE/E005/analyze5.py",
+      "analyzer_sha256": "dc56c9b539423177f10921a8e6c8d0b27d4d2e0862d5dece82d28a5ae25646e4",
+      "command": [
+        "/usr/bin/python3",
+        "-B",
+        "LAB/EVIDENCE/E005/analyze5.py"
+      ],
+      "cwd": "/tmp/fpm-storage-001-20260828/restore",
+      "designated_output": "LAB/EVIDENCE/E005/CRITERIOS-RESULTADOS.txt",
+      "directory": "E005",
+      "expected_sha256": "88e06f9eae17418e99989e5b2b0dd6081bb6f4201c945d5053b71ab30df68c5b",
+      "inputs": "restored LAB/EVIDENCE tree; cross-mission dependencies retained",
+      "volatile_exclusions": []
+    }
+  ]
+}

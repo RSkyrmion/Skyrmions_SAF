@@ -1,0 +1,44 @@
+{
+  "command": [
+    "/usr/bin/python3",
+    "-B",
+    "<each-sealed-analyze.py>"
+  ],
+  "cwd": "/tmp/fpm-storage-001-20260828/restore",
+  "determinism": "source payload identity is deterministic; compressed byte identity is recorded, not assumed across tool versions",
+  "duration_seconds": 0.0,
+  "environment": {
+    "platform": "Linux 6.1.0-52-amd64",
+    "python": "3.11.2",
+    "zstd": "*** Zstandard CLI (64-bit) v1.5.4, by Yann Collet ***"
+  },
+  "executor": {
+    "kind": "AI",
+    "name": "Codex",
+    "role": "SELF_VALIDATOR"
+  },
+  "exit_code": 0,
+  "finished_at": "2026-08-28T13:50:08.662921Z",
+  "inputs": [
+    {
+      "analyzers": 5,
+      "path": "/tmp/fpm-storage-001-20260828/restore"
+    }
+  ],
+  "mission_id": "MISSION-STORAGE-001",
+  "outputs": [
+    {
+      "path": "ANALYSIS-RESULTS.json",
+      "sha256": "ae19bcfe3b67afe63b89c3993c446e7e3d07e244853731f199bdf4cc30726123"
+    }
+  ],
+  "parameters": {
+    "archive": "GNU tar pax",
+    "compression": "zstd level 1"
+  },
+  "run_id": "analysis-validation",
+  "schema_version": 1,
+  "started_at": "2026-08-28T13:49:44.389904Z",
+  "state": "COMPLETE",
+  "timeout_seconds": 0
+}

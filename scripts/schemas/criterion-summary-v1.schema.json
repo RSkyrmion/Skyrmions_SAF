@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "name": "criterion-summary-v1",
+  "description": "Machine-readable criterion verdict table.",
+  "delimiter": "tab",
+  "fields": [
+    {"name": "criterion", "type": "string", "unit": "1", "nullable": false},
+    {"name": "measure", "type": "string", "unit": "1", "nullable": false},
+    {"name": "unit", "type": "string", "unit": "1", "nullable": false},
+    {"name": "status", "type": "string", "unit": "1", "nullable": false, "enum": ["PASS", "FAIL", "UNEVALUATED", "INDETERMINATE"]},
+    {"name": "limit", "type": "string", "unit": "1", "nullable": false}
+  ]
+}
+

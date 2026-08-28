@@ -1,0 +1,156 @@
+{
+  "archive_bytes": 55863824,
+  "archive_file": "E004R.tar.zst",
+  "archive_format": "POSIX pax tar compressed by Zstandard",
+  "archive_sha256": "9550507ac6ea5c9ba641dbf4dc80d39a336215dfff417b7c90ca0686734a4e9c",
+  "command": [
+    "tar",
+    "--sort=name",
+    "--format=posix",
+    "-cf",
+    "-",
+    "-C",
+    "/home/rodrigo/pesquisa/SAF",
+    "LAB/EVIDENCE/E004R",
+    "|",
+    "zstd",
+    "-1",
+    "-T0",
+    "-o",
+    "/tmp/fpm-storage-001-20260828/packages/E004R.tar.zst"
+  ],
+  "compression_lossless": true,
+  "created_at": "2026-08-28T13:49:44.744075Z",
+  "historical_seal_authority": "LAB/EVIDENCE/E004R/SHA256SUMS.txt",
+  "historical_seal_rederived": false,
+  "mission_id": "MISSION-STORAGE-001",
+  "payloads": [
+    {
+      "bytes": 1270,
+      "kind": "file",
+      "mode": 420,
+      "mtime_ns": 1787758335831921766,
+      "path": "E004R/CRITERIOS-RESULTADOS.txt",
+      "sha256": "aaa127016ffe9836a754ca1814e8f39a9c2dccba2d75b53997af676758f48998"
+    },
+    {
+      "bytes": 6630,
+      "kind": "file",
+      "mode": 420,
+      "mtime_ns": 1787756544775762904,
+      "path": "E004R/RUN-LOG.txt",
+      "sha256": "c6416eeac46e8d0c85d342bd21929d63c66da24aadd136d8ef6d6b730324b0b1"
+    },
+    {
+      "bytes": 1189,
+      "kind": "file",
+      "mode": 420,
+      "mtime_ns": 1787758622645970043,
+      "path": "E004R/SHA256SUMS.txt",
+      "sha256": "25b1568d22458a56491200aac61fc6a83303cfd876b353de05eefe1be911de84"
+    },
+    {
+      "bytes": 4514,
+      "kind": "file",
+      "mode": 420,
+      "mtime_ns": 1787758333151944841,
+      "path": "E004R/analyze4r.py",
+      "sha256": "034d6291141fd120ae7ce4f0e7d61e7c49a24264e2eb792657aef068c74a4be1"
+    },
+    {
+      "bytes": 1100071,
+      "kind": "file",
+      "mode": 420,
+      "mtime_ns": 1787738586952228788,
+      "path": "E004R/ev3_sbm_40ns.dat",
+      "sha256": "efa33bd9dd1e6acc52350c63f42c5888cc74bf2e75dcff12eb030af112a7bad5"
+    },
+    {
+      "bytes": 2759653,
+      "kind": "file",
+      "mode": 420,
+      "mtime_ns": 1787739580188707553,
+      "path": "E004R/prop_rf4_mesh05_th30.dat",
+      "sha256": "3009cc3d87c6ab6b05e500f387f16148c96f69c476155d5b20d80d674a7326ae"
+    },
+    {
+      "bytes": 2730562,
+      "kind": "file",
+      "mode": 420,
+      "mtime_ns": 1787739856799743419,
+      "path": "E004R/prop_rf4_mesh10_th30.dat",
+      "sha256": "d41db8dc7c85221a17c2abb8f5294ebb5b8bbb53e07611af7c253ec9cdf3b257"
+    },
+    {
+      "bytes": 41100547,
+      "kind": "file",
+      "mode": 420,
+      "mtime_ns": 1787743191657445050,
+      "path": "E004R/prop_sbm_17.00GHz.dat",
+      "sha256": "dddba7e0da337181d6c34de741bfda37c0a168d34bd8beab962b1d753d94b9a7"
+    },
+    {
+      "bytes": 41100547,
+      "kind": "file",
+      "mode": 420,
+      "mtime_ns": 1787746541630090811,
+      "path": "E004R/prop_sbm_17.50GHz.dat",
+      "sha256": "6ae6c38c5b1842cb4f315bb99e17c5370330c57e9a16f6ea57e97a323ed0a86f"
+    },
+    {
+      "bytes": 41100547,
+      "kind": "file",
+      "mode": 420,
+      "mtime_ns": 1787749875635647550,
+      "path": "E004R/prop_sbm_17.75GHz.dat",
+      "sha256": "af4138bdd3cd4eb0471baa1736e26aeffc2b9d3bdfb1820a881bfe0ea63a4975"
+    },
+    {
+      "bytes": 41100547,
+      "kind": "file",
+      "mode": 420,
+      "mtime_ns": 1787753210227978345,
+      "path": "E004R/prop_sbm_18.00GHz.dat",
+      "sha256": "69914ecf92685eeb8905683feaa52d1b7b31596ae20edf68834644802ebc14ba"
+    },
+    {
+      "bytes": 41100547,
+      "kind": "file",
+      "mode": 420,
+      "mtime_ns": 1787756544759762890,
+      "path": "E004R/prop_sbm_18.25GHz.dat",
+      "sha256": "8b31e6918611abb00fa6bb527374036b01215491b142452be3606d982ae97809"
+    },
+    {
+      "bytes": 948,
+      "kind": "file",
+      "mode": 493,
+      "mtime_ns": 1787738144961887400,
+      "path": "E004R/run_batch.sh",
+      "sha256": "2a8d4938833706aaa033b7cc76d94d6b87e33864e78672eae54d8123e026421a"
+    },
+    {
+      "bytes": 984784,
+      "kind": "file",
+      "mode": 493,
+      "mtime_ns": 1787738132057937722,
+      "path": "E004R/saf_prop4r",
+      "sha256": "2ffe65b39e13267cae78d81ca40f019a30f49cf84295d96a76efd5f5dd96a47f"
+    },
+    {
+      "bytes": 53105,
+      "kind": "file",
+      "mode": 420,
+      "mtime_ns": 1787738130429944081,
+      "path": "E004R/saf_prop4r.cu",
+      "sha256": "4dec45354802c606d0b3695624a7d6fd1eefe539d0a26d143cdbfce978e513db"
+    }
+  ],
+  "retention": "TEMPORARY_COLD_COPY",
+  "schema_version": 1,
+  "source_bytes": 213145461,
+  "source_directory": "LAB/EVIDENCE/E004R",
+  "source_file_count": 15,
+  "source_seal_status": "SEALED_VALID",
+  "temporary_location": "/tmp/fpm-storage-001-20260828/packages/E004R.tar.zst"
+}

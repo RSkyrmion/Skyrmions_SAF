@@ -1,0 +1,56 @@
+{
+  "command": [
+    "tar",
+    "--sort=name",
+    "--format=posix",
+    "-cf",
+    "-",
+    "-C",
+    "/home/rodrigo/pesquisa/SAF",
+    "LAB/EVIDENCE/AUDIT-002",
+    "|",
+    "zstd",
+    "-1",
+    "-T0",
+    "-o",
+    "/tmp/fpm-storage-001-20260828/packages/AUDIT-002.tar.zst"
+  ],
+  "cwd": "/home/rodrigo/pesquisa/SAF",
+  "determinism": "source payload identity is deterministic; compressed byte identity is recorded, not assumed across tool versions",
+  "duration_seconds": 0.003158087027259171,
+  "environment": {
+    "platform": "Linux 6.1.0-52-amd64",
+    "python": "3.11.2",
+    "zstd": "*** Zstandard CLI (64-bit) v1.5.4, by Yann Collet ***"
+  },
+  "executor": {
+    "kind": "AI",
+    "name": "Codex",
+    "role": "PACKAGER"
+  },
+  "exit_code": 0,
+  "finished_at": "2026-08-28T13:49:44.437133Z",
+  "inputs": [
+    {
+      "files": 8,
+      "path": "LAB/EVIDENCE/AUDIT-002"
+    }
+  ],
+  "mission_id": "MISSION-STORAGE-001",
+  "outputs": [
+    {
+      "bytes": 29903,
+      "path": "/tmp/fpm-storage-001-20260828/packages/AUDIT-002.tar.zst",
+      "sha256": "fa558a873b5d9d2ba497b33a72d0e28bcd2be45c05dcc52e4337248a0b2ee060"
+    }
+  ],
+  "parameters": {
+    "archive": "GNU tar pax",
+    "compression": "zstd level 1"
+  },
+  "run_id": "package-AUDIT-002",
+  "schema_version": 1,
+  "started_at": "2026-08-28T13:49:44.433966Z",
+  "state": "COMPLETE",
+  "timeout_seconds": 0
+}

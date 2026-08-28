@@ -1,0 +1,17 @@
+test_duplicate_unsafe_symlink_and_transient (__main__.EvidenceTests.test_duplicate_unsafe_symlink_and_transient) ... ok
+test_missing_and_byte_change (__main__.EvidenceTests.test_missing_and_byte_change) ... ok
+test_real_tree_preserves_known_failures (__main__.EvidenceTests.test_real_tree_preserves_known_failures) ... ok
+test_recursive_clean_and_extra_nested (__main__.EvidenceTests.test_recursive_clean_and_extra_nested) ... ok
+test_sealer_is_deterministic_and_never_overwrites (__main__.EvidenceTests.test_sealer_is_deterministic_and_never_overwrites) ... ok
+test_catalog_links_and_no_silent_promotion (__main__.ReceiptExportCatalogTests.test_catalog_links_and_no_silent_promotion) ... ok
+test_integrations_use_recursive_rule (__main__.ReceiptExportCatalogTests.test_integrations_use_recursive_rule) ... ok
+test_local_export_and_no_identifier (__main__.ReceiptExportCatalogTests.test_local_export_and_no_identifier) ... ok
+test_receipts_for_success_error_timeout (__main__.ReceiptExportCatalogTests.test_receipts_for_success_error_timeout) ... ok
+test_four_valid_table_families (__main__.SchemaTests.test_four_valid_table_families) ... ok
+test_invalid_column_unit_nan_and_monotonicity (__main__.SchemaTests.test_invalid_column_unit_nan_and_monotonicity) ... ok
+test_manifest_semantics (__main__.SchemaTests.test_manifest_semantics) ... ok
+
+----------------------------------------------------------------------
+Ran 12 tests in 1.398s
+
+OK

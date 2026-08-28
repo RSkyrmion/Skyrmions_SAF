@@ -1,0 +1,364 @@
+//mumax 3.11.1 [linux_amd64 go1.22.6(gc) CUDA-11.8]
+//commit hash: 
+//CPU info: 13th Gen Intel(R) Core(TM) i7-13650HX, Cores: 14, MHz: 3257.887
+//GPU info: NVIDIA GeForce RTX 4050 Laptop GPU(5905MB), CUDA Driver 12.2, cc=8.9, using cc=89 PTX
+//OS  info: Debian GNU/Linux 12 (bookworm), Hostname: Landau
+//Timestamp: 2026-08-28 12:24:05
+//(c) Arne Vansteenkiste, Dynamat LAB, Ghent University, Belgium
+//This is free software without any warranty. See license.txt
+//********************************************************************//
+//  If you use mumax in any work or publication,                      //
+//  we kindly ask you to cite the references in references.bib        //
+//********************************************************************//
+//output directory: /tmp/claude-1000/-home-rodrigo-pesquisa-SAF/471574db-345c-43d2-a045-35b73207a394/scratchpad/a008/a0.5_r1.out/
+//starting GUI at http://127.0.0.1:35367
+SetGridSize(200, 200, 2)
+SetCellSize(5.000000e-10, 5.000000e-10, 0.4e-9)
+SetPBC(2, 2, 0)
+//resizing...
+EnableDemag = false
+Msat = 0.58e6
+Aex = 15e-12
+Ku1 = 0.6e6
+anisU = vector(0, 0, 1)
+defregion(1, zrange(-1e-9, 0))
+defregion(2, zrange(0, 1e-9))
+Dind.SetRegion(1, 3.05e-3)
+Dind.SetRegion(2, -3.05e-3)
+ext_InterDind(1, 2, 0)
+ext_InterExchange(1, 2, -4e-15)
+MinimizerStop = 1e-8
+m.SetRegion(1, neelskyrmion(1, -1).Transl(-5e-9, 0, 0))
+m.SetRegion(2, neelskyrmion(1, 1).Transl(5e-9, 0, 0))
+relax()
+minimize()
+print("A008 a0.5nm_r1  MaxTorque =", MaxTorque, "  E_total =", E_total, "  <m> =", m.average())
+//A008 a0.5nm_r1  MaxTorque = 6.438724677319838e-05   E_total = -4.985820211200001e-18   <m> = [2.2649765014648437e-10 9.5367431640625e-11 0]
+save(m)
+//********************************************************************//
+//Please cite the following references, relevant for your simulation. //
+//See bibtex file in output folder for justification.                 //
+//********************************************************************//
+//   * Mulkers et al., Phys. Rev. B 95, 144401 (2017).
+//   * Vansteenkiste et al., AIP Adv. 4, 107133 (2014).
+//   * Exl et al., J. Appl. Phys. 115, 17D118 (2014).
+  a=0.5nm r=1  l=10.832353 nm  Q1=-1 Q2=1
+//mumax 3.11.1 [linux_amd64 go1.22.6(gc) CUDA-11.8]
+//commit hash: 
+//CPU info: 13th Gen Intel(R) Core(TM) i7-13650HX, Cores: 14, MHz: 2324.404
+//GPU info: NVIDIA GeForce RTX 4050 Laptop GPU(5905MB), CUDA Driver 12.2, cc=8.9, using cc=89 PTX
+//OS  info: Debian GNU/Linux 12 (bookworm), Hostname: Landau
+//Timestamp: 2026-08-28 12:24:49
+//(c) Arne Vansteenkiste, Dynamat LAB, Ghent University, Belgium
+//This is free software without any warranty. See license.txt
+//********************************************************************//
+//  If you use mumax in any work or publication,                      //
+//  we kindly ask you to cite the references in references.bib        //
+//********************************************************************//
+//output directory: /tmp/claude-1000/-home-rodrigo-pesquisa-SAF/471574db-345c-43d2-a045-35b73207a394/scratchpad/a008/a0.5_r2.out/
+//starting GUI at http://127.0.0.1:35367
+SetGridSize(200, 200, 2)
+SetCellSize(5.000000e-10, 5.000000e-10, 0.4e-9)
+SetPBC(2, 2, 0)
+//resizing...
+EnableDemag = false
+Msat = 0.58e6
+Aex = 15e-12
+Ku1 = 0.6e6
+anisU = vector(0, 0, 1)
+defregion(1, zrange(-1e-9, 0))
+defregion(2, zrange(0, 1e-9))
+Dind.SetRegion(1, 3.05e-3)
+Dind.SetRegion(2, -3.05e-3)
+ext_InterDind(1, 2, 0)
+ext_InterExchange(1, 2, -4e-15)
+MinimizerStop = 1e-8
+m.LoadFile("LAB/EVIDENCE/A008/ck_a0.5nm_r1.ovf")
+minimize()
+print("A008 a0.5nm_r2  MaxTorque =", MaxTorque, "  E_total =", E_total, "  <m> =", m.average())
+//A008 a0.5nm_r2  MaxTorque = 6.438724677319838e-05   E_total = -4.985820211200001e-18   <m> = [1.9669532775878906e-10 9.5367431640625e-11 0]
+save(m)
+//********************************************************************//
+//Please cite the following references, relevant for your simulation. //
+//See bibtex file in output folder for justification.                 //
+//********************************************************************//
+//   * Vansteenkiste et al., AIP Adv. 4, 107133 (2014).
+//   * Exl et al., J. Appl. Phys. 115, 17D118 (2014).
+//   * Mulkers et al., Phys. Rev. B 95, 144401 (2017).
+  a=0.5nm r=2  l=10.832353 nm  Q1=-1 Q2=1
+     |dl| entre rodadas = 0.0 nm  (criterio AM-0.3: < 0.001)
+     CONVERGIU
+//mumax 3.11.1 [linux_amd64 go1.22.6(gc) CUDA-11.8]
+//commit hash: 
+//CPU info: 13th Gen Intel(R) Core(TM) i7-13650HX, Cores: 14, MHz: 1219.607
+//GPU info: NVIDIA GeForce RTX 4050 Laptop GPU(5905MB), CUDA Driver 12.2, cc=8.9, using cc=89 PTX
+//OS  info: Debian GNU/Linux 12 (bookworm), Hostname: Landau
+//Timestamp: 2026-08-28 12:25:07
+//(c) Arne Vansteenkiste, Dynamat LAB, Ghent University, Belgium
+//This is free software without any warranty. See license.txt
+//********************************************************************//
+//  If you use mumax in any work or publication,                      //
+//  we kindly ask you to cite the references in references.bib        //
+//********************************************************************//
+//output directory: /tmp/claude-1000/-home-rodrigo-pesquisa-SAF/471574db-345c-43d2-a045-35b73207a394/scratchpad/a008/a2.0_r1.out/
+//starting GUI at http://127.0.0.1:35367
+SetGridSize(50, 50, 2)
+SetCellSize(2.000000e-09, 2.000000e-09, 0.4e-9)
+// WARNING: cell size was set to a high aspect ratio.
+//          Calculation of demag kernel may take longer than usual.
+SetPBC(2, 2, 0)
+//resizing...
+EnableDemag = false
+Msat = 0.58e6
+Aex = 15e-12
+Ku1 = 0.6e6
+anisU = vector(0, 0, 1)
+defregion(1, zrange(-1e-9, 0))
+defregion(2, zrange(0, 1e-9))
+Dind.SetRegion(1, 3.05e-3)
+Dind.SetRegion(2, -3.05e-3)
+ext_InterDind(1, 2, 0)
+ext_InterExchange(1, 2, -4e-15)
+MinimizerStop = 1e-8
+m.SetRegion(1, neelskyrmion(1, -1).Transl(-5e-9, 0, 0))
+m.SetRegion(2, neelskyrmion(1, 1).Transl(5e-9, 0, 0))
+relax()
+minimize()
+print("A008 a2nm_r1  MaxTorque =", MaxTorque, "  E_total =", E_total, "  <m> =", m.average())
+//A008 a2nm_r1  MaxTorque = 6.224880387963401e-06   E_total = -4.984099430400001e-18   <m> = [2.1457672119140624e-10 0 0]
+save(m)
+//********************************************************************//
+//Please cite the following references, relevant for your simulation. //
+//See bibtex file in output folder for justification.                 //
+//********************************************************************//
+//   * Mulkers et al., Phys. Rev. B 95, 144401 (2017).
+//   * Vansteenkiste et al., AIP Adv. 4, 107133 (2014).
+//   * Exl et al., J. Appl. Phys. 115, 17D118 (2014).
+  a=2.0nm r=1  l=11.490846 nm  Q1=-1 Q2=1
+//mumax 3.11.1 [linux_amd64 go1.22.6(gc) CUDA-11.8]
+//commit hash: 
+//CPU info: 13th Gen Intel(R) Core(TM) i7-13650HX, Cores: 14, MHz: 3213.677
+//GPU info: NVIDIA GeForce RTX 4050 Laptop GPU(5905MB), CUDA Driver 12.2, cc=8.9, using cc=89 PTX
+//OS  info: Debian GNU/Linux 12 (bookworm), Hostname: Landau
+//Timestamp: 2026-08-28 12:25:11
+//(c) Arne Vansteenkiste, Dynamat LAB, Ghent University, Belgium
+//This is free software without any warranty. See license.txt
+//********************************************************************//
+//  If you use mumax in any work or publication,                      //
+//  we kindly ask you to cite the references in references.bib        //
+//********************************************************************//
+//output directory: /tmp/claude-1000/-home-rodrigo-pesquisa-SAF/471574db-345c-43d2-a045-35b73207a394/scratchpad/a008/a2.0_r2.out/
+//starting GUI at http://127.0.0.1:35367
+SetGridSize(50, 50, 2)
+SetCellSize(2.000000e-09, 2.000000e-09, 0.4e-9)
+// WARNING: cell size was set to a high aspect ratio.
+//          Calculation of demag kernel may take longer than usual.
+SetPBC(2, 2, 0)
+//resizing...
+EnableDemag = false
+Msat = 0.58e6
+Aex = 15e-12
+Ku1 = 0.6e6
+anisU = vector(0, 0, 1)
+defregion(1, zrange(-1e-9, 0))
+defregion(2, zrange(0, 1e-9))
+Dind.SetRegion(1, 3.05e-3)
+Dind.SetRegion(2, -3.05e-3)
+ext_InterDind(1, 2, 0)
+ext_InterExchange(1, 2, -4e-15)
+MinimizerStop = 1e-8
+m.LoadFile("LAB/EVIDENCE/A008/ck_a2.0nm_r1.ovf")
+minimize()
+print("A008 a2nm_r2  MaxTorque =", MaxTorque, "  E_total =", E_total, "  <m> =", m.average())
+//A008 a2nm_r2  MaxTorque = 6.009224661472597e-06   E_total = -4.984099430400001e-18   <m> = [2.86102294921875e-10 -1.9073486328125e-10 0]
+save(m)
+//********************************************************************//
+//Please cite the following references, relevant for your simulation. //
+//See bibtex file in output folder for justification.                 //
+//********************************************************************//
+//   * Vansteenkiste et al., AIP Adv. 4, 107133 (2014).
+//   * Exl et al., J. Appl. Phys. 115, 17D118 (2014).
+//   * Mulkers et al., Phys. Rev. B 95, 144401 (2017).
+  a=2.0nm r=2  l=11.490846 nm  Q1=-1 Q2=1
+     |dl| entre rodadas = 0.0 nm  (criterio AM-0.3: < 0.001)
+     CONVERGIU
+//mumax 3.11.1 [linux_amd64 go1.22.6(gc) CUDA-11.8]
+//commit hash: 
+//CPU info: 13th Gen Intel(R) Core(TM) i7-13650HX, Cores: 14, MHz: 3188.840
+//GPU info: NVIDIA GeForce RTX 4050 Laptop GPU(5905MB), CUDA Driver 12.2, cc=8.9, using cc=89 PTX
+//OS  info: Debian GNU/Linux 12 (bookworm), Hostname: Landau
+//Timestamp: 2026-08-28 12:25:11
+//(c) Arne Vansteenkiste, Dynamat LAB, Ghent University, Belgium
+//This is free software without any warranty. See license.txt
+//********************************************************************//
+//  If you use mumax in any work or publication,                      //
+//  we kindly ask you to cite the references in references.bib        //
+//********************************************************************//
+//output directory: /tmp/claude-1000/-home-rodrigo-pesquisa-SAF/471574db-345c-43d2-a045-35b73207a394/scratchpad/a008/a1.0_r1.out/
+//starting GUI at http://127.0.0.1:35367
+SetGridSize(100, 100, 2)
+SetCellSize(1.000000e-09, 1.000000e-09, 0.4e-9)
+SetPBC(2, 2, 0)
+//resizing...
+EnableDemag = false
+Msat = 0.58e6
+Aex = 15e-12
+Ku1 = 0.6e6
+anisU = vector(0, 0, 1)
+defregion(1, zrange(-1e-9, 0))
+defregion(2, zrange(0, 1e-9))
+Dind.SetRegion(1, 3.05e-3)
+Dind.SetRegion(2, -3.05e-3)
+ext_InterDind(1, 2, 0)
+ext_InterExchange(1, 2, -4e-15)
+MinimizerStop = 1e-8
+m.SetRegion(1, neelskyrmion(1, -1).Transl(-5e-9, 0, 0))
+m.SetRegion(2, neelskyrmion(1, 1).Transl(5e-9, 0, 0))
+relax()
+minimize()
+print("A008 a1nm_r1  MaxTorque =", MaxTorque, "  E_total =", E_total, "  <m> =", m.average())
+//A008 a1nm_r1  MaxTorque = 1.4404151317838413e-05   E_total = -4.9854401024000005e-18   <m> = [9.089708328247071e-11 1.9073486328125e-10 0]
+save(m)
+//********************************************************************//
+//Please cite the following references, relevant for your simulation. //
+//See bibtex file in output folder for justification.                 //
+//********************************************************************//
+//   * Vansteenkiste et al., AIP Adv. 4, 107133 (2014).
+//   * Exl et al., J. Appl. Phys. 115, 17D118 (2014).
+//   * Mulkers et al., Phys. Rev. B 95, 144401 (2017).
+  a=1.0nm r=1  l=10.955154 nm  Q1=-1 Q2=1
+//mumax 3.11.1 [linux_amd64 go1.22.6(gc) CUDA-11.8]
+//commit hash: 
+//CPU info: 13th Gen Intel(R) Core(TM) i7-13650HX, Cores: 14, MHz: 3158.007
+//GPU info: NVIDIA GeForce RTX 4050 Laptop GPU(5905MB), CUDA Driver 12.2, cc=8.9, using cc=89 PTX
+//OS  info: Debian GNU/Linux 12 (bookworm), Hostname: Landau
+//Timestamp: 2026-08-28 12:25:20
+//(c) Arne Vansteenkiste, Dynamat LAB, Ghent University, Belgium
+//This is free software without any warranty. See license.txt
+//********************************************************************//
+//  If you use mumax in any work or publication,                      //
+//  we kindly ask you to cite the references in references.bib        //
+//********************************************************************//
+//output directory: /tmp/claude-1000/-home-rodrigo-pesquisa-SAF/471574db-345c-43d2-a045-35b73207a394/scratchpad/a008/a1.0_r2.out/
+//starting GUI at http://127.0.0.1:35367
+SetGridSize(100, 100, 2)
+SetCellSize(1.000000e-09, 1.000000e-09, 0.4e-9)
+SetPBC(2, 2, 0)
+//resizing...
+EnableDemag = false
+Msat = 0.58e6
+Aex = 15e-12
+Ku1 = 0.6e6
+anisU = vector(0, 0, 1)
+defregion(1, zrange(-1e-9, 0))
+defregion(2, zrange(0, 1e-9))
+Dind.SetRegion(1, 3.05e-3)
+Dind.SetRegion(2, -3.05e-3)
+ext_InterDind(1, 2, 0)
+ext_InterExchange(1, 2, -4e-15)
+MinimizerStop = 1e-8
+m.LoadFile("LAB/EVIDENCE/A008/ck_a1.0nm_r1.ovf")
+minimize()
+print("A008 a1nm_r2  MaxTorque =", MaxTorque, "  E_total =", E_total, "  <m> =", m.average())
+//A008 a1nm_r2  MaxTorque = 1.6741137111364957e-05   E_total = -4.9854401280000006e-18   <m> = [1.177191734313965e-10 0 1.52587890625e-09]
+save(m)
+//********************************************************************//
+//Please cite the following references, relevant for your simulation. //
+//See bibtex file in output folder for justification.                 //
+//********************************************************************//
+//   * Vansteenkiste et al., AIP Adv. 4, 107133 (2014).
+//   * Exl et al., J. Appl. Phys. 115, 17D118 (2014).
+//   * Mulkers et al., Phys. Rev. B 95, 144401 (2017).
+  a=1.0nm r=2  l=10.955154 nm  Q1=-1 Q2=1
+     |dl| entre rodadas = 0.0 nm  (criterio AM-0.3: < 0.001)
+     CONVERGIU
+//mumax 3.11.1 [linux_amd64 go1.22.6(gc) CUDA-11.8]
+//commit hash: 
+//CPU info: 13th Gen Intel(R) Core(TM) i7-13650HX, Cores: 14, MHz: 3544.600
+//GPU info: NVIDIA GeForce RTX 4050 Laptop GPU(5905MB), CUDA Driver 12.2, cc=8.9, using cc=89 PTX
+//OS  info: Debian GNU/Linux 12 (bookworm), Hostname: Landau
+//Timestamp: 2026-08-28 12:25:35
+//(c) Arne Vansteenkiste, Dynamat LAB, Ghent University, Belgium
+//This is free software without any warranty. See license.txt
+//********************************************************************//
+//  If you use mumax in any work or publication,                      //
+//  we kindly ask you to cite the references in references.bib        //
+//********************************************************************//
+//output directory: /tmp/claude-1000/-home-rodrigo-pesquisa-SAF/471574db-345c-43d2-a045-35b73207a394/scratchpad/a008/a0.25_r1.out/
+//starting GUI at http://127.0.0.1:35367
+SetGridSize(400, 400, 2)
+SetCellSize(2.500000e-10, 2.500000e-10, 0.4e-9)
+SetPBC(2, 2, 0)
+//resizing...
+EnableDemag = false
+Msat = 0.58e6
+Aex = 15e-12
+Ku1 = 0.6e6
+anisU = vector(0, 0, 1)
+defregion(1, zrange(-1e-9, 0))
+defregion(2, zrange(0, 1e-9))
+Dind.SetRegion(1, 3.05e-3)
+Dind.SetRegion(2, -3.05e-3)
+ext_InterDind(1, 2, 0)
+ext_InterExchange(1, 2, -4e-15)
+MinimizerStop = 1e-8
+m.SetRegion(1, neelskyrmion(1, -1).Transl(-5e-9, 0, 0))
+m.SetRegion(2, neelskyrmion(1, 1).Transl(5e-9, 0, 0))
+relax()
+minimize()
+print("A008 a0.25nm_r1  MaxTorque =", MaxTorque, "  E_total =", E_total, "  <m> =", m.average())
+//A008 a0.25nm_r1  MaxTorque = 0.00020481818597125145   E_total = -4.985917568e-18   <m> = [1.4882534742355346e-10 4.76837158203125e-11 -4.141777753829956e-09]
+save(m)
+//********************************************************************//
+//Please cite the following references, relevant for your simulation. //
+//See bibtex file in output folder for justification.                 //
+//********************************************************************//
+//   * Exl et al., J. Appl. Phys. 115, 17D118 (2014).
+//   * Mulkers et al., Phys. Rev. B 95, 144401 (2017).
+//   * Vansteenkiste et al., AIP Adv. 4, 107133 (2014).
+  a=0.25nm r=1  l=10.763929 nm  Q1=-1 Q2=1
+//mumax 3.11.1 [linux_amd64 go1.22.6(gc) CUDA-11.8]
+//commit hash: 
+//CPU info: 13th Gen Intel(R) Core(TM) i7-13650HX, Cores: 14, MHz: 799.736
+//GPU info: NVIDIA GeForce RTX 4050 Laptop GPU(5905MB), CUDA Driver 12.2, cc=8.9, using cc=89 PTX
+//OS  info: Debian GNU/Linux 12 (bookworm), Hostname: Landau
+//Timestamp: 2026-08-28 12:30:38
+//(c) Arne Vansteenkiste, Dynamat LAB, Ghent University, Belgium
+//This is free software without any warranty. See license.txt
+//********************************************************************//
+//  If you use mumax in any work or publication,                      //
+//  we kindly ask you to cite the references in references.bib        //
+//********************************************************************//
+//output directory: /tmp/claude-1000/-home-rodrigo-pesquisa-SAF/471574db-345c-43d2-a045-35b73207a394/scratchpad/a008/a0.25_r2.out/
+//starting GUI at http://127.0.0.1:35367
+SetGridSize(400, 400, 2)
+SetCellSize(2.500000e-10, 2.500000e-10, 0.4e-9)
+SetPBC(2, 2, 0)
+//resizing...
+EnableDemag = false
+Msat = 0.58e6
+Aex = 15e-12
+Ku1 = 0.6e6
+anisU = vector(0, 0, 1)
+defregion(1, zrange(-1e-9, 0))
+defregion(2, zrange(0, 1e-9))
+Dind.SetRegion(1, 3.05e-3)
+Dind.SetRegion(2, -3.05e-3)
+ext_InterDind(1, 2, 0)
+ext_InterExchange(1, 2, -4e-15)
+MinimizerStop = 1e-8
+m.LoadFile("LAB/EVIDENCE/A008/ck_a0.25nm_r1.ovf")
+minimize()
+print("A008 a0.25nm_r2  MaxTorque =", MaxTorque, "  E_total =", E_total, "  <m> =", m.average())
+//A008 a0.25nm_r2  MaxTorque = 0.00021748267989637928   E_total = -4.985917568e-18   <m> = [1.728534698486328e-10 5.8114528656005857e-11 -4.330277442932129e-09]
+save(m)
+//********************************************************************//
+//Please cite the following references, relevant for your simulation. //
+//See bibtex file in output folder for justification.                 //
+//********************************************************************//
+//   * Vansteenkiste et al., AIP Adv. 4, 107133 (2014).
+//   * Exl et al., J. Appl. Phys. 115, 17D118 (2014).
+//   * Mulkers et al., Phys. Rev. B 95, 144401 (2017).
+  a=0.25nm r=2  l=10.763929 nm  Q1=-1 Q2=1
+     |dl| entre rodadas = 0.0 nm  (criterio AM-0.3: < 0.001)
+     CONVERGIU

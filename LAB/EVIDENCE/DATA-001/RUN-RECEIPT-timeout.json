@@ -1,0 +1,41 @@
+{
+  "command": [
+    "/usr/bin/python3",
+    "-B",
+    "-c",
+    "import time; time.sleep(1)"
+  ],
+  "cwd": "/tmp/data001-artifacts-2rvmaw96",
+  "determinism": {
+    "declared": "UNDECLARED",
+    "seed": "UNSPECIFIED"
+  },
+  "duration_seconds": 0.050883864,
+  "environment": {
+    "executable": {
+      "bytes": 6834488,
+      "path": "/usr/bin/python3",
+      "sha256": "6d972cf21be56fe3c947ab6ba257ff8d08c342dd2714442986791bd9a6dfabfe",
+      "status": "PRESENT"
+    },
+    "machine": "x86_64",
+    "os": "Linux-6.1.0-52-amd64-x86_64-with-glibc2.36",
+    "python": "3.11.2"
+  },
+  "executor": {
+    "agent": "Codex",
+    "human_checkpoint": "LAB/DECISIONS/WRITEBACK-031.md"
+  },
+  "exit_code": null,
+  "finished_at": "2026-08-27T19:03:55.681692Z",
+  "inputs": [],
+  "interruption": "TIMEOUT",
+  "mission_id": "MISSION-DATA-001",
+  "outputs": [],
+  "parameters": {},
+  "run_id": "fixture-timeout",
+  "schema_version": 1,
+  "started_at": "2026-08-27T19:03:55.625183Z",
+  "state": "INTERRUPTED",
+  "timeout_seconds": 0.05
+}

@@ -12,7 +12,8 @@ registro de decisões, evidência selada e claims com limites explícitos.
 | se você quer… | leia |
 |---|---|
 | o estado atual, para retomar o trabalho | **`LAB/STATE.md`** |
-| a história e o que se sabe, em uma sentada | `LAB/CONSOLIDATION-2026-08-24.md` |
+| a história inicial, em uma sentada | `LAB/CONSOLIDATION-2026-08-24.md` |
+| o que está consolidado, aberto ou excluído | `LAB/CONSOLIDATION-2026-08-27-EPISTEMIC-AUDIT.md` |
 | os claims canônicos com seus limites | `LAB/DECISIONS/WRITEBACK-007.md` e `-009.md` |
 | saber do que isto depende para rodar | `ENVIRONMENT.md` |
 
@@ -30,9 +31,10 @@ SAF/
 │   ├── RELEASES/            resultados as-run e seus adendos
 │   └── EVIDENCE/            artefatos selados por hash, um dir por missão
 ├── SOURCES/             insumos, não produtos
-│   ├── paper/               o artigo e o suplementar
+│   ├── paper/               metadados e hashes; PDFs permanecem locais
 │   ├── theory/              notas teóricas fornecidas por Rodrigo
 │   └── fpm/                 o pacote de inicialização da metodologia
+├── TOOLS/               documentação e hashes; binários/toolchains ficam locais
 └── ARCHIVE/             material morto, preservado e fora do caminho
 ```
 
@@ -51,12 +53,14 @@ Só o `STATE.md` é reescrito no lugar.
 ## Verificar a integridade
 
 ```
-python3 scripts/check_repository.py
+python3 scripts/check_public_snapshot.py
 ```
 
-No laboratório completo, `sha256sum -c` continua sendo a autoridade. No espelho público, o
-script confere todos os artefatos presentes e informa quantas entradas pertencem aos dados
-deliberadamente omitidos.
+No laboratório completo, `sha256sum -c` continua sendo a autoridade. A auditoria integral
+`scripts/check_repository.py` reprova corretamente as cinco divergências históricas de
+`A005R`, declaradas em `WRITEBACK-035`. O gate público aceita somente essa quarentena exata e
+reprova qualquer erro adicional. Ele também valida os manifestos `AI-PROVENANCE.json`
+exigidos para diretórios de evidência criados após 2026-08-27.
 
 ## Referência
 
@@ -64,7 +68,9 @@ C. C. de Souza Silva, M. V. Correia e J. C. Piña Velásquez, *Emergent Self-Pro
 Skyrmionic Matter in Synthetic Antiferromagnets*, Physical Review Letters **135**, 086701
 (2025), [doi:10.1103/c2y9-3cc9](https://doi.org/10.1103/c2y9-3cc9).
 
-Os metadados para citar esta implementação estão em [`CITATION.cff`](CITATION.cff).
+Os metadados para citar esta implementação estão em [`CITATION.cff`](CITATION.cff). Os
+hashes dos PDFs e os localizadores de páginas, figuras e equações usados pelo laboratório
+estão em [`SOURCES/paper/README.md`](SOURCES/paper/README.md).
 
 ## Licenciamento
 

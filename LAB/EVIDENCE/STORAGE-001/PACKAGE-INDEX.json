@@ -1,0 +1,198 @@
+{
+  "created_at": "2026-08-28T13:49:45.196412Z",
+  "packages": [
+    {
+      "archive_bytes": 1729487,
+      "archive_sha256": "f872f2a451ee7e48f96eaa412ef86b00c15a49738138a6a9f60f12d3b37e05e8",
+      "directory": "A002",
+      "savings_bytes": 4763889,
+      "seal_status": "SEALED_VALID",
+      "source_bytes": 6493376,
+      "source_files": 26,
+      "temporary_archive": "/tmp/fpm-storage-001-20260828/packages/A002.tar.zst",
+      "temporary_manifest": "/tmp/fpm-storage-001-20260828/packages/A002.ARCHIVE-MANIFEST.json"
+    },
+    {
+      "archive_bytes": 3191,
+      "archive_sha256": "01338ca0297772c6d85e696a48f09eb795078e3252321afce69eeebb300eb1c6",
+      "directory": "A004",
+      "savings_bytes": 2935,
+      "seal_status": "SEALED_VALID",
+      "source_bytes": 6126,
+      "source_files": 3,
+      "temporary_archive": "/tmp/fpm-storage-001-20260828/packages/A004.tar.zst",
+      "temporary_manifest": "/tmp/fpm-storage-001-20260828/packages/A004.ARCHIVE-MANIFEST.json"
+    },
+    {
+      "archive_bytes": 1077023,
+      "archive_sha256": "9b9bd4d0f67dd47153fd77412e1290c4278390bdd9380b019656aa38f58335fc",
+      "directory": "A005R2",
+      "savings_bytes": 1025056,
+      "seal_status": "SEALED_VALID",
+      "source_bytes": 2102079,
+      "source_files": 20,
+      "temporary_archive": "/tmp/fpm-storage-001-20260828/packages/A005R2.tar.zst",
+      "temporary_manifest": "/tmp/fpm-storage-001-20260828/packages/A005R2.ARCHIVE-MANIFEST.json"
+    },
+    {
+      "archive_bytes": 1012004,
+      "archive_sha256": "d844dde403e22b4c930e6ab2a3c275795da6293159e79a682ee21d6eade1d394",
+      "directory": "AUDIT-001",
+      "savings_bytes": 95132,
+      "seal_status": "SEALED_VALID",
+      "source_bytes": 1107136,
+      "source_files": 9,
+      "temporary_archive": "/tmp/fpm-storage-001-20260828/packages/AUDIT-001.tar.zst",
+      "temporary_manifest": "/tmp/fpm-storage-001-20260828/packages/AUDIT-001.ARCHIVE-MANIFEST.json"
+    },
+    {
+      "archive_bytes": 29903,
+      "archive_sha256": "fa558a873b5d9d2ba497b33a72d0e28bcd2be45c05dcc52e4337248a0b2ee060",
+      "directory": "AUDIT-002",
+      "savings_bytes": 49789,
+      "seal_status": "SEALED_VALID",
+      "source_bytes": 79692,
+      "source_files": 8,
+      "temporary_archive": "/tmp/fpm-storage-001-20260828/packages/AUDIT-002.tar.zst",
+      "temporary_manifest": "/tmp/fpm-storage-001-20260828/packages/AUDIT-002.ARCHIVE-MANIFEST.json"
+    },
+    {
+      "archive_bytes": 24501,
+      "archive_sha256": "615763a017c424d23598a3c55d38d73d96836d4721bdb7a62abbf81685f8bb10",
+      "directory": "DATA-001",
+      "savings_bytes": 165902,
+      "seal_status": "SEALED_VALID",
+      "source_bytes": 190403,
+      "source_files": 23,
+      "temporary_archive": "/tmp/fpm-storage-001-20260828/packages/DATA-001.tar.zst",
+      "temporary_manifest": "/tmp/fpm-storage-001-20260828/packages/DATA-001.ARCHIVE-MANIFEST.json"
+    },
+    {
+      "archive_bytes": 1435085,
+      "archive_sha256": "9e80dc5983774e416eadf99dae38940554b3ee489b73c8bcda8ef05d0f954849",
+      "directory": "E001",
+      "savings_bytes": 3349180,
+      "seal_status": "SEALED_VALID",
+      "source_bytes": 4784265,
+      "source_files": 10,
+      "temporary_archive": "/tmp/fpm-storage-001-20260828/packages/E001.tar.zst",
+      "temporary_manifest": "/tmp/fpm-storage-001-20260828/packages/E001.ARCHIVE-MANIFEST.json"
+    },
+    {
+      "archive_bytes": 31344546,
+      "archive_sha256": "9f6482e5818dae8a756f9946bfa7e0d8964385dcb83f6b719ffeb741e74c00f8",
+      "directory": "E002",
+      "savings_bytes": 84903261,
+      "seal_status": "SEALED_VALID",
+      "source_bytes": 116247807,
+      "source_files": 24,
+      "temporary_archive": "/tmp/fpm-storage-001-20260828/packages/E002.tar.zst",
+      "temporary_manifest": "/tmp/fpm-storage-001-20260828/packages/E002.ARCHIVE-MANIFEST.json"
+    },
+    {
+      "archive_bytes": 10449433,
+      "archive_sha256": "f733dbc3039f050cbad412aa620fa2e4736159a3cce82a7de413f438978996b4",
+      "directory": "E003",
+      "savings_bytes": 24846845,
+      "seal_status": "SEALED_VALID",
+      "source_bytes": 35296278,
+      "source_files": 13,
+      "temporary_archive": "/tmp/fpm-storage-001-20260828/packages/E003.tar.zst",
+      "temporary_manifest": "/tmp/fpm-storage-001-20260828/packages/E003.ARCHIVE-MANIFEST.json"
+    },
+    {
+      "archive_bytes": 29562695,
+      "archive_sha256": "a2d96e424e1c2d7bfb80d29fb0976b464146ce8c970c6cb8f05bbd84fcad60b6",
+      "directory": "E004",
+      "savings_bytes": 81091740,
+      "seal_status": "SEALED_VALID",
+      "source_bytes": 110654435,
+      "source_files": 15,
+      "temporary_archive": "/tmp/fpm-storage-001-20260828/packages/E004.tar.zst",
+      "temporary_manifest": "/tmp/fpm-storage-001-20260828/packages/E004.ARCHIVE-MANIFEST.json"
+    },
+    {
+      "archive_bytes": 55863824,
+      "archive_sha256": "9550507ac6ea5c9ba641dbf4dc80d39a336215dfff417b7c90ca0686734a4e9c",
+      "directory": "E004R",
+      "savings_bytes": 157281637,
+      "seal_status": "SEALED_VALID",
+      "source_bytes": 213145461,
+      "source_files": 15,
+      "temporary_archive": "/tmp/fpm-storage-001-20260828/packages/E004R.tar.zst",
+      "temporary_manifest": "/tmp/fpm-storage-001-20260828/packages/E004R.ARCHIVE-MANIFEST.json"
+    },
+    {
+      "archive_bytes": 149304870,
+      "archive_sha256": "b4734c88428d9cc469ca7d171674498708b6ecbb519b8f6d7fc5b3573c9599d0",
+      "directory": "E005",
+      "savings_bytes": 427633193,
+      "seal_status": "SEALED_VALID",
+      "source_bytes": 576938063,
+      "source_files": 24,
+      "temporary_archive": "/tmp/fpm-storage-001-20260828/packages/E005.tar.zst",
+      "temporary_manifest": "/tmp/fpm-storage-001-20260828/packages/E005.ARCHIVE-MANIFEST.json"
+    },
+    {
+      "archive_bytes": 821640,
+      "archive_sha256": "6ed443d3da345c057a15ec1c3da26c9ad3896319c19a99523d02e779ec058c05",
+      "directory": "I001",
+      "savings_bytes": 4666654,
+      "seal_status": "SEALED_VALID",
+      "source_bytes": 5488294,
+      "source_files": 8,
+      "temporary_archive": "/tmp/fpm-storage-001-20260828/packages/I001.tar.zst",
+      "temporary_manifest": "/tmp/fpm-storage-001-20260828/packages/I001.ARCHIVE-MANIFEST.json"
+    },
+    {
+      "archive_bytes": 2379327,
+      "archive_sha256": "c994be55214113f35ebae173b7fb3bf37d55b760c2a71284f55b44a6b82bc3ab",
+      "directory": "I002",
+      "savings_bytes": 9585221,
+      "seal_status": "SEALED_VALID",
+      "source_bytes": 11964548,
+      "source_files": 9,
+      "temporary_archive": "/tmp/fpm-storage-001-20260828/packages/I002.tar.zst",
+      "temporary_manifest": "/tmp/fpm-storage-001-20260828/packages/I002.ARCHIVE-MANIFEST.json"
+    },
+    {
+      "archive_bytes": 637830,
+      "archive_sha256": "f0906e47988ee0b48bb0c78f9bd392f91847a1927708c0804e821a070222bec2",
+      "directory": "I003",
+      "savings_bytes": 1498386,
+      "seal_status": "SEALED_VALID",
+      "source_bytes": 2136216,
+      "source_files": 7,
+      "temporary_archive": "/tmp/fpm-storage-001-20260828/packages/I003.tar.zst",
+      "temporary_manifest": "/tmp/fpm-storage-001-20260828/packages/I003.ARCHIVE-MANIFEST.json"
+    },
+    {
+      "archive_bytes": 1343176,
+      "archive_sha256": "8556de1596a46c00a3ab8257fb132d6ef84e8b602d4adc113ba184816c8a4bee",
+      "directory": "R001",
+      "savings_bytes": 4218358,
+      "seal_status": "SEALED_VALID",
+      "source_bytes": 5561534,
+      "source_files": 13,
+      "temporary_archive": "/tmp/fpm-storage-001-20260828/packages/R001.tar.zst",
+      "temporary_manifest": "/tmp/fpm-storage-001-20260828/packages/R001.ARCHIVE-MANIFEST.json"
+    },
+    {
+      "archive_bytes": 618655,
+      "archive_sha256": "75c298f1633570f98037432e210f869ccaa986457057c92815e2b6507c24e3f9",
+      "directory": "R002",
+      "savings_bytes": 648135,
+      "seal_status": "SEALED_VALID",
+      "source_bytes": 1266790,
+      "source_files": 14,
+      "temporary_archive": "/tmp/fpm-storage-001-20260828/packages/R002.tar.zst",
+      "temporary_manifest": "/tmp/fpm-storage-001-20260828/packages/R002.ARCHIVE-MANIFEST.json"
+    }
+  ],
+  "temporary_root": "/tmp/fpm-storage-001-20260828",
+  "totals": {
+    "archive_bytes": 287637190,
+    "savings_bytes": 805825313,
+    "source_bytes": 1093462503
+  }
+}

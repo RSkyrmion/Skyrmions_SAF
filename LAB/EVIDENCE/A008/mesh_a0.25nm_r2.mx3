@@ -1,0 +1,20 @@
+// A008 — malha 0.25 nm, rodada 2. cwd fixo: /home/rodrigo/pesquisa/SAF
+SetGridSize(400, 400, 2)
+SetCellSize(2.500000e-10, 2.500000e-10, 0.4e-9)
+SetPBC(2, 2, 0)
+EnableDemag = false
+Msat = 0.58e6
+Aex  = 15e-12
+Ku1  = 0.6e6
+anisU = vector(0, 0, 1)
+defregion(1, zrange(-1e-9, 0))
+defregion(2, zrange(0, 1e-9))
+Dind.SetRegion(1,  3.05e-3)
+Dind.SetRegion(2, -3.05e-3)
+ext_InterDind(1, 2, 0)
+ext_InterExchange(1, 2, -4e-15)
+MinimizerStop = 1e-8
+m.LoadFile("LAB/EVIDENCE/A008/ck_a0.25nm_r1.ovf")
+minimize()
+print("A008 a0.25nm_r2  MaxTorque =", MaxTorque, "  E_total =", E_total, "  <m> =", m.average())
+save(m)

@@ -5,11 +5,17 @@
 CLAUDE.md
 
 # Toolchains, dependências construídas e arquivo morto
-TOOLS/
+TOOLS/*
+!TOOLS/README.md
+!TOOLS/build.sh
+!TOOLS/BUILD-LOG.txt
+!TOOLS/SHA256-mumax3-bin.txt
 ARCHIVE/
 
 # Insumos que não devem ser redistribuídos pelo GitHub
-SOURCES/paper/
+SOURCES/paper/*
+!SOURCES/paper/README.md
+!SOURCES/paper/SHA256SUMS.txt
 SOURCES/fpm/
 *.zip
 *.tar

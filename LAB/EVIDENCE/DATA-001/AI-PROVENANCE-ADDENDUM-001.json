@@ -1,0 +1,66 @@
+{
+  "ai_involvement": "MATERIAL",
+  "created_at": "2026-08-28T12:44:24.688952Z",
+  "disclosure_summary": "Codex resumed DATA-001, preserved its first failed gate, documented concurrent filesystem drift, and repeated the corrected gate with before/after SHA protection.",
+  "executable_actions": [
+    {
+      "action": "repeated gate after correcting only the DA-10 textual matcher",
+      "actor": "Codex",
+      "artifact": "GATE-RESULTS-R1.json"
+    }
+  ],
+  "human_checkpoints": [
+    {
+      "authority": "Rodrigo",
+      "checkpoint": "RESUME_AUTHORIZED_WORK",
+      "record": "LAB/DECISIONS/WRITEBACK-033.md"
+    }
+  ],
+  "independence_limits": [
+    "Same Codex executor and validator; no external validation."
+  ],
+  "known_limits": [
+    "Concurrent filesystem drift occurred between the original snapshot and resumption.",
+    "A005R2 has no authorization record located by DATA-001.",
+    "Historical contamination/corruption remains untouched."
+  ],
+  "mission_id": "MISSION-DATA-001",
+  "persistent_context": [
+    {
+      "integrity": "append-only",
+      "path_or_identifier": "LAB/MISSIONS/MISSION-DATA-001-ADDENDUM-001.md"
+    }
+  ],
+  "research_stages": [
+    "RESUMPTION",
+    "VALIDATION",
+    "DOCUMENTATION"
+  ],
+  "retrieval_sources": [],
+  "schema_version": 1,
+  "systems": [
+    {
+      "name": "Codex",
+      "provider": "OpenAI",
+      "roles": [
+        "EXECUTOR",
+        "SELF_VALIDATOR"
+      ],
+      "version_or_access_date": "2026-08-28"
+    }
+  ],
+  "validation_layers": [
+    {
+      "independent_axes": [
+        "synthetic fixtures",
+        "SHA-256"
+      ],
+      "method": "self-validation in /tmp plus immutable preexisting evidence comparison",
+      "shared_axes": [
+        "implementation",
+        "criteria interpretation"
+      ],
+      "validator": "unittest fixtures and before/after SHA snapshot"
+    }
+  ]
+}

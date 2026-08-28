@@ -1,0 +1,648 @@
+{
+  "access": "LOCAL; volumetric packages and restored tree are temporary under /tmp/fpm-storage-001-20260828",
+  "created_at": "2026-08-28T13:51:05.370705Z",
+  "expected_outputs": [
+    {
+      "path": "AI-PROVENANCE.json",
+      "status": "PRODUCED"
+    },
+    {
+      "path": "ANALYSIS-REPRODUCTION-MATRIX.json",
+      "status": "PRODUCED"
+    },
+    {
+      "path": "ANALYSIS-RESULTS.json",
+      "status": "PRODUCED"
+    },
+    {
+      "path": "ARCHIVE-MANIFESTS/A002.ARCHIVE-MANIFEST.json",
+      "status": "PRODUCED"
+    },
+    {
+      "path": "ARCHIVE-MANIFESTS/A004.ARCHIVE-MANIFEST.json",
+      "status": "PRODUCED"
+    },
+    {
+      "path": "ARCHIVE-MANIFESTS/A005R2.ARCHIVE-MANIFEST.json",
+      "status": "PRODUCED"
+    },
+    {
+      "path": "ARCHIVE-MANIFESTS/AUDIT-001.ARCHIVE-MANIFEST.json",
+      "status": "PRODUCED"
+    },
+    {
+      "path": "ARCHIVE-MANIFESTS/AUDIT-002.ARCHIVE-MANIFEST.json",
+      "status": "PRODUCED"
+    },
+    {
+      "path": "ARCHIVE-MANIFESTS/DATA-001.ARCHIVE-MANIFEST.json",
+      "status": "PRODUCED"
+    },
+    {
+      "path": "ARCHIVE-MANIFESTS/E001.ARCHIVE-MANIFEST.json",
+      "status": "PRODUCED"
+    },
+    {
+      "path": "ARCHIVE-MANIFESTS/E002.ARCHIVE-MANIFEST.json",
+      "status": "PRODUCED"
+    },
+    {
+      "path": "ARCHIVE-MANIFESTS/E003.ARCHIVE-MANIFEST.json",
+      "status": "PRODUCED"
+    },
+    {
+      "path": "ARCHIVE-MANIFESTS/E004.ARCHIVE-MANIFEST.json",
+      "status": "PRODUCED"
+    },
+    {
+      "path": "ARCHIVE-MANIFESTS/E004R.ARCHIVE-MANIFEST.json",
+      "status": "PRODUCED"
+    },
+    {
+      "path": "ARCHIVE-MANIFESTS/E005.ARCHIVE-MANIFEST.json",
+      "status": "PRODUCED"
+    },
+    {
+      "path": "ARCHIVE-MANIFESTS/I001.ARCHIVE-MANIFEST.json",
+      "status": "PRODUCED"
+    },
+    {
+      "path": "ARCHIVE-MANIFESTS/I002.ARCHIVE-MANIFEST.json",
+      "status": "PRODUCED"
+    },
+    {
+      "path": "ARCHIVE-MANIFESTS/I003.ARCHIVE-MANIFEST.json",
+      "status": "PRODUCED"
+    },
+    {
+      "path": "ARCHIVE-MANIFESTS/R001.ARCHIVE-MANIFEST.json",
+      "status": "PRODUCED"
+    },
+    {
+      "path": "ARCHIVE-MANIFESTS/R002.ARCHIVE-MANIFEST.json",
+      "status": "PRODUCED"
+    },
+    {
+      "path": "BASELINE-INVENTORY.json",
+      "status": "PRODUCED"
+    },
+    {
+      "path": "COPY-AUDIT.json",
+      "status": "PRODUCED"
+    },
+    {
+      "path": "DEACCESSION-CANDIDATES.json",
+      "status": "PRODUCED"
+    },
+    {
+      "path": "EPISTEMIC-RETENTION-MATRIX.json",
+      "status": "PRODUCED"
+    },
+    {
+      "path": "GATE-RESULTS.json",
+      "status": "PRODUCED"
+    },
+    {
+      "path": "PACKAGE-INDEX.json",
+      "status": "PRODUCED"
+    },
+    {
+      "path": "PERMANENT-FAILURE-HOLD.json",
+      "status": "PRODUCED"
+    },
+    {
+      "path": "RESTORE-RESULTS.json",
+      "status": "PRODUCED"
+    },
+    {
+      "path": "RUN-RECEIPTS/analysis-validation.json",
+      "status": "PRODUCED"
+    },
+    {
+      "path": "RUN-RECEIPTS/package-A002.json",
+      "status": "PRODUCED"
+    },
+    {
+      "path": "RUN-RECEIPTS/package-A004.json",
+      "status": "PRODUCED"
+    },
+    {
+      "path": "RUN-RECEIPTS/package-A005R2.json",
+      "status": "PRODUCED"
+    },
+    {
+      "path": "RUN-RECEIPTS/package-AUDIT-001.json",
+      "status": "PRODUCED"
+    },
+    {
+      "path": "RUN-RECEIPTS/package-AUDIT-002.json",
+      "status": "PRODUCED"
+    },
+    {
+      "path": "RUN-RECEIPTS/package-DATA-001.json",
+      "status": "PRODUCED"
+    },
+    {
+      "path": "RUN-RECEIPTS/package-E001.json",
+      "status": "PRODUCED"
+    },
+    {
+      "path": "RUN-RECEIPTS/package-E002.json",
+      "status": "PRODUCED"
+    },
+    {
+      "path": "RUN-RECEIPTS/package-E003.json",
+      "status": "PRODUCED"
+    },
+    {
+      "path": "RUN-RECEIPTS/package-E004.json",
+      "status": "PRODUCED"
+    },
+    {
+      "path": "RUN-RECEIPTS/package-E004R.json",
+      "status": "PRODUCED"
+    },
+    {
+      "path": "RUN-RECEIPTS/package-E005.json",
+      "status": "PRODUCED"
+    },
+    {
+      "path": "RUN-RECEIPTS/package-I001.json",
+      "status": "PRODUCED"
+    },
+    {
+      "path": "RUN-RECEIPTS/package-I002.json",
+      "status": "PRODUCED"
+    },
+    {
+      "path": "RUN-RECEIPTS/package-I003.json",
+      "status": "PRODUCED"
+    },
+    {
+      "path": "RUN-RECEIPTS/package-R001.json",
+      "status": "PRODUCED"
+    },
+    {
+      "path": "RUN-RECEIPTS/package-R002.json",
+      "status": "PRODUCED"
+    },
+    {
+      "path": "RUN-RECEIPTS/restore-validation.json",
+      "status": "PRODUCED"
+    }
+  ],
+  "limits": [
+    "SC-4 UNEVALUATED because packaging and validation share the same Codex lineage",
+    "SC-6 UNEVALUATED because no second failure-independent copy was authorized",
+    "ST-6 and every removal remain not authorized",
+    "temporary packages are not a preservation destination"
+  ],
+  "links": {
+    "ai_provenance": "AI-PROVENANCE.json",
+    "authorization": "LAB/DECISIONS/WRITEBACK-038.md",
+    "mission": "LAB/MISSIONS/MISSION-STORAGE-001.md",
+    "release": "LAB/RELEASES/RELEASE-STORAGE-001.md"
+  },
+  "mission_id": "MISSION-STORAGE-001",
+  "operational_state": "COLD_COPY_ONLY",
+  "resources": [
+    {
+      "bytes": 2347,
+      "generated_by": "Codex before execution",
+      "media_type": "application/json",
+      "path": "AI-PROVENANCE.json",
+      "role": "METADATA",
+      "sha256": "6566f41fd83b756ebea9f224c5129851ad333ab279dee934e146047e780e2cf0",
+      "supports_criterion": []
+    },
+    {
+      "bytes": 3218,
+      "generated_by": "scripts/run_storage001.py",
+      "media_type": "application/json",
+      "path": "ANALYSIS-REPRODUCTION-MATRIX.json",
+      "role": "METADATA",
+      "sha256": "549a3b05f85e8bd01b5accca8e92f39140239d704a7d41001ebd5eae884f092d",
+      "supports_criterion": []
+    },
+    {
+      "bytes": 1878,
+      "generated_by": "scripts/run_storage001.py",
+      "media_type": "application/json",
+      "path": "ANALYSIS-RESULTS.json",
+      "role": "LOG",
+      "sha256": "ae19bcfe3b67afe63b89c3993c446e7e3d07e244853731f199bdf4cc30726123",
+      "supports_criterion": []
+    },
+    {
+      "bytes": 7409,
+      "generated_by": "scripts/run_storage001.py",
+      "media_type": "application/json",
+      "path": "ARCHIVE-MANIFESTS/A002.ARCHIVE-MANIFEST.json",
+      "role": "METADATA",
+      "sha256": "0ff81f8f5acac5bd6ad9ca15dfde79292056e58ee046c35a7e96b1e832d049c3",
+      "supports_criterion": []
+    },
+    {
+      "bytes": 1712,
+      "generated_by": "scripts/run_storage001.py",
+      "media_type": "application/json",
+      "path": "ARCHIVE-MANIFESTS/A004.ARCHIVE-MANIFEST.json",
+      "role": "METADATA",
+      "sha256": "6e1e69ed6d0bfe7cccedeb676b952c278277b06d0a1b126702f7fbc436118d0d",
+      "supports_criterion": []
+    },
+    {
+      "bytes": 5753,
+      "generated_by": "scripts/run_storage001.py",
+      "media_type": "application/json",
+      "path": "ARCHIVE-MANIFESTS/A005R2.ARCHIVE-MANIFEST.json",
+      "role": "METADATA",
+      "sha256": "fa2284d0bf3ac378169f7960c308ec0394dc7169664d1b181019882ff9a7b64d",
+      "supports_criterion": []
+    },
+    {
+      "bytes": 3181,
+      "generated_by": "scripts/run_storage001.py",
+      "media_type": "application/json",
+      "path": "ARCHIVE-MANIFESTS/AUDIT-001.ARCHIVE-MANIFEST.json",
+      "role": "METADATA",
+      "sha256": "15d316dc3d3c3d9f8a1b83437d9e89c2eef652670f32a4d8164443a368ce9c47",
+      "supports_criterion": []
+    },
+    {
+      "bytes": 2914,
+      "generated_by": "scripts/run_storage001.py",
+      "media_type": "application/json",
+      "path": "ARCHIVE-MANIFESTS/AUDIT-002.ARCHIVE-MANIFEST.json",
+      "role": "METADATA",
+      "sha256": "dfd85af0f2e6e6d1764e193d27c342ad8f72e4b8a1ac1763e62d7991b6f36350",
+      "supports_criterion": []
+    },
+    {
+      "bytes": 6684,
+      "generated_by": "scripts/run_storage001.py",
+      "media_type": "application/json",
+      "path": "ARCHIVE-MANIFESTS/DATA-001.ARCHIVE-MANIFEST.json",
+      "role": "METADATA",
+      "sha256": "3fdc7a2554640f910b839424ce304f49622c900428209f771bf8f3ffb9df12f2",
+      "supports_criterion": []
+    },
+    {
+      "bytes": 3379,
+      "generated_by": "scripts/run_storage001.py",
+      "media_type": "application/json",
+      "path": "ARCHIVE-MANIFESTS/E001.ARCHIVE-MANIFEST.json",
+      "role": "METADATA",
+      "sha256": "41c1769d7ec47729f071c31165202b71549c7c819a64f9095c7dbecc59bd8c1c",
+      "supports_criterion": []
+    },
+    {
+      "bytes": 6770,
+      "generated_by": "scripts/run_storage001.py",
+      "media_type": "application/json",
+      "path": "ARCHIVE-MANIFESTS/E002.ARCHIVE-MANIFEST.json",
+      "role": "METADATA",
+      "sha256": "ffdf3fc5ea24d0d207fa6ee9f7cf551cd6806f2372917c05bddbf51564f93a57",
+      "supports_criterion": []
+    },
+    {
+      "bytes": 4118,
+      "generated_by": "scripts/run_storage001.py",
+      "media_type": "application/json",
+      "path": "ARCHIVE-MANIFESTS/E003.ARCHIVE-MANIFEST.json",
+      "role": "METADATA",
+      "sha256": "205651a5ab3b6a8ce27a3494d1484ef9fbb13a68617b9fbdaf2167aefa02ece9",
+      "supports_criterion": []
+    },
+    {
+      "bytes": 4603,
+      "generated_by": "scripts/run_storage001.py",
+      "media_type": "application/json",
+      "path": "ARCHIVE-MANIFESTS/E004.ARCHIVE-MANIFEST.json",
+      "role": "METADATA",
+      "sha256": "6de6c33fdfa818931cbd340bfe345fcb455836fd9aa8f7e428c2d883c7124897",
+      "supports_criterion": []
+    },
+    {
+      "bytes": 4625,
+      "generated_by": "scripts/run_storage001.py",
+      "media_type": "application/json",
+      "path": "ARCHIVE-MANIFESTS/E004R.ARCHIVE-MANIFEST.json",
+      "role": "METADATA",
+      "sha256": "53813e9fb0679c5709adbc660c314fac8ce48abd28e860d07dad3c89be32f535",
+      "supports_criterion": []
+    },
+    {
+      "bytes": 6880,
+      "generated_by": "scripts/run_storage001.py",
+      "media_type": "application/json",
+      "path": "ARCHIVE-MANIFESTS/E005.ARCHIVE-MANIFEST.json",
+      "role": "METADATA",
+      "sha256": "e76d898a3824e1c44db81e5261f7c004399ddfdf37f294e75d5abcc4f57338b6",
+      "supports_criterion": []
+    },
+    {
+      "bytes": 2911,
+      "generated_by": "scripts/run_storage001.py",
+      "media_type": "application/json",
+      "path": "ARCHIVE-MANIFESTS/I001.ARCHIVE-MANIFEST.json",
+      "role": "METADATA",
+      "sha256": "f41b7a83a7040c12390ff8180381eadc4ffa06fbd8a1bd4b747d0558af79b49b",
+      "supports_criterion": []
+    },
+    {
+      "bytes": 3144,
+      "generated_by": "scripts/run_storage001.py",
+      "media_type": "application/json",
+      "path": "ARCHIVE-MANIFESTS/I002.ARCHIVE-MANIFEST.json",
+      "role": "METADATA",
+      "sha256": "47af3ad1b5f055b9f3fec2a1712e64916f1dccc607c68766fc4ebe2ee2da5aac",
+      "supports_criterion": []
+    },
+    {
+      "bytes": 2653,
+      "generated_by": "scripts/run_storage001.py",
+      "media_type": "application/json",
+      "path": "ARCHIVE-MANIFESTS/I003.ARCHIVE-MANIFEST.json",
+      "role": "METADATA",
+      "sha256": "a41d0aea41d23e4deb81c0a15fd3e8f34cf6e8cb23d93e64130269b11cc8b660",
+      "supports_criterion": []
+    },
+    {
+      "bytes": 4064,
+      "generated_by": "scripts/run_storage001.py",
+      "media_type": "application/json",
+      "path": "ARCHIVE-MANIFESTS/R001.ARCHIVE-MANIFEST.json",
+      "role": "METADATA",
+      "sha256": "f68327c7f5ed3a6fd7c4ac0d4d71ecf30f6054a59b8dd2a73ca7713f4741cf0e",
+      "supports_criterion": []
+    },
+    {
+      "bytes": 4304,
+      "generated_by": "scripts/run_storage001.py",
+      "media_type": "application/json",
+      "path": "ARCHIVE-MANIFESTS/R002.ARCHIVE-MANIFEST.json",
+      "role": "METADATA",
+      "sha256": "08653c603cdd59f57e1855830045b1bfa492fd24917fa54a50510d6986058884",
+      "supports_criterion": []
+    },
+    {
+      "bytes": 81535,
+      "generated_by": "scripts/run_storage001.py",
+      "media_type": "application/json",
+      "path": "BASELINE-INVENTORY.json",
+      "role": "METADATA",
+      "sha256": "86c3d093ae24adecd2d6e7d3eb017030f1368a6b83914d4844241f02ea663276",
+      "supports_criterion": []
+    },
+    {
+      "bytes": 381,
+      "generated_by": "scripts/run_storage001.py",
+      "media_type": "application/json",
+      "path": "COPY-AUDIT.json",
+      "role": "METADATA",
+      "sha256": "d40cd39640b8f0675597ba8a1e79f5cf4d3f8adb6550c49a6985a1311fe36565",
+      "supports_criterion": []
+    },
+    {
+      "bytes": 474,
+      "generated_by": "scripts/run_storage001.py",
+      "media_type": "application/json",
+      "path": "DEACCESSION-CANDIDATES.json",
+      "role": "METADATA",
+      "sha256": "63a5111229084a964b90e9ebbc47f4853098a2c9cc4fa6fe4891ccb845e9cb2e",
+      "supports_criterion": []
+    },
+    {
+      "bytes": 231245,
+      "generated_by": "scripts/run_storage001.py",
+      "media_type": "application/json",
+      "path": "EPISTEMIC-RETENTION-MATRIX.json",
+      "role": "METADATA",
+      "sha256": "229541f70bf734a8e438116dd74948acee39ca9c90ec44aeb3586ab3d09131f5",
+      "supports_criterion": []
+    },
+    {
+      "bytes": 1808,
+      "generated_by": "scripts/run_storage001.py",
+      "media_type": "application/json",
+      "path": "GATE-RESULTS.json",
+      "role": "METADATA",
+      "sha256": "f57a710deb2f9edab8a057a47d8ae6e6a68629151bff503c0c2ba47d7019cd03",
+      "supports_criterion": [
+        "SC-0",
+        "SC-1",
+        "SC-2",
+        "SC-3",
+        "SC-4",
+        "SC-5",
+        "SC-6",
+        "SC-7",
+        "SC-8",
+        "SC-9"
+      ]
+    },
+    {
+      "bytes": 8236,
+      "generated_by": "scripts/run_storage001.py",
+      "media_type": "application/json",
+      "path": "PACKAGE-INDEX.json",
+      "role": "METADATA",
+      "sha256": "7c793704d0e425c8c718cabea4580800d05c01b6ea0d2d728de7244fcfd03bca",
+      "supports_criterion": []
+    },
+    {
+      "bytes": 10651,
+      "generated_by": "scripts/run_storage001.py",
+      "media_type": "application/json",
+      "path": "PERMANENT-FAILURE-HOLD.json",
+      "role": "METADATA",
+      "sha256": "13190e1ac76a3cd63d9a88dc43ef20770899665d978e6a4f9df58a478361208a",
+      "supports_criterion": []
+    },
+    {
+      "bytes": 6085,
+      "generated_by": "scripts/run_storage001.py",
+      "media_type": "application/json",
+      "path": "RESTORE-RESULTS.json",
+      "role": "LOG",
+      "sha256": "db8076a7ad70df856fd17c3ecbccfbd7926ff1f3e06d6619462d3c31d906a658",
+      "supports_criterion": []
+    },
+    {
+      "bytes": 1148,
+      "generated_by": "scripts/run_storage001.py",
+      "media_type": "application/json",
+      "path": "RUN-RECEIPTS/analysis-validation.json",
+      "role": "METADATA",
+      "sha256": "5061f31ed3686898de0ea5574becb89e6595e86edd728265d273f26542c67ba9",
+      "supports_criterion": []
+    },
+    {
+      "bytes": 1358,
+      "generated_by": "scripts/run_storage001.py",
+      "media_type": "application/json",
+      "path": "RUN-RECEIPTS/package-A002.json",
+      "role": "METADATA",
+      "sha256": "2de58e6993b2f2836eb03cb534f196d6ef2f8e73651ae8adc5a65858a5415dd5",
+      "supports_criterion": []
+    },
+    {
+      "bytes": 1355,
+      "generated_by": "scripts/run_storage001.py",
+      "media_type": "application/json",
+      "path": "RUN-RECEIPTS/package-A004.json",
+      "role": "METADATA",
+      "sha256": "3cdd2738712c858a2d614c8005dcb17637140a9c8cfaa34dc48ae1f710ef9c62",
+      "supports_criterion": []
+    },
+    {
+      "bytes": 1368,
+      "generated_by": "scripts/run_storage001.py",
+      "media_type": "application/json",
+      "path": "RUN-RECEIPTS/package-A005R2.json",
+      "role": "METADATA",
+      "sha256": "2905585151aa175d6857e399aa0f97600ad563675d623017652f6c36bb4516b7",
+      "supports_criterion": []
+    },
+    {
+      "bytes": 1382,
+      "generated_by": "scripts/run_storage001.py",
+      "media_type": "application/json",
+      "path": "RUN-RECEIPTS/package-AUDIT-001.json",
+      "role": "METADATA",
+      "sha256": "1dd91774c4545c1072883258fc6642ddd6347102411e4a7e49f115993b713872",
+      "supports_criterion": []
+    },
+    {
+      "bytes": 1380,
+      "generated_by": "scripts/run_storage001.py",
+      "media_type": "application/json",
+      "path": "RUN-RECEIPTS/package-AUDIT-002.json",
+      "role": "METADATA",
+      "sha256": "32df180f1db81221c8f3c9e094e1d3ffb03a2f596d3c444a86232a0a263b0bef",
+      "supports_criterion": []
+    },
+    {
+      "bytes": 1377,
+      "generated_by": "scripts/run_storage001.py",
+      "media_type": "application/json",
+      "path": "RUN-RECEIPTS/package-DATA-001.json",
+      "role": "METADATA",
+      "sha256": "146d8f0501f44680ca13357fee9d528ca6b52bcbec92edaff7920d468d5edade",
+      "supports_criterion": []
+    },
+    {
+      "bytes": 1358,
+      "generated_by": "scripts/run_storage001.py",
+      "media_type": "application/json",
+      "path": "RUN-RECEIPTS/package-E001.json",
+      "role": "METADATA",
+      "sha256": "9d2345a7f945e97513d30ed6c703e9c0bd7eb87460d697a87c275a4a05eef17a",
+      "supports_criterion": []
+    },
+    {
+      "bytes": 1358,
+      "generated_by": "scripts/run_storage001.py",
+      "media_type": "application/json",
+      "path": "RUN-RECEIPTS/package-E002.json",
+      "role": "METADATA",
+      "sha256": "9d019fcfc0681ed9d315afee717642b49bfffb070ba117d0ca140e0ce7d24e69",
+      "supports_criterion": []
+    },
+    {
+      "bytes": 1358,
+      "generated_by": "scripts/run_storage001.py",
+      "media_type": "application/json",
+      "path": "RUN-RECEIPTS/package-E003.json",
+      "role": "METADATA",
+      "sha256": "f819a8da6a25a68506fd8531d16f05ea00f25f8b665f9e94ca0a13ddd6e432ac",
+      "supports_criterion": []
+    },
+    {
+      "bytes": 1358,
+      "generated_by": "scripts/run_storage001.py",
+      "media_type": "application/json",
+      "path": "RUN-RECEIPTS/package-E004.json",
+      "role": "METADATA",
+      "sha256": "c2e7cef0ef6021dddc2187677328ed3d85df4212540233f28a61ff659b712e4e",
+      "supports_criterion": []
+    },
+    {
+      "bytes": 1363,
+      "generated_by": "scripts/run_storage001.py",
+      "media_type": "application/json",
+      "path": "RUN-RECEIPTS/package-E004R.json",
+      "role": "METADATA",
+      "sha256": "d932279b6372fd5b0103a16e53737ed72bcce174e38252f013104d4a461287ee",
+      "supports_criterion": []
+    },
+    {
+      "bytes": 1358,
+      "generated_by": "scripts/run_storage001.py",
+      "media_type": "application/json",
+      "path": "RUN-RECEIPTS/package-E005.json",
+      "role": "METADATA",
+      "sha256": "6b4a3cc616ff1274b339fb525d56edf0e7d8e1151a8a1cf934aabe7e43d86a6b",
+      "supports_criterion": []
+    },
+    {
+      "bytes": 1355,
+      "generated_by": "scripts/run_storage001.py",
+      "media_type": "application/json",
+      "path": "RUN-RECEIPTS/package-I001.json",
+      "role": "METADATA",
+      "sha256": "847ef6753387792ce9c8e143a929ff0e868228a1024ad335db647d4b6a024a7e",
+      "supports_criterion": []
+    },
+    {
+      "bytes": 1356,
+      "generated_by": "scripts/run_storage001.py",
+      "media_type": "application/json",
+      "path": "RUN-RECEIPTS/package-I002.json",
+      "role": "METADATA",
+      "sha256": "0ffc81b7416f696bf28a291c76273d73f64f4310644300cc897c8ed1308f8086",
+      "supports_criterion": []
+    },
+    {
+      "bytes": 1356,
+      "generated_by": "scripts/run_storage001.py",
+      "media_type": "application/json",
+      "path": "RUN-RECEIPTS/package-I003.json",
+      "role": "METADATA",
+      "sha256": "45c59c073b9a6e7cbaced8235151293d8ee5ed1e6ced3601a316927d1a8fa7ee",
+      "supports_criterion": []
+    },
+    {
+      "bytes": 1358,
+      "generated_by": "scripts/run_storage001.py",
+      "media_type": "application/json",
+      "path": "RUN-RECEIPTS/package-R001.json",
+      "role": "METADATA",
+      "sha256": "289636b751d92d6792d84fde5e07f5e12db6599f3c8ed7293c2b22f0bfa8cb6c",
+      "supports_criterion": []
+    },
+    {
+      "bytes": 1356,
+      "generated_by": "scripts/run_storage001.py",
+      "media_type": "application/json",
+      "path": "RUN-RECEIPTS/package-R002.json",
+      "role": "METADATA",
+      "sha256": "7ed0ac241c1ec4e09921e62daaf04b9c96dfc1e504ca5a20ac8d91c75288b520",
+      "supports_criterion": []
+    },
+    {
+      "bytes": 1222,
+      "generated_by": "scripts/run_storage001.py",
+      "media_type": "application/json",
+      "path": "RUN-RECEIPTS/restore-validation.json",
+      "role": "METADATA",
+      "sha256": "caaa48e4cca32b478a2998df840399aa9ab8ce463a14bc8c1913f99ec1a32203",
+      "supports_criterion": []
+    }
+  ],
+  "retention": "PRESERVE",
+  "rights": "UNDECIDED",
+  "schema_version": 1,
+  "title": "Non-destructive storage appraisal, temporary cold packages and restoration evidence"
+}

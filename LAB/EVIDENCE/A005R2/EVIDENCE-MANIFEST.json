@@ -1,0 +1,259 @@
+{
+  "schema_version": 1,
+  "mission_id": "MISSION-A005R2",
+  "title": "Escada de convergencia mumax3 x saf.cu — classificada NONCONVERGENT",
+  "operational_state": "COMPLETE",
+  "created_at": "2026-08-28T13:30:00Z",
+  "resources": [
+    {
+      "path": "AI-PROVENANCE.json",
+      "role": "METADATA",
+      "media_type": "application/json",
+      "bytes": 4441,
+      "sha256": "e0fe7fb3f6ed1d5fea010c94f120376050d45e0233308e8764fb72fcb14acb66",
+      "generated_by": "UNRECORDED",
+      "description": "manifesto de proveniencia de IA",
+      "supports_criterion": []
+    },
+    {
+      "path": "CHECKPOINT-MEASURES.txt",
+      "role": "DERIVED",
+      "media_type": "text/plain",
+      "bytes": 569,
+      "sha256": "d8cc643a1c76a069773712a5d82e49f7c5feb53dcdbcce50d370a2aeaab350cb",
+      "generated_by": "UNRECORDED",
+      "description": "l em cada checkpoint pelo estimador cego do AUDIT-002",
+      "supports_criterion": [
+        "F"
+      ]
+    },
+    {
+      "path": "INPUT-HASH.txt",
+      "role": "DERIVED",
+      "media_type": "text/plain",
+      "bytes": 219,
+      "sha256": "ecc8d198138f5cc8387b1a8ccb7fd4d340c824e2f363339a81e19a333312f61f",
+      "generated_by": "UNRECORDED",
+      "description": "hashes dos dois arquivos de entrada",
+      "supports_criterion": [
+        "V-0"
+      ]
+    },
+    {
+      "path": "LADDER-LOG.txt",
+      "role": "DERIVED",
+      "media_type": "text/plain",
+      "bytes": 10791,
+      "sha256": "f39f1bc00714e1a770e5c04566a0456ec4a3fd1fcb70405ab768196d5c7e29d3",
+      "generated_by": "UNRECORDED",
+      "description": "log as-run da escada e da repeticao",
+      "supports_criterion": [
+        "F"
+      ]
+    },
+    {
+      "path": "ck1.ovf",
+      "role": "DERIVED",
+      "media_type": "application/octet-stream",
+      "bytes": 240540,
+      "sha256": "312844f8547cad3fcb672b99ad455f86714fd57ddf8030ff36090208c2d15459",
+      "generated_by": "UNRECORDED",
+      "description": "checkpoint do degrau 1, MaxTorque 2.2918e-5 T",
+      "supports_criterion": [
+        "F"
+      ]
+    },
+    {
+      "path": "ck2.ovf",
+      "role": "DERIVED",
+      "media_type": "application/octet-stream",
+      "bytes": 240540,
+      "sha256": "dceb0165dee68df4b6b92153d4af30ed5a392b60db461340068c6043d9622d9a",
+      "generated_by": "UNRECORDED",
+      "description": "checkpoint do degrau 2, MaxTorque 1.7119e-5 T",
+      "supports_criterion": [
+        "F"
+      ]
+    },
+    {
+      "path": "ck3.ovf",
+      "role": "DERIVED",
+      "media_type": "application/octet-stream",
+      "bytes": 240540,
+      "sha256": "02aeb42eb0de239f164b707186641f53f5cd495bf3a354df6a948a6cad180c81",
+      "generated_by": "UNRECORDED",
+      "description": "checkpoint do degrau 3, sem progresso",
+      "supports_criterion": [
+        "F"
+      ]
+    },
+    {
+      "path": "ck4.ovf",
+      "role": "DERIVED",
+      "media_type": "application/octet-stream",
+      "bytes": 240540,
+      "sha256": "7ab4a4c5a80e9882e985c7aea628b27c354030b206d7b655b88d5ccb0c123c13",
+      "generated_by": "UNRECORDED",
+      "description": "checkpoint do degrau 4, sem progresso",
+      "supports_criterion": [
+        "F"
+      ]
+    },
+    {
+      "path": "f1_degrau.mx3",
+      "role": "SOURCE",
+      "media_type": "application/octet-stream",
+      "bytes": 687,
+      "sha256": "6169f61db3663aa643162b864fbeb7462b8398c8e8efc66011725b083b249d6f",
+      "generated_by": "UNRECORDED",
+      "description": "degrau 1 da escada, alvo 2e-5 T",
+      "supports_criterion": [
+        "F"
+      ]
+    },
+    {
+      "path": "f2_degrau.mx3",
+      "role": "SOURCE",
+      "media_type": "application/octet-stream",
+      "bytes": 674,
+      "sha256": "d95941be6f3bb71b635514e4aa259fb8680fd19d575825664b358471ca15f85b",
+      "generated_by": "UNRECORDED",
+      "description": "degrau 2 da escada, alvo 1e-5 T",
+      "supports_criterion": [
+        "F"
+      ]
+    },
+    {
+      "path": "f3_degrau.mx3",
+      "role": "SOURCE",
+      "media_type": "application/octet-stream",
+      "bytes": 674,
+      "sha256": "b9cf783886d00fadc71b36e978450598a59c6335c006d127db275eeea039750f",
+      "generated_by": "UNRECORDED",
+      "description": "degrau 3 da escada, alvo 3e-6 T",
+      "supports_criterion": [
+        "F"
+      ]
+    },
+    {
+      "path": "f4_degrau.mx3",
+      "role": "SOURCE",
+      "media_type": "application/octet-stream",
+      "bytes": 675,
+      "sha256": "6da83261b60332387b5f631ae2fd3de078809bd5b20a6e41d509927f47b080a4",
+      "generated_by": "UNRECORDED",
+      "description": "degrau 4 da escada, alvo 1e-6 T",
+      "supports_criterion": [
+        "F"
+      ]
+    },
+    {
+      "path": "f4rep_repeticao.mx3",
+      "role": "SOURCE",
+      "media_type": "application/octet-stream",
+      "bytes": 681,
+      "sha256": "76413485db86f2ec84fcde53d236238283baee7c880970bccc3c39ee1bce5720",
+      "generated_by": "UNRECORDED",
+      "description": "repeticao do ultimo degrau, exigida pelo criterio PARTIAL",
+      "supports_criterion": [
+        "F"
+      ]
+    },
+    {
+      "path": "input_A003_mfinal_par.dat",
+      "role": "INPUT",
+      "media_type": "application/octet-stream",
+      "bytes": 868030,
+      "sha256": "7fa7b1ea3ab293bdc0e3604761929f7b6453dbe2d97528883a2f0edf9c239011",
+      "generated_by": "LAB/EVIDENCE/A003/mfinal_par_mumax3.dat",
+      "description": "copia bit-a-bit do estado selado do A003, ponto de partida do V-0",
+      "supports_criterion": [
+        "V-0"
+      ]
+    },
+    {
+      "path": "input_A003_state.ovf",
+      "role": "INPUT",
+      "media_type": "application/octet-stream",
+      "bytes": 240511,
+      "sha256": "b35023ea59ffd5e6cc5081da9ebdf7935bc67f60171c3b63fa68d770bd05e0a5",
+      "generated_by": "LAB/EVIDENCE/A003/mfinal_par_mumax3.dat",
+      "description": "o mesmo estado convertido para OVF, para o mumax3 carregar",
+      "supports_criterion": [
+        "V-0"
+      ]
+    },
+    {
+      "path": "run_ladder.sh",
+      "role": "SOURCE",
+      "media_type": "text/x-sh",
+      "bytes": 1288,
+      "sha256": "cf54ca66457f0eab85db0c5fb289ecc92d27e7252e33b8eb42096a939f81679f",
+      "generated_by": "UNRECORDED",
+      "description": "runner da escada: processos separados, timeout 900 s cada",
+      "supports_criterion": [
+        "F"
+      ]
+    },
+    {
+      "path": "setup.mx3",
+      "role": "SOURCE",
+      "media_type": "application/octet-stream",
+      "bytes": 417,
+      "sha256": "998ecaae4374c8e4fe401246241536d35beecfb99c276b946accac1ad75a2402",
+      "generated_by": "UNRECORDED",
+      "description": "cabecalho comum: convencoes herdadas do MV-0 do A003",
+      "supports_criterion": [
+        "V-0",
+        "F"
+      ]
+    },
+    {
+      "path": "v0_torque_inicial.mx3",
+      "role": "SOURCE",
+      "media_type": "application/octet-stream",
+      "bytes": 713,
+      "sha256": "faea0f68bb3aa06621dc67afef8c79728a96472932a527f958f942530d7b914c",
+      "generated_by": "UNRECORDED",
+      "description": "mede o torque inicial antes de qualquer relaxacao",
+      "supports_criterion": [
+        "V-0"
+      ]
+    }
+  ],
+  "access": "LOCAL",
+  "rights": "UNDECIDED",
+  "retention": "PRESERVE",
+  "expected_outputs": [
+    {
+      "path": "ck1.ovf",
+      "status": "PRODUCED"
+    },
+    {
+      "path": "ck2.ovf",
+      "status": "PRODUCED"
+    },
+    {
+      "path": "ck3.ovf",
+      "status": "PRODUCED"
+    },
+    {
+      "path": "ck4.ovf",
+      "status": "PRODUCED"
+    },
+    {
+      "path": "CHECKPOINT-MEASURES.txt",
+      "status": "PRODUCED"
+    }
+  ],
+  "links": {
+    "mission": "LAB/MISSIONS/MISSION-A005R2.md",
+    "release": "LAB/RELEASES/RELEASE-A005R2.md",
+    "decision": "LAB/DECISIONS/WRITEBACK-033.md",
+    "ai_provenance": "AI-PROVENANCE.json"
+  },
+  "known_gaps": [
+    "RUN-RECEIPT.json ausente: as corridas foram executadas antes de o executor conhecer a norma do ENVIRONMENT.md. Recibo retroativo NAO foi fabricado; generated_by fica UNRECORDED.",
+    "Classificacao NONCONVERGENT: AC2-1, AC2-2 e AC2-3 nao foram executados e nenhum numero daqui revisa o C-15."
+  ]
+}

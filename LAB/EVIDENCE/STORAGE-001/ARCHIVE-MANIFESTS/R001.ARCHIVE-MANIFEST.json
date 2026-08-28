@@ -1,0 +1,140 @@
+{
+  "archive_bytes": 1343176,
+  "archive_file": "R001.tar.zst",
+  "archive_format": "POSIX pax tar compressed by Zstandard",
+  "archive_sha256": "8556de1596a46c00a3ab8257fb132d6ef84e8b602d4adc113ba184816c8a4bee",
+  "command": [
+    "tar",
+    "--sort=name",
+    "--format=posix",
+    "-cf",
+    "-",
+    "-C",
+    "/home/rodrigo/pesquisa/SAF",
+    "LAB/EVIDENCE/R001",
+    "|",
+    "zstd",
+    "-1",
+    "-T0",
+    "-o",
+    "/tmp/fpm-storage-001-20260828/packages/R001.tar.zst"
+  ],
+  "compression_lossless": true,
+  "created_at": "2026-08-28T13:49:45.186688Z",
+  "historical_seal_authority": "LAB/EVIDENCE/R001/SHA256SUMS.txt",
+  "historical_seal_rederived": false,
+  "mission_id": "MISSION-STORAGE-001",
+  "payloads": [
+    {
+      "bytes": 980,
+      "kind": "file",
+      "mode": 420,
+      "mtime_ns": 1787590864068721959,
+      "path": "R001/SHA256SUMS.txt",
+      "sha256": "9ca5d1c45ea95262e73e2025fa97d37a2e3d83394ce8acc2f4d81e7bfcc4a027"
+    },
+    {
+      "bytes": 74359,
+      "kind": "file",
+      "mode": 420,
+      "mtime_ns": 1787331225813762211,
+      "path": "R001/l_of_t_mesh05.dat",
+      "sha256": "127c8b3205ddeff970e22a03fcb5d287b67a400daf4cfd5ad3f689611d2f49b9"
+    },
+    {
+      "bytes": 12259,
+      "kind": "file",
+      "mode": 420,
+      "mtime_ns": 1787590822028735467,
+      "path": "R001/l_of_t_weak.dat",
+      "sha256": "76c4dbd95b8c6ad76934cfef7eab328db2eef1cb99c721375b1bb36e5febba57"
+    },
+    {
+      "bytes": 18759,
+      "kind": "file",
+      "mode": 420,
+      "mtime_ns": 1787331150303337344,
+      "path": "R001/l_of_t_weak_tight.dat",
+      "sha256": "268bd4eabf6dc21654f7e268d793eab1b9faaa59b63c3a5cd50e5623f79aa6ca"
+    },
+    {
+      "bytes": 3036030,
+      "kind": "file",
+      "mode": 420,
+      "mtime_ns": 1787331225889760602,
+      "path": "R001/mfinal_mesh05.dat",
+      "sha256": "469e8343f6c9d66aff6c89396e09b340981e84eae592beb608e5b39a1c897357"
+    },
+    {
+      "bytes": 748030,
+      "kind": "file",
+      "mode": 420,
+      "mtime_ns": 1787590822048735460,
+      "path": "R001/mfinal_weak.dat",
+      "sha256": "a837b24386cfa706aa7841b3151c3cfa00995b89c6890a2331bd9cad8ff38264"
+    },
+    {
+      "bytes": 748030,
+      "kind": "file",
+      "mode": 420,
+      "mtime_ns": 1787331150319337015,
+      "path": "R001/mfinal_weak_tight.dat",
+      "sha256": "427c6073800cb2f135cc72a3875d38e58807f1fc30af1858008ff3cbe34130aa"
+    },
+    {
+      "bytes": 892568,
+      "kind": "file",
+      "mode": 493,
+      "mtime_ns": 1787331135923631638,
+      "path": "R001/saf",
+      "sha256": "5589caed4f02a1eab76d898511a8450671f5bfb26769a56215bd9fc3906b3fc0"
+    },
+    {
+      "bytes": 25541,
+      "kind": "file",
+      "mode": 420,
+      "mtime_ns": 1787331134939651704,
+      "path": "R001/saf.cu",
+      "sha256": "64a3c1bdcc5581c5635907e0370f60065d6a9663e3d5c40bd6249e3690c5c791"
+    },
+    {
+      "bytes": 2171,
+      "kind": "file",
+      "mode": 420,
+      "mtime_ns": 1787331269548828931,
+      "path": "R001/vl123_final_binary.log",
+      "sha256": "618ae4997ea71a937dc61b2683458bfde792e11e37a0538e6d1321cba7759a5a"
+    },
+    {
+      "bytes": 954,
+      "kind": "file",
+      "mode": 420,
+      "mtime_ns": 1787331150319337015,
+      "path": "R001/vl4_tight.log",
+      "sha256": "696b2b37d190447c041b77700d1854eebf945370db9c4d4c54b5893d99c0f775"
+    },
+    {
+      "bytes": 911,
+      "kind": "file",
+      "mode": 420,
+      "mtime_ns": 1787331000770294854,
+      "path": "R001/vl4_weak.log",
+      "sha256": "88b79dd33992695c6806092d707b257dd2c6542707a546981cfa0baeb2c49e6c"
+    },
+    {
+      "bytes": 942,
+      "kind": "file",
+      "mode": 420,
+      "mtime_ns": 1787331225889760602,
+      "path": "R001/vl5_mesh05.log",
+      "sha256": "a6fe2dc0a475bd605b9fe6306bc73f39365edff9346e07963b2a70ad8d5138c8"
+    }
+  ],
+  "retention": "TEMPORARY_COLD_COPY",
+  "schema_version": 1,
+  "source_bytes": 5561534,
+  "source_directory": "LAB/EVIDENCE/R001",
+  "source_file_count": 13,
+  "source_seal_status": "SEALED_VALID",
+  "temporary_location": "/tmp/fpm-storage-001-20260828/packages/R001.tar.zst"
+}

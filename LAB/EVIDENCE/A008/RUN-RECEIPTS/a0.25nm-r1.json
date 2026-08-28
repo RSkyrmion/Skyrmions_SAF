@@ -1,0 +1,57 @@
+{
+  "command": [
+    "./TOOLS/mumax3-bin",
+    "-o",
+    "/tmp/claude-1000/-home-rodrigo-pesquisa-SAF/471574db-345c-43d2-a045-35b73207a394/scratchpad/a008/a0.25_r1.out",
+    "-f",
+    "LAB/EVIDENCE/A008/mesh_a0.25nm_r1.mx3"
+  ],
+  "cwd": "/home/rodrigo/pesquisa/SAF",
+  "determinism": {
+    "declared": "UNDECLARED",
+    "seed": "UNSPECIFIED"
+  },
+  "duration_seconds": 302.617284276,
+  "environment": {
+    "executable": {
+      "bytes": 14514312,
+      "path": "TOOLS/mumax3-bin",
+      "sha256": "43cfcbc0beda1ea153ee80d536b38c42e1f817885b2ea85aac9277be2a479acb",
+      "status": "PRESENT"
+    },
+    "machine": "x86_64",
+    "os": "Linux-6.1.0-52-amd64-x86_64-with-glibc2.36",
+    "python": "3.11.2"
+  },
+  "executor": {
+    "agent": "Claude (Claude Code)",
+    "human_checkpoint": "WRITEBACK-039"
+  },
+  "exit_code": 0,
+  "finished_at": "2026-08-28T15:30:37.895365Z",
+  "inputs": [
+    {
+      "bytes": 679,
+      "path": "/home/rodrigo/pesquisa/SAF/LAB/EVIDENCE/A008/mesh_a0.25nm_r1.mx3",
+      "sha256": "438f36a2f67252b7c33583fff58117f4226ee425652242f012126be824f318d0",
+      "status": "PRESENT"
+    }
+  ],
+  "mission_id": "MISSION-A008",
+  "outputs": [
+    {
+      "path": "/home/rodrigo/pesquisa/SAF/LAB/EVIDENCE/A008/ck_a0.25nm_r1.ovf",
+      "status": "MISSING"
+    }
+  ],
+  "parameters": {
+    "MinimizerStop": 1e-08,
+    "a_nm": 0.25,
+    "rodada": 1
+  },
+  "run_id": "a0.25nm-r1",
+  "schema_version": 1,
+  "started_at": "2026-08-28T15:25:35.268319Z",
+  "state": "COMPLETE",
+  "timeout_seconds": 5400.0
+}

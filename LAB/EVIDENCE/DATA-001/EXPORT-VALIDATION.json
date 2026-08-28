@@ -1,0 +1,19 @@
+{
+  "bagit": "1.0 / SHA-256",
+  "datacite": "4.x local draft",
+  "files": [
+    "bag-info.txt",
+    "bagit.txt",
+    "data/fixture.txt",
+    "datacite-draft.json",
+    "manifest-sha256.txt",
+    "ro-crate-metadata.json",
+    "tagmanifest-sha256.txt"
+  ],
+  "identifiers_created": 0,
+  "network_actions": 0,
+  "output_scope": "/tmp only",
+  "ro_crate_version": "1.3",
+  "uploads": 0,
+  "validation_errors": []
+}

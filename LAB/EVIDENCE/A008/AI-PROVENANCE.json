@@ -1,0 +1,118 @@
+{
+  "schema_version": 1,
+  "mission_id": "MISSION-A008",
+  "created_at": "2026-08-28T16:20:00Z",
+  "ai_involvement": "MATERIAL",
+  "research_stages": [
+    "IMPLEMENTATION",
+    "EXECUTION",
+    "ANALYSIS"
+  ],
+  "systems": [
+    {
+      "name": "Claude (Claude Code)",
+      "provider": "Anthropic",
+      "version_or_access_date": "2026-08-28",
+      "roles": [
+        "EXECUTOR",
+        "ANALYST"
+      ]
+    },
+    {
+      "name": "mumax3",
+      "provider": "local build TOOLS/mumax3-bin",
+      "version_or_access_date": "3.11.1",
+      "roles": [
+        "SOLVER"
+      ]
+    }
+  ],
+  "persistent_context": [
+    {
+      "path_or_identifier": "LAB/MISSIONS/MISSION-A008.md",
+      "integrity": "sha256:55bcd44fbfcfe1c1e0aa14c187696dc8ee2f0b26f6c9541ed456a60f5209679d"
+    },
+    {
+      "path_or_identifier": "LAB/DECISIONS/WRITEBACK-039.md",
+      "integrity": "sha256:af2a87bd1b23eb91c8157e58e7a1df8c370a4b296956109199f4e7469da2b4aa"
+    },
+    {
+      "path_or_identifier": "TOOLS/mumax3-bin",
+      "integrity": "sha256:43cfcbc0beda1ea153ee80d536b38c42e1f817885b2ea85aac9277be2a479acb"
+    }
+  ],
+  "executable_actions": [
+    {
+      "actor": "Claude",
+      "action": "AM-0.1: cronometrou a=0.5 nm antes de comprometer as demais malhas",
+      "artifact": "MESH-LOG.txt"
+    },
+    {
+      "actor": "mumax3",
+      "action": "relax()+minimize() por rodada em cada malha, cada processo com recibo",
+      "artifact": "RUN-RECEIPTS/"
+    },
+    {
+      "actor": "estimator.py (AUDIT-002, cego)",
+      "action": "mediu l em cada checkpoint, com 'a' como argumento",
+      "artifact": "CRITERIOS-RESULTADOS.txt"
+    }
+  ],
+  "retrieval_sources": [
+    {
+      "identifier": "10.1103/c2y9-3cc9",
+      "accessed_at": "2026-08-21",
+      "claim_location": "End Matter: malha 1x1 nm2, caixa 100x100 nm2, PBC"
+    }
+  ],
+  "human_checkpoints": [
+    {
+      "checkpoint": "PREREGISTRATION_REVIEW",
+      "authority": "Rodrigo",
+      "record": "LAB/DECISIONS/WRITEBACK-039.md"
+    },
+    {
+      "checkpoint": "EXECUTION_AUTHORIZATION",
+      "authority": "Rodrigo",
+      "record": "LAB/DECISIONS/WRITEBACK-039.md"
+    }
+  ],
+  "validation_layers": [
+    {
+      "validator": "estimator.py do AUDIT-002",
+      "method": "blind-estimator",
+      "independent_axes": [
+        "ruler-implementation"
+      ],
+      "shared_axes": [
+        "model-reading",
+        "initialization"
+      ]
+    },
+    {
+      "validator": "estados selados do saf.cu em 1.0 e 0.5 nm",
+      "method": "distinct-solver-cross-check",
+      "independent_axes": [
+        "solver-implementation",
+        "numerical-precision"
+      ],
+      "shared_axes": [
+        "model-reading",
+        "parameters",
+        "initialization"
+      ]
+    }
+  ],
+  "independence_limits": [
+    "mumax3 e' solver de terceiros, mas leitura do modelo, parametros e inicializacao continuam do executor.",
+    "A serie de quatro malhas vem de UM solver; o saf.cu entra apenas como checagem cruzada em duas malhas.",
+    "Executor e analista sao a mesma linhagem; a camada compensatoria e' o estimador cego."
+  ],
+  "known_limits": [
+    "AM-1 ficou INCONCLUSIVO e AM-2 NAO foi executado; nenhum limite de continuo foi determinado.",
+    "Caixa fixa de 100 nm: refino nao afasta imagens periodicas; efeito de caixa indistinguivel daqui.",
+    "mumax3 e' float32; piso de precisao medido no A005R2 (1.7e-5 T).",
+    "C-1 nao e' revogado: ele e' comparacao casada em malha de 1 nm."
+  ],
+  "disclosure_summary": "Claude executou a varredura de malha da MISSION-A008 com mumax3 e regua cega; a serie de quatro malhas mostra l caindo monotonicamente, mas o criterio de razao de refino ficou inconclusivo e nenhuma extrapolacao de continuo foi promovida."
+}

@@ -1,0 +1,196 @@
+{
+  "archive_bytes": 1077023,
+  "archive_file": "A005R2.tar.zst",
+  "archive_format": "POSIX pax tar compressed by Zstandard",
+  "archive_sha256": "9b9bd4d0f67dd47153fd77412e1290c4278390bdd9380b019656aa38f58335fc",
+  "command": [
+    "tar",
+    "--sort=name",
+    "--format=posix",
+    "-cf",
+    "-",
+    "-C",
+    "/home/rodrigo/pesquisa/SAF",
+    "LAB/EVIDENCE/A005R2",
+    "|",
+    "zstd",
+    "-1",
+    "-T0",
+    "-o",
+    "/tmp/fpm-storage-001-20260828/packages/A005R2.tar.zst"
+  ],
+  "compression_lossless": true,
+  "created_at": "2026-08-28T13:49:44.424504Z",
+  "historical_seal_authority": "LAB/EVIDENCE/A005R2/SHA256SUMS.txt",
+  "historical_seal_rederived": false,
+  "mission_id": "MISSION-STORAGE-001",
+  "payloads": [
+    {
+      "bytes": 4441,
+      "kind": "file",
+      "mode": 420,
+      "mtime_ns": 1787920704470766515,
+      "path": "A005R2/AI-PROVENANCE.json",
+      "sha256": "e0fe7fb3f6ed1d5fea010c94f120376050d45e0233308e8764fb72fcb14acb66"
+    },
+    {
+      "bytes": 569,
+      "kind": "file",
+      "mode": 420,
+      "mtime_ns": 1787920250148184716,
+      "path": "A005R2/CHECKPOINT-MEASURES.txt",
+      "sha256": "d8cc643a1c76a069773712a5d82e49f7c5feb53dcdbcce50d370a2aeaab350cb"
+    },
+    {
+      "bytes": 7998,
+      "kind": "file",
+      "mode": 420,
+      "mtime_ns": 1787923327529640178,
+      "path": "A005R2/EVIDENCE-MANIFEST.json",
+      "sha256": "24586abc2549f54da7b7673caf0a555721aab96aa88a680b46892cfba4958952"
+    },
+    {
+      "bytes": 219,
+      "kind": "file",
+      "mode": 420,
+      "mtime_ns": 1787918821736473743,
+      "path": "A005R2/INPUT-HASH.txt",
+      "sha256": "ecc8d198138f5cc8387b1a8ccb7fd4d340c824e2f363339a81e19a333312f61f"
+    },
+    {
+      "bytes": 10791,
+      "kind": "file",
+      "mode": 420,
+      "mtime_ns": 1787920638422973055,
+      "path": "A005R2/LADDER-LOG.txt",
+      "sha256": "f39f1bc00714e1a770e5c04566a0456ec4a3fd1fcb70405ab768196d5c7e29d3"
+    },
+    {
+      "bytes": 1551,
+      "kind": "file",
+      "mode": 420,
+      "mtime_ns": 1787923327541640241,
+      "path": "A005R2/SHA256SUMS.txt",
+      "sha256": "9f3f2afa064870d0be9e98a7478a8612ab598439c4523bcb7bed388e0c59f19c"
+    },
+    {
+      "bytes": 240540,
+      "kind": "file",
+      "mode": 420,
+      "mtime_ns": 1787919968165060247,
+      "path": "A005R2/ck1.ovf",
+      "sha256": "312844f8547cad3fcb672b99ad455f86714fd57ddf8030ff36090208c2d15459"
+    },
+    {
+      "bytes": 240540,
+      "kind": "file",
+      "mode": 420,
+      "mtime_ns": 1787919969733055394,
+      "path": "A005R2/ck2.ovf",
+      "sha256": "dceb0165dee68df4b6b92153d4af30ed5a392b60db461340068c6043d9622d9a"
+    },
+    {
+      "bytes": 240540,
+      "kind": "file",
+      "mode": 420,
+      "mtime_ns": 1787919969805055172,
+      "path": "A005R2/ck3.ovf",
+      "sha256": "02aeb42eb0de239f164b707186641f53f5cd495bf3a354df6a948a6cad180c81"
+    },
+    {
+      "bytes": 240540,
+      "kind": "file",
+      "mode": 420,
+      "mtime_ns": 1787920023144889953,
+      "path": "A005R2/ck4.ovf",
+      "sha256": "7ab4a4c5a80e9882e985c7aea628b27c354030b206d7b655b88d5ccb0c123c13"
+    },
+    {
+      "bytes": 687,
+      "kind": "file",
+      "mode": 420,
+      "mtime_ns": 1787919964269072306,
+      "path": "A005R2/f1_degrau.mx3",
+      "sha256": "6169f61db3663aa643162b864fbeb7462b8398c8e8efc66011725b083b249d6f"
+    },
+    {
+      "bytes": 674,
+      "kind": "file",
+      "mode": 420,
+      "mtime_ns": 1787919964269072306,
+      "path": "A005R2/f2_degrau.mx3",
+      "sha256": "d95941be6f3bb71b635514e4aa259fb8680fd19d575825664b358471ca15f85b"
+    },
+    {
+      "bytes": 674,
+      "kind": "file",
+      "mode": 420,
+      "mtime_ns": 1787919964269072306,
+      "path": "A005R2/f3_degrau.mx3",
+      "sha256": "b9cf783886d00fadc71b36e978450598a59c6335c006d127db275eeea039750f"
+    },
+    {
+      "bytes": 675,
+      "kind": "file",
+      "mode": 420,
+      "mtime_ns": 1787919964273072293,
+      "path": "A005R2/f4_degrau.mx3",
+      "sha256": "6da83261b60332387b5f631ae2fd3de078809bd5b20a6e41d509927f47b080a4"
+    },
+    {
+      "bytes": 681,
+      "kind": "file",
+      "mode": 420,
+      "mtime_ns": 1787920101620646531,
+      "path": "A005R2/f4rep_repeticao.mx3",
+      "sha256": "76413485db86f2ec84fcde53d236238283baee7c880970bccc3c39ee1bce5720"
+    },
+    {
+      "bytes": 868030,
+      "kind": "file",
+      "mode": 420,
+      "mtime_ns": 1787918821676473907,
+      "path": "A005R2/input_A003_mfinal_par.dat",
+      "sha256": "7fa7b1ea3ab293bdc0e3604761929f7b6453dbe2d97528883a2f0edf9c239011"
+    },
+    {
+      "bytes": 240511,
+      "kind": "file",
+      "mode": 420,
+      "mtime_ns": 1787918821724473775,
+      "path": "A005R2/input_A003_state.ovf",
+      "sha256": "b35023ea59ffd5e6cc5081da9ebdf7935bc67f60171c3b63fa68d770bd05e0a5"
+    },
+    {
+      "bytes": 1288,
+      "kind": "file",
+      "mode": 493,
+      "mtime_ns": 1787919964273072293,
+      "path": "A005R2/run_ladder.sh",
+      "sha256": "cf54ca66457f0eab85db0c5fb289ecc92d27e7252e33b8eb42096a939f81679f"
+    },
+    {
+      "bytes": 417,
+      "kind": "file",
+      "mode": 420,
+      "mtime_ns": 1787918877444320194,
+      "path": "A005R2/setup.mx3",
+      "sha256": "998ecaae4374c8e4fe401246241536d35beecfb99c276b946accac1ad75a2402"
+    },
+    {
+      "bytes": 713,
+      "kind": "file",
+      "mode": 420,
+      "mtime_ns": 1787918877444320194,
+      "path": "A005R2/v0_torque_inicial.mx3",
+      "sha256": "faea0f68bb3aa06621dc67afef8c79728a96472932a527f958f942530d7b914c"
+    }
+  ],
+  "retention": "TEMPORARY_COLD_COPY",
+  "schema_version": 1,
+  "source_bytes": 2102079,
+  "source_directory": "LAB/EVIDENCE/A005R2",
+  "source_file_count": 20,
+  "source_seal_status": "SEALED_VALID",
+  "temporary_location": "/tmp/fpm-storage-001-20260828/packages/A005R2.tar.zst"
+}

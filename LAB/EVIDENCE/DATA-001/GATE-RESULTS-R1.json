@@ -1,0 +1,37 @@
+{
+  "concurrent_drift_preserved": [
+    "A003/__pycache__/ovf.cpython-311.pyc",
+    "A005R/RUN-LOG.txt",
+    "A005R2/"
+  ],
+  "correction_reason": "DA-10 textual matcher did not account for Markdown markup; claims were unchanged.",
+  "criteria": {
+    "DA-0": "PASS",
+    "DA-1": "PASS",
+    "DA-10": "PASS",
+    "DA-2": "PASS",
+    "DA-3": "PASS",
+    "DA-4": "PASS",
+    "DA-5": "PASS",
+    "DA-6": "PASS",
+    "DA-7": "PASS",
+    "DA-8": "PASS",
+    "DA-9": "PASS"
+  },
+  "evaluated_at": "2026-08-28T12:44:24.688905Z",
+  "gate": "PASS",
+  "historical_integrity": {
+    "A003": "SEALED_CONTAMINATED",
+    "A005": "SEALED_CONTAMINATED",
+    "A005R": "SEALED_CORRUPT",
+    "A005R2": "SEALED_CORRUPT",
+    "LAB": "UNSEALED",
+    "normalized": false
+  },
+  "human_acceptance": "PENDING",
+  "mission_id": "MISSION-DATA-001",
+  "preexisting_evidence_unchanged_during_r1": true,
+  "revision": "R1",
+  "schema_version": 1,
+  "supersedes_for_gate": "GATE-RESULTS.json"
+}

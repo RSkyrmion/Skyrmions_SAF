@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "name": "phase-scan-v1",
+  "description": "Parameter scan with classification and convergence observables.",
+  "delimiter": "whitespace",
+  "fields": [
+    {"name": "a_int", "type": "number", "unit": "J/m2", "nullable": false, "finite": true},
+    {"name": "k0", "type": "number", "unit": "J/m3", "nullable": false, "finite": true},
+    {"name": "class", "type": "string", "unit": "1", "nullable": false, "enum": ["COAXIAL", "NONCOAXIAL", "COLLAPSED", "AMBIGUOUS"]},
+    {"name": "observable", "type": "number", "unit": "m", "nullable": true, "finite": true},
+    {"name": "iterations", "type": "integer", "unit": "1", "nullable": false, "minimum": 0},
+    {"name": "torque", "type": "number", "unit": "T", "nullable": false, "finite": true, "minimum": 0}
+  ]
+}
+

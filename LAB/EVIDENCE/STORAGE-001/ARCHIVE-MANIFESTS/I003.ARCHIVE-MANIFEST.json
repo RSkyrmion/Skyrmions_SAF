@@ -1,0 +1,92 @@
+{
+  "archive_bytes": 637830,
+  "archive_file": "I003.tar.zst",
+  "archive_format": "POSIX pax tar compressed by Zstandard",
+  "archive_sha256": "f0906e47988ee0b48bb0c78f9bd392f91847a1927708c0804e821a070222bec2",
+  "command": [
+    "tar",
+    "--sort=name",
+    "--format=posix",
+    "-cf",
+    "-",
+    "-C",
+    "/home/rodrigo/pesquisa/SAF",
+    "LAB/EVIDENCE/I003",
+    "|",
+    "zstd",
+    "-1",
+    "-T0",
+    "-o",
+    "/tmp/fpm-storage-001-20260828/packages/I003.tar.zst"
+  ],
+  "compression_lossless": true,
+  "created_at": "2026-08-28T13:49:45.173579Z",
+  "historical_seal_authority": "LAB/EVIDENCE/I003/SHA256SUMS.txt",
+  "historical_seal_rederived": false,
+  "mission_id": "MISSION-STORAGE-001",
+  "payloads": [
+    {
+      "bytes": 1669,
+      "kind": "file",
+      "mode": 420,
+      "mtime_ns": 1787772179645367020,
+      "path": "I003/RUN-LOG.txt",
+      "sha256": "8b3c4590d52d435f1fd5f8e98a30914200438bcce06876b7f237391de8b8637f"
+    },
+    {
+      "bytes": 493,
+      "kind": "file",
+      "mode": 420,
+      "mtime_ns": 1787772594986081257,
+      "path": "I003/SHA256SUMS.txt",
+      "sha256": "24c7f4a3add284b08505a94e559b07a82ae2f6c2d078a1a13c216c448e81bc4b"
+    },
+    {
+      "bytes": 549123,
+      "kind": "file",
+      "mode": 420,
+      "mtime_ns": 1787771366034510185,
+      "path": "I003/prop_id1_mesh05_dt10fs.dat",
+      "sha256": "c0ad1b6d2cbe4787c3c447883a80c20b165016ab0e5755eb6e1553a9a5ac2659"
+    },
+    {
+      "bytes": 546560,
+      "kind": "file",
+      "mode": 420,
+      "mtime_ns": 1787772179633367037,
+      "path": "I003/prop_id1_mesh05_dt2.5fs.dat",
+      "sha256": "3fdffaff1731e6060c77f47e17a4a31588a2f387f77768d219feaa44352d0b6d"
+    },
+    {
+      "bytes": 487,
+      "kind": "file",
+      "mode": 493,
+      "mtime_ns": 1787771014179017628,
+      "path": "I003/run_batch.sh",
+      "sha256": "edf50f984a1a7d9aba7d4bcd7f865005ccd20919f73de087fd4fd40b5222f52e"
+    },
+    {
+      "bytes": 984784,
+      "kind": "file",
+      "mode": 493,
+      "mtime_ns": 1787770992003050132,
+      "path": "I003/saf_dt",
+      "sha256": "861c5b7690828e6167c7a413a0d494022b209e0fecb51aa4553fe1fa37a02958"
+    },
+    {
+      "bytes": 53100,
+      "kind": "file",
+      "mode": 420,
+      "mtime_ns": 1787770887735204081,
+      "path": "I003/saf_dt.cu",
+      "sha256": "d0b3a50c36eaa3000216998b13ee5a46b398f0341ae79743c5e9e1dd355d6228"
+    }
+  ],
+  "retention": "TEMPORARY_COLD_COPY",
+  "schema_version": 1,
+  "source_bytes": 2136216,
+  "source_directory": "LAB/EVIDENCE/I003",
+  "source_file_count": 7,
+  "source_seal_status": "SEALED_VALID",
+  "temporary_location": "/tmp/fpm-storage-001-20260828/packages/I003.tar.zst"
+}

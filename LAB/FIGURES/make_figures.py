@@ -17,8 +17,9 @@ import matplotlib.pyplot as plt
 
 OUT = "LAB/FIGURES"
 E = "LAB/EVIDENCE"
-LG = ("L-G: NAO ha verificacao independente do resultado. Codigo unico, o nosso. "
-      "Nenhuma figura aqui e' reproducao do artigo.")
+LG = ("L-G: l tem um solver independente (-0.30 %), mas leitura do modelo e inicializacao "
+      "sao compartilhadas; o acordo e' menor que a sensibilidade de malha (1.0 %). "
+      "A dinamica segue com um unico solver. Nao e' reproducao do artigo.")
 
 plt.rcParams.update({
     "figure.dpi": 150, "font.size": 9, "axes.linewidth": 0.9,
@@ -108,8 +109,9 @@ def F1():
     fig.suptitle("F1 — deriva do par (analogo a Fig. 2(a),(b))", fontsize=9)
     fig.tight_layout(rect=[0, 0.20, 1, 0.97])
     footer(fig, "E002 (C-7, WB-011)",
-           "platos: SBM 3.54 vs 3.50 ; ABM 2.03 vs 2.03 cm/s",
-           "o TRANSIENTE nao reproduz; so o valor tardio. E a corrida SBM nao estacionou (L7.3).")
+           "valores tardios: SBM 3.54 vs 3.50 ; ABM 2.03 vs 2.03 cm/s",
+           "o TRANSIENTE nao reproduz. ABM chegou a valor tardio; SBM ainda cruzava o alvo e "
+           "nao estacionou (L7.3).")
     save(fig, "F1_deriva_do_par")
 
 
@@ -132,7 +134,8 @@ def F2():
     fig.tight_layout(rect=[0, 0.26, 1, 0.95])
     footer(fig, "E002 — EXPLORATORIO, NAO e' resultado",
            "o PV-1 declarou estes dois paineis MORTOS antes do dado (piso 0.868 pm)",
-           "o eixo D do artigo omite o expoente (D-1, em aberto com os autores).")
+           "o eixo D do artigo omite o expoente (D-1). Autores fora de alcance; A004 apenas "
+           "desloca plausibilidade e aguarda aceite.")
     save(fig, "F2_ciclos_de_nado")
 
 
@@ -159,9 +162,10 @@ def F3():
                  fontsize=8.5)
     ax.legend(fontsize=6.5, loc="upper right")
     fig.tight_layout(rect=[0, 0.24, 1, 1])
-    footer(fig, "E004 (revisao pedida) + E004R (C-10/C-11, WB-018)",
+    footer(fig, "E004 (material aceito; EF-1 sem veredito) + E004R (C-10/C-11)",
            "contraste de 86 % (fator 7) entre pico e asas; o pico converge a 6 MHz entre janelas",
-           "EF-1 e RF-1 ficaram SEM VEREDITO. A afirmacao do artigo sobre o pico NAO foi testada.")
+           "EF-1 e RF-1 ficaram SEM VEREDITO. E005 depois explicou o deslocamento como "
+           "amolecimento de amplitude; isso nao aprova retroativamente estes criterios.")
     save(fig, "F3_ressonancia_autopropulsao")
 
 
@@ -218,7 +222,8 @@ def F5():
     fig.tight_layout(rect=[0, 0.24, 1, 0.93])
     footer(fig, "R002 (C-2, WB-007) + ADDENDUM-001",
            "165 pontos; os dois pontos publicados caem na regiao estavel",
-           "L2.3 ABERTA: em A_int=0.12 o artigo preve ramo coaxial e nos nao o encontramos.")
+           "L2.3 ABERTA: em A_int=0.12 o artigo preve ramo coaxial e nos nao o encontramos; "
+           "A006 esta autorizada, ainda sem pre-registro lido.")
     save(fig, "F5_regiao_estabilidade")
 
 
@@ -247,7 +252,8 @@ def F6():
     fig.tight_layout(rect=[0, 0.24, 1, 1])
     footer(fig, "E003 (C-8, WB-015)",
            "inclinacao medida = +1.0201, estavel em tres janelas (1.007-1.026)",
-           "testado em DOIS angulos alem de zero, so no modo SBM. Nao e' 'qualquer angulo'.")
+           "testado em DOIS angulos alem de zero, so no modo SBM; os estados fora do eixo "
+           "nao estavam plenamente relaxados. Nao e' 'qualquer angulo'.")
     save(fig, "F6_deriva_segue_ligacao")
 
 

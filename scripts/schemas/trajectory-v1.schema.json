@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "name": "trajectory-v1",
+  "description": "Time series for two coupled texture centers and derived observables.",
+  "delimiter": "whitespace",
+  "fields": [
+    {"name": "t", "type": "number", "unit": "s", "nullable": false, "finite": true, "monotonic": "strict"},
+    {"name": "x1", "type": "number", "unit": "m", "nullable": false, "finite": true},
+    {"name": "y1", "type": "number", "unit": "m", "nullable": false, "finite": true},
+    {"name": "x2", "type": "number", "unit": "m", "nullable": false, "finite": true},
+    {"name": "y2", "type": "number", "unit": "m", "nullable": false, "finite": true},
+    {"name": "l", "type": "number", "unit": "m", "nullable": false, "finite": true, "minimum": 0},
+    {"name": "q1", "type": "number", "unit": "1", "nullable": false, "finite": true},
+    {"name": "q2", "type": "number", "unit": "1", "nullable": false, "finite": true},
+    {"name": "dxx", "type": "number", "unit": "1", "nullable": false, "finite": true},
+    {"name": "dyy", "type": "number", "unit": "1", "nullable": false, "finite": true}
+  ]
+}
+

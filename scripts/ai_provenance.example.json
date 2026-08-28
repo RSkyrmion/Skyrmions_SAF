@@ -1,0 +1,67 @@
+{
+  "schema_version": 1,
+  "mission_id": "MISSION-EXAMPLE",
+  "created_at": "YYYY-MM-DDTHH:MM:SSZ",
+  "ai_involvement": "MATERIAL",
+  "research_stages": [
+    "SPECIFICATION",
+    "IMPLEMENTATION",
+    "ANALYSIS"
+  ],
+  "systems": [
+    {
+      "name": "system-or-model-name",
+      "provider": "provider-or-local",
+      "version_or_access_date": "version-or-YYYY-MM-DD",
+      "roles": [
+        "EXECUTOR"
+      ]
+    }
+  ],
+  "persistent_context": [
+    {
+      "path_or_identifier": "LAB/MISSIONS/MISSION-EXAMPLE.md",
+      "integrity": "sha256-if-material"
+    }
+  ],
+  "executable_actions": [
+    {
+      "actor": "system-or-human",
+      "action": "what-was-run-or-changed",
+      "artifact": "relative/path/to/artifact"
+    }
+  ],
+  "retrieval_sources": [
+    {
+      "identifier": "doi-or-canonical-url",
+      "accessed_at": "YYYY-MM-DD",
+      "claim_location": "page-section-figure-or-table"
+    }
+  ],
+  "human_checkpoints": [
+    {
+      "checkpoint": "PREREGISTRATION_REVIEW",
+      "authority": "Rodrigo",
+      "record": "LAB/DECISIONS/WRITEBACK-NNN.md"
+    }
+  ],
+  "validation_layers": [
+    {
+      "validator": "validator-name",
+      "method": "analytic-test-solver-blind-estimator-or-review",
+      "independent_axes": [
+        "implementation"
+      ],
+      "shared_axes": [
+        "model-reading"
+      ]
+    }
+  ],
+  "independence_limits": [
+    "state exactly what executor and validator still share"
+  ],
+  "known_limits": [
+    "limits that must travel with outputs derived from this work"
+  ],
+  "disclosure_summary": "One short, publication-ready description of material AI use."
+}

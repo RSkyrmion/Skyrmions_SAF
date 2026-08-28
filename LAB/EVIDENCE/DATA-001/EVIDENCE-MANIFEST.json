@@ -1,0 +1,218 @@
+{
+  "access": "LOCAL; lightweight subset may be public",
+  "created_at": "2026-08-27T19:03:55.689373Z",
+  "expected_outputs": [
+    {
+      "path": "AI-PROVENANCE.json",
+      "status": "PRODUCED"
+    },
+    {
+      "path": "BASELINE-CHECK.json",
+      "status": "PRODUCED"
+    },
+    {
+      "path": "BASELINE-INVENTORY.json",
+      "status": "PRODUCED"
+    },
+    {
+      "path": "CATALOG-SNAPSHOT.json",
+      "status": "PRODUCED"
+    },
+    {
+      "path": "EXPORT-VALIDATION.json",
+      "status": "PRODUCED"
+    },
+    {
+      "path": "GATE-RESULTS.json",
+      "status": "PRODUCED"
+    },
+    {
+      "path": "RUN-RECEIPT-failure.json",
+      "status": "PRODUCED"
+    },
+    {
+      "path": "RUN-RECEIPT-success.json",
+      "status": "PRODUCED"
+    },
+    {
+      "path": "RUN-RECEIPT-timeout.json",
+      "status": "PRODUCED"
+    },
+    {
+      "path": "TEST-RESULTS.txt",
+      "status": "PRODUCED"
+    },
+    {
+      "path": "criterion-summary-valid.tsv",
+      "status": "PRODUCED"
+    },
+    {
+      "path": "magnetization-grid-valid.tsv",
+      "status": "PRODUCED"
+    },
+    {
+      "path": "phase-scan-valid.tsv",
+      "status": "PRODUCED"
+    },
+    {
+      "path": "trajectory-valid.tsv",
+      "status": "PRODUCED"
+    }
+  ],
+  "links": {
+    "ai_provenance": "AI-PROVENANCE.json",
+    "authorization": "LAB/DECISIONS/WRITEBACK-031.md",
+    "errata": [
+      "LAB/MISSIONS/MISSION-DATA-001-ERRATA-001.md",
+      "LAB/MISSIONS/MISSION-DATA-001-ERRATA-002.md"
+    ],
+    "mission": "LAB/MISSIONS/MISSION-DATA-001.md",
+    "release": "LAB/RELEASES/RELEASE-DATA-001.md"
+  },
+  "mission_id": "MISSION-DATA-001",
+  "operational_state": "FAILED",
+  "resources": [
+    {
+      "bytes": 3275,
+      "generated_by": "scripts/prepare_data001_evidence.py",
+      "media_type": "application/json",
+      "path": "AI-PROVENANCE.json",
+      "role": "METADATA",
+      "sha256": "54e23f1534a8c983dc974e38d67b87245095c9ed538f8f0723bcb01a6e5bae57",
+      "supports_criterion": []
+    },
+    {
+      "bytes": 7060,
+      "generated_by": "scripts/prepare_data001_evidence.py",
+      "media_type": "application/json",
+      "path": "BASELINE-CHECK.json",
+      "role": "METADATA",
+      "sha256": "e0295bc937dbe0591aa3a7059385d5b0d961883247414d8b928c2d85233a0eb7",
+      "supports_criterion": []
+    },
+    {
+      "bytes": 55954,
+      "generated_by": "scripts/prepare_data001_evidence.py",
+      "media_type": "application/json",
+      "path": "BASELINE-INVENTORY.json",
+      "role": "METADATA",
+      "sha256": "20c1c4276e94749911715283809613d0cd015d45912f66db3de612f4518d5fe4",
+      "supports_criterion": []
+    },
+    {
+      "bytes": 14843,
+      "generated_by": "scripts/prepare_data001_evidence.py",
+      "media_type": "application/json",
+      "path": "CATALOG-SNAPSHOT.json",
+      "role": "METADATA",
+      "sha256": "0972491b663e220f86ce0cf63b56a082859ca4554476b39757b3e00e145a0c07",
+      "supports_criterion": []
+    },
+    {
+      "bytes": 411,
+      "generated_by": "scripts/prepare_data001_evidence.py",
+      "media_type": "application/json",
+      "path": "EXPORT-VALIDATION.json",
+      "role": "METADATA",
+      "sha256": "72a91c26417561c1c6d67d277c0c63c933449750a53f9efd345a49164f58baea",
+      "supports_criterion": []
+    },
+    {
+      "bytes": 549,
+      "generated_by": "scripts/prepare_data001_evidence.py",
+      "media_type": "application/json",
+      "path": "GATE-RESULTS.json",
+      "role": "METADATA",
+      "sha256": "4a90ab69741b2915a53f586664e0c30737d131c4839fe8c2a3beb8705d38c588",
+      "supports_criterion": [
+        "DA-0",
+        "DA-1",
+        "DA-2",
+        "DA-3",
+        "DA-4",
+        "DA-5",
+        "DA-6",
+        "DA-7",
+        "DA-8",
+        "DA-9",
+        "DA-10"
+      ]
+    },
+    {
+      "bytes": 978,
+      "generated_by": "scripts/prepare_data001_evidence.py",
+      "media_type": "application/json",
+      "path": "RUN-RECEIPT-failure.json",
+      "role": "LOG",
+      "sha256": "2e027c48ee4a1bcf18b4b1f9955153760ee19767f88b2ed79fcce8de34df6532",
+      "supports_criterion": []
+    },
+    {
+      "bytes": 965,
+      "generated_by": "scripts/prepare_data001_evidence.py",
+      "media_type": "application/json",
+      "path": "RUN-RECEIPT-success.json",
+      "role": "LOG",
+      "sha256": "c647049d64e4d002fab570b29e3ac9c08b1bc89de78661f8ab74a67bca637abf",
+      "supports_criterion": []
+    },
+    {
+      "bytes": 1023,
+      "generated_by": "scripts/prepare_data001_evidence.py",
+      "media_type": "application/json",
+      "path": "RUN-RECEIPT-timeout.json",
+      "role": "LOG",
+      "sha256": "31625070ba693f0206f54ce11750fc1d34946a36ffb73fd6ef3a8dd6fd570991",
+      "supports_criterion": []
+    },
+    {
+      "bytes": 1441,
+      "generated_by": "scripts/prepare_data001_evidence.py",
+      "media_type": "text/plain",
+      "path": "TEST-RESULTS.txt",
+      "role": "LOG",
+      "sha256": "60a04b70d061f73fa100e1a8b9e4d7db55a33d4bfec7074506852ab11d735f33",
+      "supports_criterion": []
+    },
+    {
+      "bytes": 92,
+      "generated_by": "scripts/prepare_data001_evidence.py",
+      "media_type": "text/tab-separated-values",
+      "path": "criterion-summary-valid.tsv",
+      "role": "RAW",
+      "sha256": "d1fcb6bf9a0b95152752fac7ca41a4343595605b5381d8788433951a52d63f9d",
+      "supports_criterion": []
+    },
+    {
+      "bytes": 78,
+      "generated_by": "scripts/prepare_data001_evidence.py",
+      "media_type": "text/tab-separated-values",
+      "path": "magnetization-grid-valid.tsv",
+      "role": "RAW",
+      "sha256": "8539d2a0128730765f46557e256623bd018b6c45fff0d68d48bbaadd8fd3f7be",
+      "supports_criterion": []
+    },
+    {
+      "bytes": 81,
+      "generated_by": "scripts/prepare_data001_evidence.py",
+      "media_type": "text/tab-separated-values",
+      "path": "phase-scan-valid.tsv",
+      "role": "RAW",
+      "sha256": "87bade35f5c7d48a529de6e9b2a5a55e77a0c56d286fe2a63d1eaf3ca7a8f2ee",
+      "supports_criterion": []
+    },
+    {
+      "bytes": 111,
+      "generated_by": "scripts/prepare_data001_evidence.py",
+      "media_type": "text/tab-separated-values",
+      "path": "trajectory-valid.tsv",
+      "role": "RAW",
+      "sha256": "d6d7257d843a9582e9dd3dc0de6423990fabdd3006f3000681a8ec37d7cf1983",
+      "supports_criterion": []
+    }
+  ],
+  "retention": "PRESERVE",
+  "rights": "UNDECIDED",
+  "schema_version": 1,
+  "title": "Fixtures and validation reports for FPM data hygiene"
+}

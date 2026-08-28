@@ -14,8 +14,9 @@ ext_InterDind(1, 2, 0)
 ext_InterExchange(1, 2, -4e-15)
 // AC-0: CASAMENTO DE CONVERGENCIA — 1.0e-6 T, o mesmo do saf.cu desde o E002.
 // Valor fixado no pre-registro, ANTES de qualquer corrida.
-RelaxTorqueThreshold = 1e-6
-MinimizerStop = 1e-9
+// AC-0: 1e-6 NAO e alcancavel (piso medido 1.4903e-5, float32). Casamento PARCIAL:
+// sem RelaxTorqueThreshold (senao relax() nao retorna) e MinimizerStop no piso.
+MinimizerStop = 1e-8
 m.SetRegion(1, neelskyrmion( 1, -1).Transl(-5e-9, 0, 0))
 m.SetRegion(2, neelskyrmion( 1,  1).Transl( 5e-9, 0, 0))
 relax()
