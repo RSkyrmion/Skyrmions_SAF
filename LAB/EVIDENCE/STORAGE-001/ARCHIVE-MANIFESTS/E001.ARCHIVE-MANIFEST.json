@@ -1,0 +1,116 @@
+{
+  "archive_bytes": 1435085,
+  "archive_file": "E001.tar.zst",
+  "archive_format": "POSIX pax tar compressed by Zstandard",
+  "archive_sha256": "9e80dc5983774e416eadf99dae38940554b3ee489b73c8bcda8ef05d0f954849",
+  "command": [
+    "tar",
+    "--sort=name",
+    "--format=posix",
+    "-cf",
+    "-",
+    "-C",
+    "/home/rodrigo/pesquisa/SAF",
+    "LAB/EVIDENCE/E001",
+    "|",
+    "zstd",
+    "-1",
+    "-T0",
+    "-o",
+    "/tmp/fpm-storage-001-20260828/packages/E001.tar.zst"
+  ],
+  "compression_lossless": true,
+  "created_at": "2026-08-28T13:49:44.452226Z",
+  "historical_seal_authority": "LAB/EVIDENCE/E001/SHA256SUMS.txt",
+  "historical_seal_rederived": false,
+  "mission_id": "MISSION-STORAGE-001",
+  "payloads": [
+    {
+      "bytes": 394,
+      "kind": "file",
+      "mode": 420,
+      "mtime_ns": 1787591268044566075,
+      "path": "E001/EV3-RESULTS.txt",
+      "sha256": "7ef6e72aea15f86a9bf3f809877efcc21988ce1ec2cbcd6dea0299c59616d584"
+    },
+    {
+      "bytes": 749,
+      "kind": "file",
+      "mode": 420,
+      "mtime_ns": 1787592560604630455,
+      "path": "E001/SHA256SUMS.txt",
+      "sha256": "da47bca88a1881fc7d0ff23e3919fb17ddf284a29b8c77f0cd369b59e5e4d897"
+    },
+    {
+      "bytes": 1056291,
+      "kind": "file",
+      "mode": 420,
+      "mtime_ns": 1787591675820380311,
+      "path": "E001/ev2_precessao_a0.000.dat",
+      "sha256": "75bfb609f83c0960f91d46ec423a58195dc8f1a40214839067458eef184e1789"
+    },
+    {
+      "bytes": 1056661,
+      "kind": "file",
+      "mode": 420,
+      "mtime_ns": 1787591771912334299,
+      "path": "E001/ev2_precessao_a0.020.dat",
+      "sha256": "edf2a910172372ad78d37b1ea292084845abf3346ed8794374db2caa3d0700f0"
+    },
+    {
+      "bytes": 1151307,
+      "kind": "file",
+      "mode": 420,
+      "mtime_ns": 1787591876548283558,
+      "path": "E001/ev2_precessao_a0.300.dat",
+      "sha256": "9091f882d37754efc93208511abb72e3e66f1f9ae6dd8002fe3e0d0a0bfcffbe"
+    },
+    {
+      "bytes": 275073,
+      "kind": "file",
+      "mode": 420,
+      "mtime_ns": 1787592129052159053,
+      "path": "E001/ev3_abm_10ns.dat",
+      "sha256": "303c9a62788f039246784c935c56e54fc03cc99bef8a91b75c8a9c9f34b5ab80"
+    },
+    {
+      "bytes": 275071,
+      "kind": "file",
+      "mode": 420,
+      "mtime_ns": 1787592020072213091,
+      "path": "E001/ev3_sbm_10ns.dat",
+      "sha256": "d23bd6fbb5bf3803bd25e7265210943752366c3c4849f57442f94c42662378bb"
+    },
+    {
+      "bytes": 926800,
+      "kind": "file",
+      "mode": 493,
+      "mtime_ns": 1787592499432429517,
+      "path": "E001/saf_dyn",
+      "sha256": "d90e097a46c8e477df1a5182d54e99611e794e1c85b3b74d56253f1a00995a0a"
+    },
+    {
+      "bytes": 40917,
+      "kind": "file",
+      "mode": 420,
+      "mtime_ns": 1787592498256425416,
+      "path": "E001/saf_dyn.cu",
+      "sha256": "f8402d0400035e3ad88a969118ec7f640c3dbf9f56cf83e89c43b5b0d8e49124"
+    },
+    {
+      "bytes": 1002,
+      "kind": "file",
+      "mode": 420,
+      "mtime_ns": 1787591245580575684,
+      "path": "E001/spectra.py",
+      "sha256": "b68bd101ce8a8b6f943d35cd24d86bcaf6bdf839d4d3b72c8e5cfde34f4ce9fb"
+    }
+  ],
+  "retention": "TEMPORARY_COLD_COPY",
+  "schema_version": 1,
+  "source_bytes": 4784265,
+  "source_directory": "LAB/EVIDENCE/E001",
+  "source_file_count": 10,
+  "source_seal_status": "SEALED_VALID",
+  "temporary_location": "/tmp/fpm-storage-001-20260828/packages/E001.tar.zst"
+}

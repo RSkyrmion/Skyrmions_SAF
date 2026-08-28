@@ -1,0 +1,86 @@
+{
+  "schema_version": 1,
+  "mission_id": "MISSION-A005R",
+  "created_at": "2026-08-27T14:41:16-03:00",
+  "ai_involvement": "MATERIAL",
+  "research_stages": [
+    "IMPLEMENTATION",
+    "EXECUTION",
+    "DOCUMENTATION"
+  ],
+  "systems": [
+    {
+      "name": "AI coding assistant used for the original A005R execution (exact model unknown)",
+      "provider": "unknown from the surviving record",
+      "version_or_access_date": "2026-08-27",
+      "roles": [
+        "EXECUTOR"
+      ]
+    },
+    {
+      "name": "OpenAI Codex",
+      "provider": "OpenAI",
+      "version_or_access_date": "2026-08-27",
+      "roles": [
+        "DOCUMENTARIAN",
+        "INTEGRITY_CHECKER"
+      ]
+    }
+  ],
+  "persistent_context": [
+    {
+      "path_or_identifier": "LAB/MISSIONS/MISSION-A005R.md",
+      "integrity": "historical preregistration; repository path"
+    },
+    {
+      "path_or_identifier": "LAB/DECISIONS/WRITEBACK-025.md",
+      "integrity": "human authorization; immutable repository path"
+    },
+    {
+      "path_or_identifier": "LAB/EVIDENCE/A005R/RUN-LOG.txt",
+      "integrity": "covered by this directory SHA256SUMS.txt"
+    }
+  ],
+  "executable_actions": [
+    {
+      "actor": "original AI-assisted execution; exact system unknown",
+      "action": "ran run_batch.sh, invoking three mumax3 jobs with a 3600-second timeout each",
+      "artifact": "RUN-LOG.txt"
+    },
+    {
+      "actor": "OpenAI Codex",
+      "action": "reconstructed only documented execution facts, added provenance, and sealed the incomplete directory",
+      "artifact": "AI-PROVENANCE.json"
+    }
+  ],
+  "retrieval_sources": [],
+  "human_checkpoints": [
+    {
+      "checkpoint": "PREREGISTRATION_REVIEW_AND_AUTHORIZATION",
+      "authority": "Rodrigo",
+      "record": "LAB/DECISIONS/WRITEBACK-025.md"
+    }
+  ],
+  "validation_layers": [
+    {
+      "validator": "timeout exit status and file inventory",
+      "method": "three exit-status-124 records, elapsed time, and zero OVF outputs checked against the surviving run log",
+      "independent_axes": [
+        "documentary inspection after execution"
+      ],
+      "shared_axes": [
+        "same surviving run log"
+      ]
+    }
+  ],
+  "independence_limits": [
+    "The exact original assistant model, prompt, and interactive decisions were not recorded.",
+    "The documentary check cannot independently reconstruct solver progress that was never emitted to the log."
+  ],
+  "known_limits": [
+    "All three jobs timed out inside relax() after 3600.01 seconds.",
+    "No final MaxTorque, minimized state, dynamic trajectory, or OVF file was produced.",
+    "AC-0 through AC-3 and G-A005R are unevaluated; this directory supports no scientific claim."
+  ],
+  "disclosure_summary": "An AI-assisted workflow prepared and launched three A005R mumax3 attempts; the surviving record does not identify the exact model. OpenAI Codex later documented the timeouts and sealed the incomplete evidence without reconstructing unrecorded scientific output."
+}

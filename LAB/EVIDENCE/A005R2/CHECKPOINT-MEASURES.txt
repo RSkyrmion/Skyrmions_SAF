@@ -1,0 +1,11 @@
+l em cada checkpoint, pelo ESTIMADOR CEGO do AUDIT-002 (A005R2 secao 7, AC2-3)
+
+  checkpoint          MaxTorque[T]     l [nm]     dl vs saf.cu (10.9607)
+  input_A003_state   4.8334e-05    10.9279    -0.299 %
+  ck1                2.2918e-05    10.9526    -0.074 %
+  ck2                1.7119e-05    10.9551    -0.051 %
+  ck3                1.9252e-05    10.9551    -0.051 %
+  ck4                1.7119e-05    10.9551    -0.051 %
+
+  §6 convergencia da SAIDA: l estavel se variar <= 0.05 % entre os dois ultimos checkpoints
+     |l(ck4)-l(ck3)|/l = 0.0000 %  ->  ESTAVEL

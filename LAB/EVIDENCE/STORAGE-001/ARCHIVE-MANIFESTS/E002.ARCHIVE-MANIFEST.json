@@ -1,0 +1,228 @@
+{
+  "archive_bytes": 31344546,
+  "archive_file": "E002.tar.zst",
+  "archive_format": "POSIX pax tar compressed by Zstandard",
+  "archive_sha256": "9f6482e5818dae8a756f9946bfa7e0d8964385dcb83f6b719ffeb741e74c00f8",
+  "command": [
+    "tar",
+    "--sort=name",
+    "--format=posix",
+    "-cf",
+    "-",
+    "-C",
+    "/home/rodrigo/pesquisa/SAF",
+    "LAB/EVIDENCE/E002",
+    "|",
+    "zstd",
+    "-1",
+    "-T0",
+    "-o",
+    "/tmp/fpm-storage-001-20260828/packages/E002.tar.zst"
+  ],
+  "compression_lossless": true,
+  "created_at": "2026-08-28T13:49:44.514486Z",
+  "historical_seal_authority": "LAB/EVIDENCE/E002/SHA256SUMS.txt",
+  "historical_seal_rederived": false,
+  "mission_id": "MISSION-STORAGE-001",
+  "payloads": [
+    {
+      "bytes": 3748,
+      "kind": "file",
+      "mode": 420,
+      "mtime_ns": 1787675495900598265,
+      "path": "E002/CRITERIOS-RESULTADOS.txt",
+      "sha256": "e913063bb65f0545402f7fd1d75aabaa0e6c7d4c3fd7563514aa644b88e784cc"
+    },
+    {
+      "bytes": 626,
+      "kind": "file",
+      "mode": 420,
+      "mtime_ns": 1787665422534122289,
+      "path": "E002/FIG2-TARGETS.txt",
+      "sha256": "6da1491fd0db905e586b84c1c712e3adea48898f0cf7f1db857c2dd90161fe88"
+    },
+    {
+      "bytes": 1141,
+      "kind": "file",
+      "mode": 420,
+      "mtime_ns": 1787665690898373727,
+      "path": "E002/PV0-DIAGNOSTICO.txt",
+      "sha256": "700e4239ca45d6397413bbc936d94c02e10b7ff1d885f43f7f9a34298a6f01d6"
+    },
+    {
+      "bytes": 815,
+      "kind": "file",
+      "mode": 420,
+      "mtime_ns": 1787665569122265778,
+      "path": "E002/PV0-RESULTS.txt",
+      "sha256": "2619634b9ac3b9407130eacc66b0b96d5bc28ef40a33f28bafdafc026d04e2fc"
+    },
+    {
+      "bytes": 5427,
+      "kind": "file",
+      "mode": 420,
+      "mtime_ns": 1787666308491867387,
+      "path": "E002/PV0-VEREDITO.md",
+      "sha256": "5c9bf1aea1db7feb4291b076978bcf4495bb45c0ef986659c281cacd25a782b8"
+    },
+    {
+      "bytes": 3122,
+      "kind": "file",
+      "mode": 420,
+      "mtime_ns": 1787675486588576737,
+      "path": "E002/RUN-LOG.txt",
+      "sha256": "3f590872ff45db32f6c856d5fc1303e424d2c7f78e38a9c7ae71ab3a38b90f01"
+    },
+    {
+      "bytes": 1978,
+      "kind": "file",
+      "mode": 420,
+      "mtime_ns": 1787676781533324673,
+      "path": "E002/SHA256SUMS.txt",
+      "sha256": "fc5342d3a70e8ae6d5d3abe335d59ac3bda23532d47d53386046e89b1257ee14"
+    },
+    {
+      "bytes": 9643,
+      "kind": "file",
+      "mode": 420,
+      "mtime_ns": 1787675096667452883,
+      "path": "E002/analyze.py",
+      "sha256": "51d2d9a82b49fb2f30c6e8e773930ed18e01cd0e291dc3c994bb8cbb6b053337"
+    },
+    {
+      "bytes": 3252,
+      "kind": "file",
+      "mode": 420,
+      "mtime_ns": 1787666119578701071,
+      "path": "E002/diag_dissip.py",
+      "sha256": "73b30e8fbffd4550174a4d445fa6f8910ac664e2b7a6976d8648d77d21936e36"
+    },
+    {
+      "bytes": 2812,
+      "kind": "file",
+      "mode": 420,
+      "mtime_ns": 1787665422338122085,
+      "path": "E002/extract_fig2.py",
+      "sha256": "f7154fc96ee42ab9d7954aaa4a1c3fcabfac16231d4d5850ad67a4229eef1370"
+    },
+    {
+      "bytes": 23807,
+      "kind": "file",
+      "mode": 420,
+      "mtime_ns": 1787665422522122276,
+      "path": "E002/fig2_a_SBM_18GHz_v_par.dat",
+      "sha256": "334956df32f88e1452919f1a9b37ca41c0bbc425227c56c7e13e0a525a02d6ef"
+    },
+    {
+      "bytes": 23857,
+      "kind": "file",
+      "mode": 420,
+      "mtime_ns": 1787665422514122268,
+      "path": "E002/fig2_a_SBM_18GHz_v_perp.dat",
+      "sha256": "acb6850bde74958a5675502cc1da1205854ad63ff1e6ae03dcd37d68503fd8ff"
+    },
+    {
+      "bytes": 23857,
+      "kind": "file",
+      "mode": 420,
+      "mtime_ns": 1787665422534122289,
+      "path": "E002/fig2_b_ABM_19.24GHz_v_par.dat",
+      "sha256": "61df7e2a0a4c0c37c7034742ce14c0fb4e6d87e77a0b1452cb8ee9a75076b497"
+    },
+    {
+      "bytes": 21357,
+      "kind": "file",
+      "mode": 420,
+      "mtime_ns": 1787665422526122281,
+      "path": "E002/fig2_b_ABM_19.24GHz_v_perp.dat",
+      "sha256": "0db5e3c315db1e1f7ebac84b3f718015c4918460aa6e1f38b6933a9e9905e0d0"
+    },
+    {
+      "bytes": 1182340,
+      "kind": "file",
+      "mode": 420,
+      "mtime_ns": 1787665422338122085,
+      "path": "E002/fig2_p3_rendered.png",
+      "sha256": "bfa82d0caab6655d95109126ce2de07538a8d1a91a8f597cf3cc2a746872c118"
+    },
+    {
+      "bytes": 27400491,
+      "kind": "file",
+      "mode": 420,
+      "mtime_ns": 1787672807738554785,
+      "path": "E002/prop_abm_19.24GHz.dat",
+      "sha256": "7da73e21cdf5f818be0d9bb936d99fc6d2b9903ae0215e61b35a4266b24b99e9"
+    },
+    {
+      "bytes": 27400490,
+      "kind": "file",
+      "mode": 420,
+      "mtime_ns": 1787675044639258827,
+      "path": "E002/prop_abm_19.40GHz.dat",
+      "sha256": "fb63efb224b384f4899044c16cb8b9373d7ef92ea2c3f920771e69696602a510"
+    },
+    {
+      "bytes": 822499,
+      "kind": "file",
+      "mode": 420,
+      "mtime_ns": 1787665887326531904,
+      "path": "E002/prop_cost6ns.dat",
+      "sha256": "d74a0d2805fac9afb8d1f94752e4beabd3d9f9a795ab36b3ea64d90e601b09b2"
+    },
+    {
+      "bytes": 822474,
+      "kind": "file",
+      "mode": 420,
+      "mtime_ns": 1787666051562653098,
+      "path": "E002/prop_noise6ns_tight.dat",
+      "sha256": "65cb99b2043dcb1e4e5a25bf7dde699a84874334e5eb86f963509a55ba72763e"
+    },
+    {
+      "bytes": 27318288,
+      "kind": "file",
+      "mode": 420,
+      "mtime_ns": 1787668340870989040,
+      "path": "E002/prop_pv1_noise200ns.dat",
+      "sha256": "65ec42e3489f5af13c25d0b2c5258e257b1f0a1ed32bc316c9af9f969859d4d2"
+    },
+    {
+      "bytes": 2740487,
+      "kind": "file",
+      "mode": 420,
+      "mtime_ns": 1787675486576576709,
+      "path": "E002/prop_pv2_sbm_dt5fs.dat",
+      "sha256": "f53012e953ef03c8caf5d6ddfe3304fbec1725ec496d2c3c75a94e11ac2b7c67"
+    },
+    {
+      "bytes": 27400489,
+      "kind": "file",
+      "mode": 420,
+      "mtime_ns": 1787670574498817109,
+      "path": "E002/prop_sbm_18.00GHz.dat",
+      "sha256": "d26b8e2b2078750306960d0f68c53c885b7dd115d01b963b3b76e5ca7cafb5a4"
+    },
+    {
+      "bytes": 984608,
+      "kind": "file",
+      "mode": 493,
+      "mtime_ns": 1787665979226600739,
+      "path": "E002/saf_prop",
+      "sha256": "b78b1da84b3b209f9e205f503cfb8efb68fe0b5934b32619caca1830e2195324"
+    },
+    {
+      "bytes": 50199,
+      "kind": "file",
+      "mode": 420,
+      "mtime_ns": 1787665977642599575,
+      "path": "E002/saf_prop.cu",
+      "sha256": "950114a035574bf3d349625d096daf831843ba8a6c0d42098ebd11f43624adcd"
+    }
+  ],
+  "retention": "TEMPORARY_COLD_COPY",
+  "schema_version": 1,
+  "source_bytes": 116247807,
+  "source_directory": "LAB/EVIDENCE/E002",
+  "source_file_count": 24,
+  "source_seal_status": "SEALED_VALID",
+  "temporary_location": "/tmp/fpm-storage-001-20260828/packages/E002.tar.zst"
+}

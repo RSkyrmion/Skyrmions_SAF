@@ -1,0 +1,108 @@
+{
+  "archive_bytes": 2379327,
+  "archive_file": "I002.tar.zst",
+  "archive_format": "POSIX pax tar compressed by Zstandard",
+  "archive_sha256": "c994be55214113f35ebae173b7fb3bf37d55b760c2a71284f55b44a6b82bc3ab",
+  "command": [
+    "tar",
+    "--sort=name",
+    "--format=posix",
+    "-cf",
+    "-",
+    "-C",
+    "/home/rodrigo/pesquisa/SAF",
+    "LAB/EVIDENCE/I002",
+    "|",
+    "zstd",
+    "-1",
+    "-T0",
+    "-o",
+    "/tmp/fpm-storage-001-20260828/packages/I002.tar.zst"
+  ],
+  "compression_lossless": true,
+  "created_at": "2026-08-28T13:49:45.162359Z",
+  "historical_seal_authority": "LAB/EVIDENCE/I002/SHA256SUMS.txt",
+  "historical_seal_rederived": false,
+  "mission_id": "MISSION-STORAGE-001",
+  "payloads": [
+    {
+      "bytes": 3165,
+      "kind": "file",
+      "mode": 420,
+      "mtime_ns": 1787760311794176070,
+      "path": "I002/RUN-LOG.txt",
+      "sha256": "8b752f9f465ea5efc9cd3075e3ea84a02f49f94d8d3ff264966834c6c38ae79f"
+    },
+    {
+      "bytes": 668,
+      "kind": "file",
+      "mode": 420,
+      "mtime_ns": 1787763300826932891,
+      "path": "I002/SHA256SUMS.txt",
+      "sha256": "6a937823939f1c6451364fee30bcb0c47c2bf2c8e5e3c3cd4ada463343f405dc"
+    },
+    {
+      "bytes": 2730561,
+      "kind": "file",
+      "mode": 420,
+      "mtime_ns": 1787759474943333413,
+      "path": "I002/prop_il_K0.55_th30.dat",
+      "sha256": "a4aff5f9e7b7d2c9da430fcb26cc2a1e74d999bf6b8dd1003823651b080bcbae"
+    },
+    {
+      "bytes": 2730562,
+      "kind": "file",
+      "mode": 420,
+      "mtime_ns": 1787759754014883657,
+      "path": "I002/prop_il_K0.60_th30.dat",
+      "sha256": "d41db8dc7c85221a17c2abb8f5294ebb5b8bbb53e07611af7c253ec9cdf3b257"
+    },
+    {
+      "bytes": 2730562,
+      "kind": "file",
+      "mode": 420,
+      "mtime_ns": 1787760032630508716,
+      "path": "I002/prop_il_K0.65_th30.dat",
+      "sha256": "ec9837e4d19c64e9ecf6620e3fa9e04bf1e34ef9b6e6dc8c195e27933f1cd273"
+    },
+    {
+      "bytes": 2730562,
+      "kind": "file",
+      "mode": 420,
+      "mtime_ns": 1787760311782176083,
+      "path": "I002/prop_il_K0.70_th30.dat",
+      "sha256": "fc88e03df37848516b776aea7df0d3d9d62ffc3edd84f16036f0bd0e2c5c2246"
+    },
+    {
+      "bytes": 392,
+      "kind": "file",
+      "mode": 493,
+      "mtime_ns": 1787759197819906624,
+      "path": "I002/run_batch.sh",
+      "sha256": "1a0499e8988cf907b261ad6369ede95f5f8c303ba2a55baa2319243f344305f1"
+    },
+    {
+      "bytes": 984784,
+      "kind": "file",
+      "mode": 493,
+      "mtime_ns": 1787759197815906633,
+      "path": "I002/saf_inst2",
+      "sha256": "a3947b5f8dc68f479d8f2b634d4a3d3f810b1939afb325387efe1c38fb6869ce"
+    },
+    {
+      "bytes": 53292,
+      "kind": "file",
+      "mode": 420,
+      "mtime_ns": 1787759196043910872,
+      "path": "I002/saf_inst2.cu",
+      "sha256": "05a8dd4d5e07739fcd4a93d18a7bc06a6ffd3fe1d0f891c59e5729eeebb0c9cd"
+    }
+  ],
+  "retention": "TEMPORARY_COLD_COPY",
+  "schema_version": 1,
+  "source_bytes": 11964548,
+  "source_directory": "LAB/EVIDENCE/I002",
+  "source_file_count": 9,
+  "source_seal_status": "SEALED_VALID",
+  "temporary_location": "/tmp/fpm-storage-001-20260828/packages/I002.tar.zst"
+}

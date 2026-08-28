@@ -1,0 +1,373 @@
+{
+  "created_at": "2026-08-28T13:49:44.391163Z",
+  "directories": [
+    {
+      "path": "LAB/EVIDENCE/A005R",
+      "reason": "SEALED_CORRUPT: five divergent payloads, one extra, and failure context"
+    },
+    {
+      "path": "LAB/EVIDENCE/A003",
+      "reason": "SEALED_CONTAMINATED: historical __pycache__ preserved in context"
+    },
+    {
+      "path": "LAB/EVIDENCE/A005",
+      "reason": "SEALED_CONTAMINATED: historical __pycache__ preserved in context"
+    },
+    {
+      "path": "LAB/EVIDENCE/LAB",
+      "reason": "UNSEALED anomalous nested tree and zero-byte failure record"
+    }
+  ],
+  "files": [
+    {
+      "bytes": 973,
+      "inode": 9840858,
+      "kind": "file",
+      "mode": 420,
+      "mtime_ns": 1787834305054507248,
+      "path": "A003/MV0-MV1-RESULTS.txt",
+      "sha256": "c9ec6e2bd8be27c9e47aff01a262110df45652e16a77cfd40e5deb8e032c698e",
+      "symlink_target": null
+    },
+    {
+      "bytes": 142,
+      "inode": 9830427,
+      "kind": "file",
+      "mode": 420,
+      "mtime_ns": 1787838405984773857,
+      "path": "A003/MV2-ESTIMADOR-CEGO.txt",
+      "sha256": "5fc23b9d4e27752a6e9fabee06361414200676b8bb9fd43a377996a894ca3172",
+      "symlink_target": null
+    },
+    {
+      "bytes": 83,
+      "inode": 9840853,
+      "kind": "file",
+      "mode": 420,
+      "mtime_ns": 1787831551889910482,
+      "path": "A003/SHA256-mumax3-bin.txt",
+      "sha256": "20992d2317bd6de1419d36883212e9248ba65d5074d3f5053a82df5c408ab134",
+      "symlink_target": null
+    },
+    {
+      "bytes": 1088,
+      "inode": 9840859,
+      "kind": "file",
+      "mode": 420,
+      "mtime_ns": 1787838427584768134,
+      "path": "A003/SHA256SUMS.txt",
+      "sha256": "0066003db305e9c0c819276d8891e9141ee969532a3c944d32041a86a0fd1b83",
+      "symlink_target": null
+    },
+    {
+      "bytes": 5145,
+      "inode": 9864400,
+      "kind": "file",
+      "mode": 420,
+      "mtime_ns": 1787857820565840539,
+      "path": "A003/__pycache__/ovf.cpython-311.pyc",
+      "sha256": "843eaf519d5b786ec0b551fbc18ecd93e3e7ee1ebc3fbfa4bc9194cb6b31d48f",
+      "symlink_target": null
+    },
+    {
+      "bytes": 458226,
+      "inode": 9840863,
+      "kind": "file",
+      "mode": 420,
+      "mtime_ns": 1787834279646513304,
+      "path": "A003/mfinal_iso_safcu.dat",
+      "sha256": "c33573d78f2f168658b39b18620464a85df0daab6bc20919010bc1e182d96c81",
+      "symlink_target": null
+    },
+    {
+      "bytes": 868030,
+      "inode": 9862274,
+      "kind": "file",
+      "mode": 420,
+      "mtime_ns": 1787838405932773871,
+      "path": "A003/mfinal_par_mumax3.dat",
+      "sha256": "7fa7b1ea3ab293bdc0e3604761929f7b6453dbe2d97528883a2f0edf9c239011",
+      "symlink_target": null
+    },
+    {
+      "bytes": 949,
+      "inode": 9840855,
+      "kind": "file",
+      "mode": 420,
+      "mtime_ns": 1787831721525572414,
+      "path": "A003/mv0_13_convencoes.mx3",
+      "sha256": "317a3a7c54268662044f5ec98a5f32d96cbb98d9677f17aeaf27dc4150bb6de6",
+      "symlink_target": null
+    },
+    {
+      "bytes": 1066,
+      "inode": 9840857,
+      "kind": "file",
+      "mode": 420,
+      "mtime_ns": 1787834094646543506,
+      "path": "A003/mv0_2_dmi_sinal.mx3",
+      "sha256": "79a68f98a8687c0f8f8b6533457cef298895c111aa7a7ed9a4a398d52e8bff7f",
+      "symlink_target": null
+    },
+    {
+      "bytes": 1665,
+      "inode": 9840854,
+      "kind": "file",
+      "mode": 420,
+      "mtime_ns": 1787831683653647890,
+      "path": "A003/mv0_4_interlayer.mx3",
+      "sha256": "0a3fc673d5419b6f930a6f0d67bde23007136657fa1f897727ad476da70180fa",
+      "symlink_target": null
+    },
+    {
+      "bytes": 940,
+      "inode": 9830423,
+      "kind": "file",
+      "mode": 420,
+      "mtime_ns": 1787838326476794428,
+      "path": "A003/mv2_convergencia.mx3",
+      "sha256": "7f7f71f7bc2915c8288ee952435a3e677b48d5f52b8289ee1f3945f7f5426179",
+      "symlink_target": null
+    },
+    {
+      "bytes": 1275,
+      "inode": 9840773,
+      "kind": "file",
+      "mode": 420,
+      "mtime_ns": 1787838154196835719,
+      "path": "A003/mv2_par.mx3",
+      "sha256": "25db3052fc8e7db8afde10b055ea7ffe8fbd17ed90d74bcba248d2af7416408a",
+      "symlink_target": null
+    },
+    {
+      "bytes": 1737,
+      "inode": 9840856,
+      "kind": "file",
+      "mode": 420,
+      "mtime_ns": 1787834034734545828,
+      "path": "A003/ovf.py",
+      "sha256": "d14fab274d35b16ce7129efa0491d9debbdbbd58716dda2339fb322ef1afac4e",
+      "symlink_target": null
+    },
+    {
+      "bytes": 988984,
+      "inode": 9840861,
+      "kind": "file",
+      "mode": 493,
+      "mtime_ns": 1787834279022513448,
+      "path": "A003/saf_iso",
+      "sha256": "f13f35b6f56988fa2721d95eb68d144a3a8efdb391dc4770d9d430542015ca73",
+      "symlink_target": null
+    },
+    {
+      "bytes": 54504,
+      "inode": 9840862,
+      "kind": "file",
+      "mode": 420,
+      "mtime_ns": 1787834214366527077,
+      "path": "A003/saf_iso.cu",
+      "sha256": "a90dbded88bb0869a879554b200f9ab4152c0bf8ef65253c51a678d01e46f8b4",
+      "symlink_target": null
+    },
+    {
+      "bytes": 1118,
+      "inode": 9844205,
+      "kind": "file",
+      "mode": 420,
+      "mtime_ns": 1787839991042791494,
+      "path": "A005/CRITERIOS-RESULTADOS.txt",
+      "sha256": "b0f8ee32a8a3223b9b937e93148dcde6a5a5d371857f4b72e85c86705156b192",
+      "symlink_target": null
+    },
+    {
+      "bytes": 4547,
+      "inode": 9842055,
+      "kind": "file",
+      "mode": 420,
+      "mtime_ns": 1787839941466829406,
+      "path": "A005/RUN-LOG.txt",
+      "sha256": "cfb7a5d8b36b4677b73129dd716df34d3d4ed13443dd95f85808f06c4ab5e944",
+      "symlink_target": null
+    },
+    {
+      "bytes": 566,
+      "inode": 9844206,
+      "kind": "file",
+      "mode": 420,
+      "mtime_ns": 1787840096774712947,
+      "path": "A005/SHA256SUMS.txt",
+      "sha256": "ae7afe87611bda3c267ac3224ac6101399febdff98160310befe72d1fa631911",
+      "symlink_target": null
+    },
+    {
+      "bytes": 5145,
+      "inode": 9863560,
+      "kind": "file",
+      "mode": 420,
+      "mtime_ns": 1787850841332555018,
+      "path": "A005/__pycache__/ovf.cpython-311.pyc",
+      "sha256": "67e68ab75e3673f71634f588bffb423c3920d57e56d7141e5dde051316b17325",
+      "symlink_target": null
+    },
+    {
+      "bytes": 3673,
+      "inode": 9844165,
+      "kind": "file",
+      "mode": 420,
+      "mtime_ns": 1787839990862791631,
+      "path": "A005/analyze5a.py",
+      "sha256": "6a8365aab2c7607c7897bc9b26d95f95fd9f8df87d58fa105d5fa6128b52f1bb",
+      "symlink_target": null
+    },
+    {
+      "bytes": 858,
+      "inode": 9841579,
+      "kind": "file",
+      "mode": 420,
+      "mtime_ns": 1787839526151187080,
+      "path": "A005/ar0_no_eixo.mx3",
+      "sha256": "a24d170bd7a76a393cb66183134819d36a51c2b47a0472531e04dba88dbb63f2",
+      "symlink_target": null
+    },
+    {
+      "bytes": 897,
+      "inode": 9842769,
+      "kind": "file",
+      "mode": 420,
+      "mtime_ns": 1787839526151187080,
+      "path": "A005/ar1_fora_eixo.mx3",
+      "sha256": "72f548c22664ee1295bc87fc3d97a0d38ad2664e8ab45a8b46ca3e9e02a3ef6e",
+      "symlink_target": null
+    },
+    {
+      "bytes": 1737,
+      "inode": 9840567,
+      "kind": "file",
+      "mode": 420,
+      "mtime_ns": 1787839526151187080,
+      "path": "A005/ovf.py",
+      "sha256": "d14fab274d35b16ce7129efa0491d9debbdbbd58716dda2339fb322ef1afac4e",
+      "symlink_target": null
+    },
+    {
+      "bytes": 527,
+      "inode": 9842034,
+      "kind": "file",
+      "mode": 493,
+      "mtime_ns": 1787839663547059014,
+      "path": "A005/run_batch.sh",
+      "sha256": "19b7f017e3b23e9dd5fb32a91a116e153537d66fa9c89e5752e275ca44fca9e4",
+      "symlink_target": null
+    },
+    {
+      "bytes": 2986,
+      "inode": 9863933,
+      "kind": "file",
+      "mode": 420,
+      "mtime_ns": 1787852483667622489,
+      "path": "A005R/AI-PROVENANCE.json",
+      "sha256": "d861b5f58b2a255a205209a136c712069d5d91c158c3ec46ca45411bf080c08b",
+      "symlink_target": null
+    },
+    {
+      "bytes": 6458,
+      "inode": 9862479,
+      "kind": "file",
+      "mode": 420,
+      "mtime_ns": 1787857659374369415,
+      "path": "A005R/RUN-LOG.txt",
+      "sha256": "6f9f0ae2731a40a994516ce63dd248041ac8f0d0b83c90948cc20929bc1683bb",
+      "symlink_target": null
+    },
+    {
+      "bytes": 556,
+      "inode": 9863943,
+      "kind": "file",
+      "mode": 420,
+      "mtime_ns": 1787852654155603834,
+      "path": "A005R/SHA256SUMS.txt",
+      "sha256": "2d16bdb3aca455d7a069db9e945b1d4b965d3abfb992e22a5342bb5eaa2e29a0",
+      "symlink_target": null
+    },
+    {
+      "bytes": 1148,
+      "inode": 9864597,
+      "kind": "file",
+      "mode": 420,
+      "mtime_ns": 1787856249537983639,
+      "path": "A005R/ac0_piso.mx3",
+      "sha256": "7601636eca82934c31524a3df000578cc9e0572202519f8cd5273bac0ee4a3d4",
+      "symlink_target": null
+    },
+    {
+      "bytes": 962,
+      "inode": 9863928,
+      "kind": "file",
+      "mode": 420,
+      "mtime_ns": 1787856306373975383,
+      "path": "A005R/ac1_theta0.mx3",
+      "sha256": "b65606bded03885046f803f1be99028d6657b2fed893cab5706456676a9d13b1",
+      "symlink_target": null
+    },
+    {
+      "bytes": 994,
+      "inode": 9862475,
+      "kind": "file",
+      "mode": 420,
+      "mtime_ns": 1787856306373975383,
+      "path": "A005R/ac2_theta30.mx3",
+      "sha256": "0ddb120d4e7f70be6ffacda771b2bc3232b19672ea4ab4515552eb453663ab22",
+      "symlink_target": null
+    },
+    {
+      "bytes": 1030,
+      "inode": 9862476,
+      "kind": "file",
+      "mode": 420,
+      "mtime_ns": 1787856306377975383,
+      "path": "A005R/ac3_par.mx3",
+      "sha256": "83e4e390a19f0f10ffeb302f9bc60f78881e3bec4147e695f2830e5c5a93b46b",
+      "symlink_target": null
+    },
+    {
+      "bytes": 1737,
+      "inode": 9862474,
+      "kind": "file",
+      "mode": 420,
+      "mtime_ns": 1787840346162537303,
+      "path": "A005R/ovf.py",
+      "sha256": "d14fab274d35b16ce7129efa0491d9debbdbbd58716dda2339fb322ef1afac4e",
+      "symlink_target": null
+    },
+    {
+      "bytes": 613,
+      "inode": 9862478,
+      "kind": "file",
+      "mode": 493,
+      "mtime_ns": 1787856306377975383,
+      "path": "A005R/run_batch.sh",
+      "sha256": "3000180933246ddb8c703ce9660175ae9a66575ed839327128d630723f2b5b59",
+      "symlink_target": null
+    },
+    {
+      "bytes": 0,
+      "inode": 9842048,
+      "kind": "file",
+      "mode": 420,
+      "mtime_ns": 1787839446559267304,
+      "path": "LAB/EVIDENCE/A005/ar1_fora_eixo.mx3",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "symlink_target": null
+    }
+  ],
+  "operations_forbidden": [
+    "compress",
+    "migrate",
+    "remove",
+    "move",
+    "replace",
+    "normalize",
+    "reseal"
+  ],
+  "policy": "PERMANENT-FAILURE-HOLD"
+}

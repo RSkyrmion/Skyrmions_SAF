@@ -1,0 +1,26 @@
+{
+  "criteria": {
+    "DA-0": "PASS",
+    "DA-1": "PASS",
+    "DA-10": "FAIL",
+    "DA-2": "PASS",
+    "DA-3": "PASS",
+    "DA-4": "PASS",
+    "DA-5": "PASS",
+    "DA-6": "PASS",
+    "DA-7": "PASS",
+    "DA-8": "PASS",
+    "DA-9": "PASS"
+  },
+  "evaluated_at": "2026-08-27T19:03:55.687083Z",
+  "gate": "FAIL",
+  "historical_integrity": {
+    "A005": "SEALED_CONTAMINATED",
+    "A005R": "SEALED_CORRUPT",
+    "LAB": "UNSEALED",
+    "normalized": false
+  },
+  "human_acceptance": "PENDING",
+  "mission_id": "MISSION-DATA-001",
+  "schema_version": 1
+}

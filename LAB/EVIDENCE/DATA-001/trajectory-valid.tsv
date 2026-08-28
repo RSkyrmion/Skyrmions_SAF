@@ -1,0 +1,4 @@
+# schema: trajectory-v1
+# units: s m m m m m 1 1 1 1
+0 0 0 1e-8 0 1e-8 1 -1 2 2
+1e-12 0 0 1e-8 0 1e-8 1 -1 2 2

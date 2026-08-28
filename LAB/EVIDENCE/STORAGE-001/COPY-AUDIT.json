@@ -1,0 +1,9 @@
+{
+  "classification": "SINGLE_COPY",
+  "failure_domain": "same filesystem as source; /tmp and workspace are both on /dev/nvme0n1p2",
+  "restore_copy": "/tmp/fpm-storage-001-20260828/restore",
+  "second_failure_independent_destination": "NOT_AUTHORIZED_OR_NAMED",
+  "st_4_satisfied": false,
+  "temporary_copy": "/tmp/fpm-storage-001-20260828/packages",
+  "verdict": "UNEVALUATED"
+}

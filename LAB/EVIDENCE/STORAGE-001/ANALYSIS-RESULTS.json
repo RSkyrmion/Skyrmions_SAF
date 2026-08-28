@@ -1,0 +1,51 @@
+{
+  "comparison": "SHA-256 exact stdout equality; no tolerance and no volatile exclusions",
+  "results": [
+    {
+      "bit_identical": true,
+      "directory": "E002",
+      "duration_seconds": 1.7702144049690105,
+      "exit_code": 0,
+      "expected_sha256": "e913063bb65f0545402f7fd1d75aabaa0e6c7d4c3fd7563514aa644b88e784cc",
+      "observed_stdout_sha256": "e913063bb65f0545402f7fd1d75aabaa0e6c7d4c3fd7563514aa644b88e784cc",
+      "stderr": ""
+    },
+    {
+      "bit_identical": true,
+      "directory": "E003",
+      "duration_seconds": 1.1828694069990888,
+      "exit_code": 0,
+      "expected_sha256": "c9935526c388e3954aacc10fabda45bf49ffecbc71a350b236471bf38d15f6ab",
+      "observed_stdout_sha256": "c9935526c388e3954aacc10fabda45bf49ffecbc71a350b236471bf38d15f6ab",
+      "stderr": ""
+    },
+    {
+      "bit_identical": true,
+      "directory": "E004",
+      "duration_seconds": 1.782962063967716,
+      "exit_code": 0,
+      "expected_sha256": "f394ccd55ff4372b2ea07df55d0d616e02001a5f9484d2e7888a4a9844101752",
+      "observed_stdout_sha256": "f394ccd55ff4372b2ea07df55d0d616e02001a5f9484d2e7888a4a9844101752",
+      "stderr": ""
+    },
+    {
+      "bit_identical": true,
+      "directory": "E004R",
+      "duration_seconds": 2.6830418680328876,
+      "exit_code": 0,
+      "expected_sha256": "aaa127016ffe9836a754ca1814e8f39a9c2dccba2d75b53997af676758f48998",
+      "observed_stdout_sha256": "aaa127016ffe9836a754ca1814e8f39a9c2dccba2d75b53997af676758f48998",
+      "stderr": ""
+    },
+    {
+      "bit_identical": true,
+      "directory": "E005",
+      "duration_seconds": 10.357542733021546,
+      "exit_code": 0,
+      "expected_sha256": "88e06f9eae17418e99989e5b2b0dd6081bb6f4201c945d5053b71ab30df68c5b",
+      "observed_stdout_sha256": "88e06f9eae17418e99989e5b2b0dd6081bb6f4201c945d5053b71ab30df68c5b",
+      "stderr": ""
+    }
+  ],
+  "verdict": "PASS"
+}

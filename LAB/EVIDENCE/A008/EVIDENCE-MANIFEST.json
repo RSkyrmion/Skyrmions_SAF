@@ -1,0 +1,340 @@
+{
+  "schema_version": 1,
+  "mission_id": "MISSION-A008",
+  "title": "Varredura de malha 2.0/1.0/0.5/0.25 nm — AM-1 inconclusivo, AM-2 nao executado",
+  "operational_state": "COMPLETE",
+  "created_at": "2026-08-28T16:20:00Z",
+  "resources": [
+    {
+      "path": "AI-PROVENANCE.json",
+      "role": "METADATA",
+      "media_type": "application/json",
+      "bytes": 3720,
+      "sha256": "9ecd1d3580dacda848c68a3009d3762c8750290323dbda8366cdfb722f9de3d0",
+      "generated_by": "Claude",
+      "supports_criterion": []
+    },
+    {
+      "path": "CRITERIOS-RESULTADOS.txt",
+      "role": "LOG",
+      "media_type": "text/plain",
+      "bytes": 1831,
+      "sha256": "3e5fd26e96e12d4845ec802976159861d6d00ccf7d74ca871ec47249601999c0",
+      "generated_by": "Claude",
+      "supports_criterion": [
+        "AM-0",
+        "AM-1"
+      ]
+    },
+    {
+      "path": "MESH-LOG.txt",
+      "role": "LOG",
+      "media_type": "text/plain",
+      "bytes": 17700,
+      "sha256": "de1cd599411345c88b7958d9d355c4f66cda0cb8fe2c18e3a955f341933702a1",
+      "generated_by": "Claude",
+      "supports_criterion": [
+        "AM-0",
+        "AM-1"
+      ]
+    },
+    {
+      "path": "RUN-RECEIPTS/a0.25nm-r1.json",
+      "role": "METADATA",
+      "media_type": "application/json",
+      "bytes": 1520,
+      "sha256": "07edce3ef3e7a28c673b80f875a5143f60b34e7916e6c44562532cac30adc7e0",
+      "generated_by": "Claude",
+      "supports_criterion": []
+    },
+    {
+      "path": "RUN-RECEIPTS/a0.25nm-r2.json",
+      "role": "METADATA",
+      "media_type": "application/json",
+      "bytes": 1518,
+      "sha256": "97cd7de0ef25fe188f63a9d9cfeb41235b577fd9e7b8e6267c5a0947b128b965",
+      "generated_by": "Claude",
+      "supports_criterion": []
+    },
+    {
+      "path": "RUN-RECEIPTS/a0.5nm-r1.json",
+      "role": "METADATA",
+      "media_type": "application/json",
+      "bytes": 1513,
+      "sha256": "c74f42859f098b44cc3c309979adf4150881a3fb929cbfe9af1832d44f7956de",
+      "generated_by": "Claude",
+      "supports_criterion": []
+    },
+    {
+      "path": "RUN-RECEIPTS/a0.5nm-r2.json",
+      "role": "METADATA",
+      "media_type": "application/json",
+      "bytes": 1512,
+      "sha256": "d2f0c3297ba30324e15df58a579eb16f7d69f93be0599e0ebd288a164a9520b9",
+      "generated_by": "Claude",
+      "supports_criterion": []
+    },
+    {
+      "path": "RUN-RECEIPTS/a1.0nm-r1.json",
+      "role": "METADATA",
+      "media_type": "application/json",
+      "bytes": 1512,
+      "sha256": "5fc33c11aa7062b830a08217dfad552a69f9f94f5f4f060c2b789cff32c43700",
+      "generated_by": "Claude",
+      "supports_criterion": []
+    },
+    {
+      "path": "RUN-RECEIPTS/a1.0nm-r2.json",
+      "role": "METADATA",
+      "media_type": "application/json",
+      "bytes": 1512,
+      "sha256": "c570e494bf6f4f87de51c911a5957fc876ca1efb4d803f15b7e9ee281c0519cb",
+      "generated_by": "Claude",
+      "supports_criterion": []
+    },
+    {
+      "path": "RUN-RECEIPTS/a2.0nm-r1.json",
+      "role": "METADATA",
+      "media_type": "application/json",
+      "bytes": 1512,
+      "sha256": "e54add6f593b6a4db3c2a556f364f079ea3b4ee3157dbfce2428eba3216b78d3",
+      "generated_by": "Claude",
+      "supports_criterion": []
+    },
+    {
+      "path": "RUN-RECEIPTS/a2.0nm-r2.json",
+      "role": "METADATA",
+      "media_type": "application/json",
+      "bytes": 1512,
+      "sha256": "0001cfd68ffca1a192d881773df8ad192b363f859597bc77b317dadab1160c11",
+      "generated_by": "Claude",
+      "supports_criterion": []
+    },
+    {
+      "path": "ck_a0.25nm_r1.ovf",
+      "role": "DERIVED",
+      "media_type": "application/octet-stream",
+      "bytes": 3840550,
+      "sha256": "00ee28c52b6cce5efcb00dc1157857abb1abd0a6d9fcb3a8b098005c6b2662fb",
+      "generated_by": "RUN-RECEIPTS/",
+      "supports_criterion": [
+        "AM-0",
+        "AM-1"
+      ]
+    },
+    {
+      "path": "ck_a0.25nm_r2.ovf",
+      "role": "DERIVED",
+      "media_type": "application/octet-stream",
+      "bytes": 3840550,
+      "sha256": "758b2540304d1c84266c6f980707166508d24cf6190f9d971bed8e0a57979043",
+      "generated_by": "RUN-RECEIPTS/",
+      "supports_criterion": [
+        "AM-0",
+        "AM-1"
+      ]
+    },
+    {
+      "path": "ck_a0.5nm_r1.ovf",
+      "role": "DERIVED",
+      "media_type": "application/octet-stream",
+      "bytes": 960544,
+      "sha256": "5e9ba5c7a0cd92863ead8512227972a2041c5511b5bca98b3d3b4fca2f1294da",
+      "generated_by": "RUN-RECEIPTS/",
+      "supports_criterion": [
+        "AM-0",
+        "AM-1"
+      ]
+    },
+    {
+      "path": "ck_a0.5nm_r2.ovf",
+      "role": "DERIVED",
+      "media_type": "application/octet-stream",
+      "bytes": 960544,
+      "sha256": "e25f6464c56922c23dd68c191fe06a6a0641b7e193936d6161b71e6f82477b1b",
+      "generated_by": "RUN-RECEIPTS/",
+      "supports_criterion": [
+        "AM-0",
+        "AM-1"
+      ]
+    },
+    {
+      "path": "ck_a1.0nm_r1.ovf",
+      "role": "DERIVED",
+      "media_type": "application/octet-stream",
+      "bytes": 240540,
+      "sha256": "754851738ad010bd3ec802fe01f3a4b772be44998feaf6019d64355b317e2f40",
+      "generated_by": "RUN-RECEIPTS/",
+      "supports_criterion": [
+        "AM-0",
+        "AM-1"
+      ]
+    },
+    {
+      "path": "ck_a1.0nm_r2.ovf",
+      "role": "DERIVED",
+      "media_type": "application/octet-stream",
+      "bytes": 240540,
+      "sha256": "7a1168bb84d323645555e6d11f4977f057001c884fa14fba943105033848dec3",
+      "generated_by": "RUN-RECEIPTS/",
+      "supports_criterion": [
+        "AM-0",
+        "AM-1"
+      ]
+    },
+    {
+      "path": "ck_a2.0nm_r1.ovf",
+      "role": "DERIVED",
+      "media_type": "application/octet-stream",
+      "bytes": 60538,
+      "sha256": "2f6f2d7b4965e1dc0c701d74ed32dce84d60c2678b6774f8a76850da6a2ad830",
+      "generated_by": "RUN-RECEIPTS/",
+      "supports_criterion": [
+        "AM-0",
+        "AM-1"
+      ]
+    },
+    {
+      "path": "ck_a2.0nm_r2.ovf",
+      "role": "DERIVED",
+      "media_type": "application/octet-stream",
+      "bytes": 60538,
+      "sha256": "7bb3c54ed5b11abfbbfbd0c8dd15ab60fd8775d47818b1dbe54374e9d6724560",
+      "generated_by": "RUN-RECEIPTS/",
+      "supports_criterion": [
+        "AM-0",
+        "AM-1"
+      ]
+    },
+    {
+      "path": "gen_mx3.py",
+      "role": "CODE",
+      "media_type": "text/x-python",
+      "bytes": 1287,
+      "sha256": "10691534a5bbd5d9b9bf446c089edd63e59b5a18ca1c75fd543fe5501bb50348",
+      "generated_by": "Claude",
+      "supports_criterion": []
+    },
+    {
+      "path": "measure_l.py",
+      "role": "CODE",
+      "media_type": "text/x-python",
+      "bytes": 909,
+      "sha256": "8456fbec7849c3c58dfd26c0107cc58d244d354549514ea4bec9e6f67606e5d4",
+      "generated_by": "Claude",
+      "supports_criterion": []
+    },
+    {
+      "path": "mesh_a0.25nm_r1.mx3",
+      "role": "SOURCE",
+      "media_type": "application/octet-stream",
+      "bytes": 679,
+      "sha256": "438f36a2f67252b7c33583fff58117f4226ee425652242f012126be824f318d0",
+      "generated_by": "Claude",
+      "supports_criterion": []
+    },
+    {
+      "path": "mesh_a0.25nm_r2.mx3",
+      "role": "SOURCE",
+      "media_type": "application/octet-stream",
+      "bytes": 607,
+      "sha256": "082d97b93b5da3a8baab8f5d25fdb9d9f4f2165c731bf13de27ae2f262d4ff62",
+      "generated_by": "Claude",
+      "supports_criterion": []
+    },
+    {
+      "path": "mesh_a0.5nm_r1.mx3",
+      "role": "SOURCE",
+      "media_type": "application/octet-stream",
+      "bytes": 677,
+      "sha256": "9e784e60d9964e49fca665de27a0c67f4d564a3aaa8e9952ff8a577b5eed8a4d",
+      "generated_by": "Claude",
+      "supports_criterion": []
+    },
+    {
+      "path": "mesh_a0.5nm_r2.mx3",
+      "role": "SOURCE",
+      "media_type": "application/octet-stream",
+      "bytes": 604,
+      "sha256": "c11e92c173a398f434d1e30fa5d5ff5f975d637ede56523e765a7ec0bf8bd3fe",
+      "generated_by": "Claude",
+      "supports_criterion": []
+    },
+    {
+      "path": "mesh_a1.0nm_r1.mx3",
+      "role": "SOURCE",
+      "media_type": "application/octet-stream",
+      "bytes": 675,
+      "sha256": "eda0e27a9e2010f9763c3eea476e6837ef74637ed36bb5056cbff5c817668ccb",
+      "generated_by": "Claude",
+      "supports_criterion": []
+    },
+    {
+      "path": "mesh_a1.0nm_r2.mx3",
+      "role": "SOURCE",
+      "media_type": "application/octet-stream",
+      "bytes": 602,
+      "sha256": "cd0fc6cacc4191c6eb186523df298956458a1e40a026c5a75e481000ee2fb080",
+      "generated_by": "Claude",
+      "supports_criterion": []
+    },
+    {
+      "path": "mesh_a2.0nm_r1.mx3",
+      "role": "SOURCE",
+      "media_type": "application/octet-stream",
+      "bytes": 673,
+      "sha256": "74ad80ec98f181090b2c1bf5828f238cfe067f1d7f3726d0df4181d43eeaf902",
+      "generated_by": "Claude",
+      "supports_criterion": []
+    },
+    {
+      "path": "mesh_a2.0nm_r2.mx3",
+      "role": "SOURCE",
+      "media_type": "application/octet-stream",
+      "bytes": 600,
+      "sha256": "b5859ae7f35a9cf38bf4c32a573fb12e5dbc424db395bfc424cd651a6e96af06",
+      "generated_by": "Claude",
+      "supports_criterion": []
+    },
+    {
+      "path": "run_mesh.sh",
+      "role": "SOURCE",
+      "media_type": "text/x-sh",
+      "bytes": 1670,
+      "sha256": "5196cec306c00f63cf5c66181abc0d3bbb72628f877a3918cf3815121dbf70e9",
+      "generated_by": "Claude",
+      "supports_criterion": []
+    }
+  ],
+  "access": "LOCAL",
+  "rights": "UNDECIDED",
+  "retention": "PRESERVE",
+  "expected_outputs": [
+    {
+      "path": "ck_a2.0nm_r2.ovf",
+      "status": "PRODUCED"
+    },
+    {
+      "path": "ck_a1.0nm_r2.ovf",
+      "status": "PRODUCED"
+    },
+    {
+      "path": "ck_a0.5nm_r2.ovf",
+      "status": "PRODUCED"
+    },
+    {
+      "path": "ck_a0.25nm_r2.ovf",
+      "status": "PRODUCED"
+    }
+  ],
+  "links": {
+    "mission": "LAB/MISSIONS/MISSION-A008.md",
+    "release": "LAB/RELEASES/RELEASE-A008.md",
+    "decision": "LAB/DECISIONS/WRITEBACK-039.md",
+    "ai_provenance": "AI-PROVENANCE.json"
+  },
+  "known_gaps": [
+    "AM-2 nao executado por condicionalidade do pre-registro; nenhum limite de continuo foi determinado.",
+    "Efeito de caixa (100 nm fixa) nao separado do efeito de malha."
+  ]
+}

@@ -1,0 +1,117 @@
+{
+  "ai_involvement": "MATERIAL",
+  "created_at": "2026-08-27T19:03:55.687133Z",
+  "disclosure_summary": "Codex materially implemented and self-validated the DATA-001 data-governance tooling under a human-reviewed preregistration; local fixtures and SHA-256 checks compensate partially, without independent external validation.",
+  "executable_actions": [
+    {
+      "action": "implemented and ran local data-hygiene fixtures",
+      "actor": "Codex",
+      "artifact": "TEST-RESULTS.txt"
+    },
+    {
+      "action": "generated read-only baseline inventory",
+      "actor": "Codex",
+      "artifact": "BASELINE-INVENTORY.json"
+    },
+    {
+      "action": "validated local-only export dry-run",
+      "actor": "Codex",
+      "artifact": "EXPORT-VALIDATION.json"
+    }
+  ],
+  "human_checkpoints": [
+    {
+      "authority": "Rodrigo",
+      "checkpoint": "PREREGISTRATION_REVIEW_AND_EXECUTION_AUTHORIZATION",
+      "record": "LAB/DECISIONS/WRITEBACK-031.md"
+    }
+  ],
+  "independence_limits": [
+    "Executor and validator are the same Codex session (SELF_VALIDATION).",
+    "No external validator or backup destination was authorized."
+  ],
+  "known_limits": [
+    "A005 remains contaminated.",
+    "A005R remains corrupt.",
+    "Backup and restore remain UNVERIFIED.",
+    "No DOI, upload, license decision or scientific claim was produced."
+  ],
+  "mission_id": "MISSION-DATA-001",
+  "persistent_context": [
+    {
+      "integrity": "append-only",
+      "path_or_identifier": "LAB/MISSIONS/MISSION-DATA-001.md"
+    },
+    {
+      "integrity": "append-only",
+      "path_or_identifier": "LAB/MISSIONS/MISSION-DATA-001-ERRATA-001.md"
+    },
+    {
+      "integrity": "append-only",
+      "path_or_identifier": "LAB/MISSIONS/MISSION-DATA-001-ERRATA-002.md"
+    }
+  ],
+  "research_stages": [
+    "SPECIFICATION",
+    "IMPLEMENTATION",
+    "VALIDATION",
+    "DOCUMENTATION"
+  ],
+  "retrieval_sources": [
+    {
+      "accessed_at": "2026-08-27",
+      "claim_location": "FAIR guiding principles",
+      "identifier": "10.1038/sdata.2016.18"
+    },
+    {
+      "accessed_at": "2026-08-27",
+      "claim_location": "research data lifecycle",
+      "identifier": "10.6028/NIST.SP.1500-18r2"
+    },
+    {
+      "accessed_at": "2026-08-27",
+      "claim_location": "entities, activities and agents",
+      "identifier": "https://www.w3.org/TR/prov-overview/"
+    },
+    {
+      "accessed_at": "2026-08-27",
+      "claim_location": "BagIt manifests and transfer",
+      "identifier": "https://www.rfc-editor.org/rfc/rfc8493"
+    }
+  ],
+  "schema_version": 1,
+  "systems": [
+    {
+      "name": "Codex",
+      "provider": "OpenAI",
+      "roles": [
+        "EXECUTOR",
+        "SELF_VALIDATOR"
+      ],
+      "version_or_access_date": "2026-08-27"
+    }
+  ],
+  "validation_layers": [
+    {
+      "independent_axes": [
+        "test data"
+      ],
+      "method": "positive and negative synthetic fixtures in /tmp",
+      "shared_axes": [
+        "implementation",
+        "criteria interpretation"
+      ],
+      "validator": "unittest fixtures"
+    },
+    {
+      "independent_axes": [
+        "digest algorithm"
+      ],
+      "method": "recursive fixity and exact set comparison",
+      "shared_axes": [
+        "local filesystem"
+      ],
+      "validator": "SHA-256"
+    }
+  ]
+}

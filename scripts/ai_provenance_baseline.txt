@@ -1,0 +1,21 @@
+# Evidence directories existing when AI-PROVENANCE.json became mandatory (2026-08-27).
+# They are exempt from retroactive reconstruction. One directory name per line.
+A002
+A003
+A004
+A005
+A005R
+AUDIT-001
+AUDIT-002
+E001
+E002
+E003
+E004
+E004R
+E005
+I001
+I002
+I003
+LAB
+R001
+R002

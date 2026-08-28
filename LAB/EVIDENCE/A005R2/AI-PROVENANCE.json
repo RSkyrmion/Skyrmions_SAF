@@ -1,0 +1,132 @@
+{
+  "schema_version": 1,
+  "mission_id": "MISSION-A005R2",
+  "created_at": "2026-08-28T12:40:00Z",
+  "ai_involvement": "MATERIAL",
+  "research_stages": [
+    "IMPLEMENTATION",
+    "EXECUTION",
+    "ANALYSIS"
+  ],
+  "systems": [
+    {
+      "name": "Claude (Claude Code)",
+      "provider": "Anthropic",
+      "version_or_access_date": "2026-08-28",
+      "roles": [
+        "EXECUTOR",
+        "ANALYST"
+      ]
+    },
+    {
+      "name": "mumax3",
+      "provider": "local build (TOOLS/mumax3-bin)",
+      "version_or_access_date": "3.11.1",
+      "roles": [
+        "SOLVER"
+      ]
+    }
+  ],
+  "persistent_context": [
+    {
+      "path_or_identifier": "LAB/MISSIONS/MISSION-A005R2.md",
+      "integrity": "sha256:b5a0e25a36ffff71dfaaf26e965990b66585a566d4bbad5ca77a673279e7ad94"
+    },
+    {
+      "path_or_identifier": "LAB/DECISIONS/WRITEBACK-033.md",
+      "integrity": "sha256:d5ecfd70d4bc9cf5f2b14afa48b5e285f3b57a17bd4524a7c9a95a2c983f0cae"
+    },
+    {
+      "path_or_identifier": "LAB/EVIDENCE/A003/mfinal_par_mumax3.dat (estado de partida, selado)",
+      "integrity": "sha256:7fa7b1ea3ab293bdc0e3604761929f7b6453dbe2d97528883a2f0edf9c239011"
+    },
+    {
+      "path_or_identifier": "TOOLS/mumax3-bin",
+      "integrity": "sha256:43cfcbc0beda1ea153ee80d536b38c42e1f817885b2ea85aac9277be2a479acb"
+    }
+  ],
+  "executable_actions": [
+    {
+      "actor": "Claude",
+      "action": "V-0: verificou unidade de MaxTorque na fonte, copiou o estado selado do A003 sem sobrescrever, converteu para OVF e imprimiu o torque inicial",
+      "artifact": "v0_torque_inicial.mx3"
+    },
+    {
+      "actor": "Claude",
+      "action": "Estagio F: escada de quatro degraus, processos separados, timeout 900 s cada",
+      "artifact": "run_ladder.sh"
+    },
+    {
+      "actor": "mumax3",
+      "action": "minimize() em cada degrau, a partir do checkpoint anterior",
+      "artifact": "ck1.ovf ck2.ovf ck3.ovf ck4.ovf"
+    },
+    {
+      "actor": "Claude",
+      "action": "repeticao do ultimo degrau completo, exigida pelo criterio PARTIAL",
+      "artifact": "f4rep_repeticao.mx3"
+    },
+    {
+      "actor": "estimator.py (AUDIT-002, cego)",
+      "action": "mediu l em cada checkpoint",
+      "artifact": "CHECKPOINT-MEASURES.txt"
+    }
+  ],
+  "retrieval_sources": [
+    {
+      "identifier": "10.1103/c2y9-3cc9",
+      "accessed_at": "2026-08-21",
+      "claim_location": "End Matter Eq. (A3)-(A4); parametros do acoplamento fraco"
+    }
+  ],
+  "human_checkpoints": [
+    {
+      "checkpoint": "PREREGISTRATION_REVIEW",
+      "authority": "Rodrigo",
+      "record": "LAB/DECISIONS/WRITEBACK-033.md"
+    },
+    {
+      "checkpoint": "EXECUTION_AUTHORIZATION",
+      "authority": "Rodrigo",
+      "record": "LAB/DECISIONS/WRITEBACK-033.md"
+    }
+  ],
+  "validation_layers": [
+    {
+      "validator": "estimator.py do AUDIT-002",
+      "method": "blind-estimator",
+      "independent_axes": [
+        "ruler-implementation"
+      ],
+      "shared_axes": [
+        "model-reading",
+        "initialization"
+      ]
+    },
+    {
+      "validator": "saf.cu",
+      "method": "distinct-solver",
+      "independent_axes": [
+        "solver-implementation",
+        "numerical-precision"
+      ],
+      "shared_axes": [
+        "model-reading",
+        "initialization",
+        "parameters"
+      ]
+    }
+  ],
+  "independence_limits": [
+    "A leitura do modelo e a inicializacao sao compartilhadas entre mumax3 e saf.cu: uma leitura errada comum sobrevive.",
+    "O pre-registro A005R2 foi escrito por outro agente (Codex) e executado por Claude; executor e projetista sao distintos, mas ambos sao IA.",
+    "O estimador cego foi escrito as cegas quanto ao codigo, nao quanto ao artigo."
+  ],
+  "known_limits": [
+    "A classificacao da escada saiu NONCONVERGENT pela letra do §4; os criterios AC2-1, AC2-2 e AC2-3 NAO foram executados.",
+    "l = 10.9551 nm e medida de degrau da escada, nao veredito de AC2-3, e nao revisa o C-15.",
+    "O ida-e-volta do checkpoint em float32 desloca MaxTorque em ~12 %, mais que a melhoria buscada.",
+    "mumax3 e float32; saf.cu e double. Um ponto de parametros, uma malha, T=0."
+  ],
+  "disclosure_summary": "Claude executou a MISSION-A005R2 escrita por outro agente, sob autorizacao humana registrada, usando mumax3 como solver distinto e o estimador cego do AUDIT-002 como regua; a escada de convergencia terminou NONCONVERGENT pela letra do pre-registro e nenhum criterio cientifico foi avaliado."
+}

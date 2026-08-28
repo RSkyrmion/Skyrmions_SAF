@@ -1,0 +1,60 @@
+{
+  "archive_bytes": 3191,
+  "archive_file": "A004.tar.zst",
+  "archive_format": "POSIX pax tar compressed by Zstandard",
+  "archive_sha256": "01338ca0297772c6d85e696a48f09eb795078e3252321afce69eeebb300eb1c6",
+  "command": [
+    "tar",
+    "--sort=name",
+    "--format=posix",
+    "-cf",
+    "-",
+    "-C",
+    "/home/rodrigo/pesquisa/SAF",
+    "LAB/EVIDENCE/A004",
+    "|",
+    "zstd",
+    "-1",
+    "-T0",
+    "-o",
+    "/tmp/fpm-storage-001-20260828/packages/A004.tar.zst"
+  ],
+  "compression_lossless": true,
+  "created_at": "2026-08-28T13:49:44.415021Z",
+  "historical_seal_authority": "LAB/EVIDENCE/A004/SHA256SUMS.txt",
+  "historical_seal_rederived": false,
+  "mission_id": "MISSION-STORAGE-001",
+  "payloads": [
+    {
+      "bytes": 1461,
+      "kind": "file",
+      "mode": 420,
+      "mtime_ns": 1787839222015525341,
+      "path": "A004/CRITERIOS-RESULTADOS.txt",
+      "sha256": "57a34d00ada854ef4c9918fea5f9bc67d0c704503f41e5a1260c1542bfab244e"
+    },
+    {
+      "bytes": 175,
+      "kind": "file",
+      "mode": 420,
+      "mtime_ns": 1787839298127431741,
+      "path": "A004/SHA256SUMS.txt",
+      "sha256": "e5ebe861b77379142da7a428d078db2464dadee0f1386f39022755fcf6c8610b"
+    },
+    {
+      "bytes": 4490,
+      "kind": "file",
+      "mode": 420,
+      "mtime_ns": 1787839221951525423,
+      "path": "A004/dissip_compare.py",
+      "sha256": "a84cfd9f167a18f556f003d639da0f5384befb599fda675cc27aebaf4a1f963c"
+    }
+  ],
+  "retention": "TEMPORARY_COLD_COPY",
+  "schema_version": 1,
+  "source_bytes": 6126,
+  "source_directory": "LAB/EVIDENCE/A004",
+  "source_file_count": 3,
+  "source_seal_status": "SEALED_VALID",
+  "temporary_location": "/tmp/fpm-storage-001-20260828/packages/A004.tar.zst"
+}

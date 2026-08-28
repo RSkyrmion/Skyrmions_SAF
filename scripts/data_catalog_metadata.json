@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "entries": {
+    "A002": {"retention": "PRESERVE", "gate": "FAILED", "claims": [{"id": "C-4", "relation": "ACCEPTED", "authority": "LAB/DECISIONS/WRITEBACK-007.md"}]},
+    "A003": {"retention": "PRESERVE", "gate": "PASSED", "claims": [{"id": "C-15", "relation": "ACCEPTED", "authority": "LAB/DECISIONS/WRITEBACK-023.md"}]},
+    "A004": {"retention": "PRESERVE", "gate": "PASSED", "claims": []},
+    "A005": {"retention": "PRESERVE", "gate": "FAILED", "claims": [{"id": "C-15", "relation": "REVISITS", "authority": "LAB/DECISIONS/WRITEBACK-025.md"}]},
+    "A005R": {"retention": "PRESERVE", "gate": "UNEVALUATED", "claims": [{"id": "C-15", "relation": "REVISITS", "authority": "LAB/DECISIONS/WRITEBACK-028.md"}]},
+    "A005R2": {"retention": "PRESERVE", "gate": "FAILED_NONCONVERGENT", "claims": []},
+    "AUDIT-001": {"retention": "PRESERVE", "gate": "PARTIAL", "claims": [{"id": "C-3", "relation": "ACCEPTED", "authority": "LAB/DECISIONS/WRITEBACK-007.md"}]},
+    "AUDIT-002": {"retention": "PRESERVE", "gate": "PASSED", "claims": [{"id": "C-5", "relation": "ACCEPTED", "authority": "LAB/DECISIONS/WRITEBACK-009.md"}]},
+    "E001": {"retention": "PRESERVE", "gate": "PASSED", "claims": [{"id": "C-6", "relation": "ACCEPTED", "authority": "LAB/DECISIONS/WRITEBACK-009.md"}]},
+    "E002": {"retention": "PRESERVE", "gate": "FAILED", "claims": [{"id": "C-7", "relation": "ACCEPTED", "authority": "LAB/DECISIONS/WRITEBACK-012.md"}]},
+    "E003": {"retention": "PRESERVE", "gate": "PASSED", "claims": [{"id": "C-8", "relation": "ACCEPTED", "authority": "LAB/DECISIONS/WRITEBACK-015.md"}]},
+    "E004": {"retention": "PRESERVE", "gate": "FAILED", "claims": []},
+    "E004R": {"retention": "PRESERVE", "gate": "PASSED", "claims": [{"id": "C-10", "relation": "ACCEPTED", "authority": "LAB/DECISIONS/WRITEBACK-018.md"}, {"id": "C-11", "relation": "ACCEPTED", "authority": "LAB/DECISIONS/WRITEBACK-018.md"}]},
+    "E005": {"retention": "PRESERVE", "gate": "PASSED", "claims": [{"id": "C-14", "relation": "ACCEPTED", "authority": "LAB/DECISIONS/WRITEBACK-021.md"}]},
+    "I001": {"retention": "PRESERVE", "gate": "PASSED", "claims": [{"id": "C-9", "relation": "ACCEPTED", "authority": "LAB/DECISIONS/WRITEBACK-015.md"}]},
+    "I002": {"retention": "PRESERVE", "gate": "INDETERMINATE", "claims": [{"id": "C-12", "relation": "ACCEPTED", "authority": "LAB/DECISIONS/WRITEBACK-018.md"}]},
+    "I003": {"retention": "PRESERVE", "gate": "PASSED", "claims": [{"id": "C-13", "relation": "ACCEPTED", "authority": "LAB/DECISIONS/WRITEBACK-019.md"}]},
+    "R001": {"retention": "PRESERVE", "gate": "PASSED", "claims": [{"id": "C-1", "relation": "ACCEPTED", "authority": "LAB/DECISIONS/WRITEBACK-007.md"}]},
+    "R002": {"retention": "PRESERVE", "gate": "PASSED", "claims": [{"id": "C-2", "relation": "ACCEPTED", "authority": "LAB/DECISIONS/WRITEBACK-007.md"}]},
+    "DATA-001": {"retention": "PRESERVE", "gate": "TECHNICAL_GATE_R1", "claims": []},
+    "STORAGE-001": {"retention": "PRESERVE", "gate": "COLD_COPY_ONLY", "claims": []}
+  }
+}

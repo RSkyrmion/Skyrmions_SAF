@@ -1,0 +1,140 @@
+{
+  "archive_bytes": 10449433,
+  "archive_file": "E003.tar.zst",
+  "archive_format": "POSIX pax tar compressed by Zstandard",
+  "archive_sha256": "f733dbc3039f050cbad412aa620fa2e4736159a3cce82a7de413f438978996b4",
+  "command": [
+    "tar",
+    "--sort=name",
+    "--format=posix",
+    "-cf",
+    "-",
+    "-C",
+    "/home/rodrigo/pesquisa/SAF",
+    "LAB/EVIDENCE/E003",
+    "|",
+    "zstd",
+    "-1",
+    "-T0",
+    "-o",
+    "/tmp/fpm-storage-001-20260828/packages/E003.tar.zst"
+  ],
+  "compression_lossless": true,
+  "created_at": "2026-08-28T13:49:44.562852Z",
+  "historical_seal_authority": "LAB/EVIDENCE/E003/SHA256SUMS.txt",
+  "historical_seal_rederived": false,
+  "mission_id": "MISSION-STORAGE-001",
+  "payloads": [
+    {
+      "bytes": 3218,
+      "kind": "file",
+      "mode": 420,
+      "mtime_ns": 1787682435940223336,
+      "path": "E003/CRITERIOS-RESULTADOS.txt",
+      "sha256": "c9935526c388e3954aacc10fabda45bf49ffecbc71a350b236471bf38d15f6ab"
+    },
+    {
+      "bytes": 0,
+      "kind": "file",
+      "mode": 420,
+      "mtime_ns": 1787679080754952188,
+      "path": "E003/EO0-RESULTS.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 3024,
+      "kind": "file",
+      "mode": 420,
+      "mtime_ns": 1787682135068333822,
+      "path": "E003/RUN-LOG.txt",
+      "sha256": "acaae58b2215b41b46a295fe1c1dd9f5d8ff8a0b56ba9377be0348cd9fa23dc8"
+    },
+    {
+      "bytes": 1023,
+      "kind": "file",
+      "mode": 420,
+      "mtime_ns": 1787682858296116086,
+      "path": "E003/SHA256SUMS.txt",
+      "sha256": "ada4d13ddbb550827e246c44421035a0036156d6c90f89140c137a11d827f548"
+    },
+    {
+      "bytes": 6576,
+      "kind": "file",
+      "mode": 420,
+      "mtime_ns": 1787682434816223784,
+      "path": "E003/analyze3.py",
+      "sha256": "cad347284d51cd1a50312a705a22ee8a9276b5ed8e9d516e84930536d337daab"
+    },
+    {
+      "bytes": 2730562,
+      "kind": "file",
+      "mode": 420,
+      "mtime_ns": 1787679787060392972,
+      "path": "E003/prop_eo0_ctrl_th22.5.dat",
+      "sha256": "fea1f86761b085c5fc5826c6cc3b8caabbb973cf246ef00e397a8d44f2f7a7ed"
+    },
+    {
+      "bytes": 790528,
+      "kind": "file",
+      "mode": 420,
+      "mtime_ns": 1787679200558335484,
+      "path": "E003/prop_eo0_ctrl_th30.0.dat",
+      "sha256": "d35100f152ca445673b0688bd5b200a205a9ed9a49ec502889176664c1fee4d6"
+    },
+    {
+      "bytes": 2730562,
+      "kind": "file",
+      "mode": 420,
+      "mtime_ns": 1787679508261150237,
+      "path": "E003/prop_eo0_ctrl_th30.dat",
+      "sha256": "d41db8dc7c85221a17c2abb8f5294ebb5b8bbb53e07611af7c253ec9cdf3b257"
+    },
+    {
+      "bytes": 13659116,
+      "kind": "file",
+      "mode": 420,
+      "mtime_ns": 1787682135052333827,
+      "path": "E003/prop_eo1_sbm_th22.5.dat",
+      "sha256": "5ec8813b159a875141f6ea2aae1357c873bc84922a0644920f500a0ea9effe16"
+    },
+    {
+      "bytes": 13650548,
+      "kind": "file",
+      "mode": 420,
+      "mtime_ns": 1787680962120182119,
+      "path": "E003/prop_eo1_sbm_th30.dat",
+      "sha256": "6fcf8fcaf54bd0c04eb95d681be9f7dd126b1565438d7bc4637bda9f1afc7458"
+    },
+    {
+      "bytes": 685545,
+      "kind": "file",
+      "mode": 420,
+      "mtime_ns": 1787679063855048412,
+      "path": "E003/prop_regress_theta0.dat",
+      "sha256": "a4841b7443fc1de762cb435b2ff96d549fdd6796dac89efd8fad4aa8ea964445"
+    },
+    {
+      "bytes": 984608,
+      "kind": "file",
+      "mode": 493,
+      "mtime_ns": 1787678987183517870,
+      "path": "E003/saf_prop3",
+      "sha256": "62eb5b211d509a984abc83dbf5d047b9f0b42799f6eaa2caf67db04270f18968"
+    },
+    {
+      "bytes": 50968,
+      "kind": "file",
+      "mode": 420,
+      "mtime_ns": 1787678985547528512,
+      "path": "E003/saf_prop3.cu",
+      "sha256": "25c607aef1f3e2b8bd84c3fbc59dd766314e8ae678574fcab640ded778b15194"
+    }
+  ],
+  "retention": "TEMPORARY_COLD_COPY",
+  "schema_version": 1,
+  "source_bytes": 35296278,
+  "source_directory": "LAB/EVIDENCE/E003",
+  "source_file_count": 13,
+  "source_seal_status": "SEALED_VALID",
+  "temporary_location": "/tmp/fpm-storage-001-20260828/packages/E003.tar.zst"
+}

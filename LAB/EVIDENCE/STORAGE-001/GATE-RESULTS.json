@@ -1,0 +1,61 @@
+{
+  "authorized_scope": "ST-0 through ST-5; /tmp packages; ST-6 and removal not authorized",
+  "created_at": "2026-08-28T13:50:09.618349Z",
+  "criteria": {
+    "SC-0": {
+      "reason": "preexisting LAB/EVIDENCE payload snapshot unchanged",
+      "verdict": "PASS"
+    },
+    "SC-1": {
+      "reason": "four hold directories unchanged and excluded from packages",
+      "verdict": "PASS"
+    },
+    "SC-2": {
+      "reason": "every source file has epistemic and retention axes",
+      "verdict": "PASS"
+    },
+    "SC-3": {
+      "reason": "temporary archives and outer hashes validate; no historical seal rederived",
+      "verdict": "PASS"
+    },
+    "SC-4": {
+      "reason": "technical restore=True, but validation is SELF_VALIDATION",
+      "verdict": "UNEVALUATED"
+    },
+    "SC-5": {
+      "reason": "all five applicable sealed analyzers compared by exact stdout SHA-256; zero deaccession candidates",
+      "verdict": "PASS"
+    },
+    "SC-6": {
+      "reason": "no second failure-independent destination authorized",
+      "verdict": "UNEVALUATED"
+    },
+    "SC-7": {
+      "reason": "candidate list is empty and excludes claim/failure/hold/unevaluated material",
+      "verdict": "PASS"
+    },
+    "SC-8": {
+      "reason": "ST-6 NOT_AUTHORIZED; no original removed",
+      "verdict": "PASS"
+    },
+    "SC-9": {
+      "reason": "no preexisting evidence, claim, release, historical seal or scientific status changed",
+      "verdict": "PASS"
+    }
+  },
+  "failed": [],
+  "g_storage": "NOT_PASS",
+  "hold_unchanged": true,
+  "mission_id": "MISSION-STORAGE-001",
+  "outcome": "COLD_COPY_ONLY",
+  "source_unchanged": true,
+  "st_6": "NOT_AUTHORIZED",
+  "temporary_package_totals": {
+    "archive_bytes": 287637190,
+    "source_bytes": 1093462503
+  },
+  "unevaluated": [
+    "SC-4",
+    "SC-6"
+  ]
+}

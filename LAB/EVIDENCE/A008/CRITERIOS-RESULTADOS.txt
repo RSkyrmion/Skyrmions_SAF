@@ -1,0 +1,35 @@
+======================================================================
+MISSION-A008 — criterios PRE-REGISTRADOS
+======================================================================
+
+--- AM-0  pre-testes
+  AM-0.1 custo medido antes: 44 s em a=0.5 nm; as quatro malhas couberam
+  AM-0.2 |Q1|=|Q2|=1.0000 e par nao coaxial em TODAS as malhas          -> PASSOU
+  AM-0.3 convergencia da SAIDA: |dl| entre rodadas = 0.000000 nm em TODAS -> PASSOU
+  AM-0.4 regressao a 1 nm: 10.955154 vs 10.9551 do A005R2/ck4
+         diferenca = 0.000054 nm   (criterio < 0.005)                     -> PASSOU
+
+--- serie medida (estimador CEGO do AUDIT-002, 'a' passado como argumento)
+   a[nm]      l[nm]     vs 10.98 publicado   vs C-1 (10.9607)
+    2.00    11.490846        +4.65 %            +4.84 %
+    1.00    10.955154        -0.23 %            -0.05 %
+    0.50    10.832353        -1.34 %            -1.17 %
+    0.25    10.763929        -1.97 %            -1.80 %
+
+--- checagem cruzada com os estados SELADOS do saf.cu
+   a=1.0 nm: saf.cu 10.9607 (tol 1e-6)  vs mumax3 10.9552  -> -0.051 %
+   a=0.5 nm: saf.cu 10.8500 (R001)      vs mumax3 10.8324  -> -0.163 %
+
+--- AM-1  PRIMARIO: razao de refino
+   r (triplo grosso 2.0/1.0/0.5)  = 0.2292   -> ordem implicada p = 2.125
+   r (triplo fino 1.0/0.5/0.25)   = 0.5572   -> ordem implicada p = 0.844
+   H_converge previa ~0.25 ; H_nao_converge previa >= 0.7
+
+   O triplo GROSSO cai sobre H_converge. O triplo FINO cai ENTRE as bandas.
+   Taxonomia (§8): 'r entre as bandas -> inconclusivo; relatar sem escolher lado'
+   ==> AM-1: INCONCLUSIVO
+
+--- AM-2  NAO EXECUTADO
+   O §7 condiciona o AM-2 a AM-1 classificar H_converge. Nao classificou.
+   (Uma extrapolacao calculada por curiosidade daria ~10.68 nm; ela NAO e' resultado,
+    NAO e' AM-2, e nao pode ser citada como limite do continuo.)

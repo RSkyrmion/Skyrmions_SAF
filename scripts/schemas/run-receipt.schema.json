@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/fpm/run-receipt.schema.json",
+  "title": "FPM Run Receipt",
+  "type": "object",
+  "required": ["schema_version", "mission_id", "run_id", "command", "cwd", "started_at", "finished_at", "duration_seconds", "exit_code", "timeout_seconds", "state", "environment", "parameters", "determinism", "inputs", "outputs", "executor"],
+  "properties": {
+    "schema_version": {"const": 1},
+    "mission_id": {"type": "string"},
+    "run_id": {"type": "string"},
+    "command": {"type": "array", "items": {"type": "string"}, "minItems": 1},
+    "cwd": {"type": "string"},
+    "started_at": {"type": "string", "format": "date-time"},
+    "finished_at": {"type": ["string", "null"], "format": "date-time"},
+    "duration_seconds": {"type": ["number", "null"], "minimum": 0},
+    "exit_code": {"type": ["integer", "null"]},
+    "timeout_seconds": {"type": ["number", "null"]},
+    "state": {"enum": ["RUNNING", "COMPLETE", "FAILED", "INTERRUPTED"]},
+    "environment": {"type": "object"},
+    "parameters": {"type": "object"},
+    "determinism": {"type": "object"},
+    "inputs": {"type": "array"},
+    "outputs": {"type": "array"},
+    "executor": {"type": "object"}
+  },
+  "additionalProperties": true
+}
+

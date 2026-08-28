@@ -1,6 +1,6 @@
 # ENVIRONMENT.md — dependências externas deste laboratório
 
-Verificado em **2026-08-25**. Cada resultado aceito depende de algum item desta lista; se um
+Verificado em **2026-08-28**. Cada resultado aceito depende de algum item desta lista; se um
 deles mudar, o resultado correspondente pode deixar de ser reproduzível.
 
 ## Máquina
@@ -19,6 +19,16 @@ deles mudar, o resultado correspondente pode deixar de ser reproduzível.
 | `R001`, `R002`, `E001` | código CUDA próprio (`saf.cu`, `saf_dyn.cu`) | `LAB/EVIDENCE/<missão>/` | nenhum — selado com hash |
 | `AUDIT-001`, `AUDIT-002` | `codex-cli 0.149.1`, modelo `gpt-5.6-sol` | `~/.nvm/.../bin/codex` | serviço externo; versão e modelo registrados nos releases |
 | `A002` | **OOMMF 2.0b0** | ⚠ `/home/rodrigo/pesquisa/kMC/micromag/oommf_work/oommf` | **fragilidade real — ver abaixo** |
+| `A003`, `A005`, `A005R`, `A005R2`, `A008` | **mumax3 3.11.1**, binário local `TOOLS/mumax3-bin` | hash do binário registrado em `A003`; comandos/logs variam por missão | `A005R` foi regravado depois do selo; `A005R2` foi regularizada em `WB-036`, mas é `NONCONVERGENT` e não tem `RUN-RECEIPT`; `A008` tem proveniência e recibos completos, porém seu `AM-1` foi inconclusivo |
+| `DATA-001` | Python stdlib e schemas JSON compactos | `scripts/`; fixtures e exportação somente em `/tmp` | não prova backup externo nem validação por serviço externo |
+| `STORAGE-001` | Python stdlib, `tar`, `gzip`, SHA-256 | pacotes temporários somente em `/tmp` | resultado `COLD_COPY_ONLY`; sem segunda cópia independente e sem autorização para remoção |
+
+### Lacuna de recibos históricos
+
+Missões anteriores a `DATA-001` registram ambiente de modo desigual. Não será fabricada
+proveniência retroativa. Corridas futuras devem usar `RUN-RECEIPT.json` com comando vetorial,
+`cwd`, tempos, código de saída/timeout, hashes, parâmetros, seed, outputs e agente executor.
+O recibo começa em `RUNNING` antes do processo e é finalizado mesmo em erro ou timeout.
 
 ### ⚠ Fragilidade conhecida: o OOMMF mora em outro projeto
 O OOMMF que produziu o `RELEASE-A002` **não está dentro do `SAF/`**. Ele está no projeto

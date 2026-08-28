@@ -1,0 +1,39 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/fpm/fpm-evidence-manifest.schema.json",
+  "title": "FPM Evidence Manifest",
+  "type": "object",
+  "required": ["schema_version", "mission_id", "title", "operational_state", "created_at", "resources", "access", "rights", "retention"],
+  "properties": {
+    "schema_version": {"const": 1},
+    "mission_id": {"type": "string", "pattern": "^MISSION-[A-Z0-9-]+$"},
+    "title": {"type": "string", "minLength": 1},
+    "operational_state": {"enum": ["COMPLETE", "FAILED", "INTERRUPTED", "PARTIAL"]},
+    "created_at": {"type": "string", "format": "date-time"},
+    "resources": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["path", "role", "media_type", "bytes", "sha256", "generated_by"],
+        "properties": {
+          "path": {"type": "string"},
+          "role": {"enum": ["INPUT", "SOURCE", "RAW", "DERIVED", "LOG", "CODE", "BINARY", "FIGURE_TARGET", "METADATA"]},
+          "media_type": {"type": "string"},
+          "bytes": {"type": "integer", "minimum": 0},
+          "sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+          "generated_by": {"type": "string"},
+          "derived_from": {"type": "array", "items": {"type": "string"}},
+          "supports_criterion": {"type": "array", "items": {"type": "string"}}
+        },
+        "additionalProperties": true
+      }
+    },
+    "access": {"type": "string"},
+    "rights": {"type": "string"},
+    "retention": {"enum": ["PRESERVE", "REGENERABLE", "TRANSIENT", "EXTERNAL", "RESTRICTED"]},
+    "expected_outputs": {"type": "array"},
+    "links": {"type": "object"}
+  },
+  "additionalProperties": true
+}
+

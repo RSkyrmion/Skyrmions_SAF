@@ -1,0 +1,581 @@
+{
+  "authority_note": "Index only; mission, release, writeback and sealed manifest prevail on conflict.",
+  "claim_promotion": "FORBIDDEN_WITHOUT_WRITEBACK",
+  "entries": [
+    {
+      "access": "LOCAL_FULL_PUBLIC_LIGHTWEIGHT",
+      "actual_files": 25,
+      "bytes": 6491047,
+      "claims": [
+        {
+          "authority": "LAB/DECISIONS/WRITEBACK-007.md",
+          "id": "C-4",
+          "relation": "ACCEPTED"
+        }
+      ],
+      "evidence_path": "LAB/EVIDENCE/A002",
+      "gate": "FAILED",
+      "integrity_findings": {
+        "extra": [],
+        "hash_mismatches": [],
+        "missing": []
+      },
+      "manifest_entries": 25,
+      "mission_id": "MISSION-A002",
+      "missions": [
+        "LAB/MISSIONS/MISSION-A002.md"
+      ],
+      "releases": [
+        "LAB/RELEASES/RELEASE-A002.md"
+      ],
+      "retention": "PRESERVE",
+      "schemas": [],
+      "seal_status": "SEALED_VALID"
+    },
+    {
+      "access": "LOCAL_FULL_PUBLIC_LIGHTWEIGHT",
+      "actual_files": 13,
+      "bytes": 2378574,
+      "claims": [
+        {
+          "authority": "LAB/DECISIONS/WRITEBACK-023.md",
+          "id": "C-15",
+          "relation": "ACCEPTED"
+        }
+      ],
+      "evidence_path": "LAB/EVIDENCE/A003",
+      "gate": "PASSED",
+      "integrity_findings": {
+        "extra": [],
+        "hash_mismatches": [],
+        "missing": []
+      },
+      "manifest_entries": 13,
+      "mission_id": "MISSION-A003",
+      "missions": [
+        "LAB/MISSIONS/MISSION-A003.md"
+      ],
+      "releases": [
+        "LAB/RELEASES/RELEASE-A003.md"
+      ],
+      "retention": "PRESERVE",
+      "schemas": [],
+      "seal_status": "SEALED_VALID"
+    },
+    {
+      "access": "LOCAL_FULL_PUBLIC_LIGHTWEIGHT",
+      "actual_files": 2,
+      "bytes": 5951,
+      "claims": [],
+      "evidence_path": "LAB/EVIDENCE/A004",
+      "gate": "PASSED",
+      "integrity_findings": {
+        "extra": [],
+        "hash_mismatches": [],
+        "missing": []
+      },
+      "manifest_entries": 2,
+      "mission_id": "MISSION-A004",
+      "missions": [
+        "LAB/MISSIONS/MISSION-A004.md"
+      ],
+      "releases": [
+        "LAB/RELEASES/RELEASE-A004.md"
+      ],
+      "retention": "PRESERVE",
+      "schemas": [],
+      "seal_status": "SEALED_VALID"
+    },
+    {
+      "access": "LOCAL_FULL_PUBLIC_LIGHTWEIGHT",
+      "actual_files": 8,
+      "bytes": 18502,
+      "claims": [
+        {
+          "authority": "LAB/DECISIONS/WRITEBACK-025.md",
+          "id": "C-15",
+          "relation": "REVISITS"
+        }
+      ],
+      "evidence_path": "LAB/EVIDENCE/A005",
+      "gate": "FAILED",
+      "integrity_findings": {
+        "extra": [
+          "__pycache__/ovf.cpython-311.pyc"
+        ],
+        "hash_mismatches": [],
+        "missing": []
+      },
+      "manifest_entries": 7,
+      "mission_id": "MISSION-A005",
+      "missions": [
+        "LAB/MISSIONS/MISSION-A005.md",
+        "LAB/MISSIONS/MISSION-A005R.md",
+        "LAB/MISSIONS/MISSION-A005R2.md"
+      ],
+      "releases": [
+        "LAB/RELEASES/RELEASE-A005.md",
+        "LAB/RELEASES/RELEASE-A005R.md"
+      ],
+      "retention": "PRESERVE",
+      "schemas": [],
+      "seal_status": "SEALED_CONTAMINATED"
+    },
+    {
+      "access": "LOCAL_FULL_PUBLIC_LIGHTWEIGHT",
+      "actual_files": 8,
+      "bytes": 15811,
+      "claims": [
+        {
+          "authority": "LAB/DECISIONS/WRITEBACK-028.md",
+          "id": "C-15",
+          "relation": "REVISITS"
+        }
+      ],
+      "evidence_path": "LAB/EVIDENCE/A005R",
+      "gate": "UNEVALUATED",
+      "integrity_findings": {
+        "extra": [
+          "ac0_piso.mx3"
+        ],
+        "hash_mismatches": [
+          "RUN-LOG.txt",
+          "ac1_theta0.mx3",
+          "ac2_theta30.mx3",
+          "ac3_par.mx3",
+          "run_batch.sh"
+        ],
+        "missing": []
+      },
+      "manifest_entries": 7,
+      "mission_id": "MISSION-A005R",
+      "missions": [
+        "LAB/MISSIONS/MISSION-A005R.md",
+        "LAB/MISSIONS/MISSION-A005R2.md"
+      ],
+      "releases": [
+        "LAB/RELEASES/RELEASE-A005R.md"
+      ],
+      "retention": "PRESERVE",
+      "schemas": [],
+      "seal_status": "SEALED_CORRUPT"
+    },
+    {
+      "access": "LOCAL_FULL_PUBLIC_LIGHTWEIGHT",
+      "actual_files": 8,
+      "bytes": 1106495,
+      "claims": [
+        {
+          "authority": "LAB/DECISIONS/WRITEBACK-007.md",
+          "id": "C-3",
+          "relation": "ACCEPTED"
+        }
+      ],
+      "evidence_path": "LAB/EVIDENCE/AUDIT-001",
+      "gate": "PARTIAL",
+      "integrity_findings": {
+        "extra": [],
+        "hash_mismatches": [],
+        "missing": []
+      },
+      "manifest_entries": 8,
+      "mission_id": "MISSION-AUDIT-001",
+      "missions": [],
+      "releases": [
+        "LAB/RELEASES/RELEASE-AUDIT-001.md"
+      ],
+      "retention": "PRESERVE",
+      "schemas": [],
+      "seal_status": "SEALED_VALID"
+    },
+    {
+      "access": "LOCAL_FULL_PUBLIC_LIGHTWEIGHT",
+      "actual_files": 7,
+      "bytes": 79148,
+      "claims": [
+        {
+          "authority": "LAB/DECISIONS/WRITEBACK-009.md",
+          "id": "C-5",
+          "relation": "ACCEPTED"
+        }
+      ],
+      "evidence_path": "LAB/EVIDENCE/AUDIT-002",
+      "gate": "PASSED",
+      "integrity_findings": {
+        "extra": [],
+        "hash_mismatches": [],
+        "missing": []
+      },
+      "manifest_entries": 7,
+      "mission_id": "MISSION-AUDIT-002",
+      "missions": [],
+      "releases": [
+        "LAB/RELEASES/RELEASE-AUDIT-002.md"
+      ],
+      "retention": "PRESERVE",
+      "schemas": [],
+      "seal_status": "SEALED_VALID"
+    },
+    {
+      "access": "LOCAL_FULL_PUBLIC_LIGHTWEIGHT",
+      "actual_files": 9,
+      "bytes": 4783516,
+      "claims": [
+        {
+          "authority": "LAB/DECISIONS/WRITEBACK-009.md",
+          "id": "C-6",
+          "relation": "ACCEPTED"
+        }
+      ],
+      "evidence_path": "LAB/EVIDENCE/E001",
+      "gate": "PASSED",
+      "integrity_findings": {
+        "extra": [],
+        "hash_mismatches": [],
+        "missing": []
+      },
+      "manifest_entries": 9,
+      "mission_id": "MISSION-E001",
+      "missions": [
+        "LAB/MISSIONS/MISSION-E001.md"
+      ],
+      "releases": [
+        "LAB/RELEASES/RELEASE-E001-ADDENDUM-001.md",
+        "LAB/RELEASES/RELEASE-E001-ADDENDUM-002.md",
+        "LAB/RELEASES/RELEASE-E001-ADDENDUM-003.md",
+        "LAB/RELEASES/RELEASE-E001-ADDENDUM-004.md",
+        "LAB/RELEASES/RELEASE-E001-ADDENDUM-005.md",
+        "LAB/RELEASES/RELEASE-E001.md"
+      ],
+      "retention": "PRESERVE",
+      "schemas": [],
+      "seal_status": "SEALED_VALID"
+    },
+    {
+      "access": "LOCAL_FULL_PUBLIC_LIGHTWEIGHT",
+      "actual_files": 23,
+      "bytes": 116245829,
+      "claims": [
+        {
+          "authority": "LAB/DECISIONS/WRITEBACK-012.md",
+          "id": "C-7",
+          "relation": "ACCEPTED"
+        }
+      ],
+      "evidence_path": "LAB/EVIDENCE/E002",
+      "gate": "FAILED",
+      "integrity_findings": {
+        "extra": [],
+        "hash_mismatches": [],
+        "missing": []
+      },
+      "manifest_entries": 23,
+      "mission_id": "MISSION-E002",
+      "missions": [
+        "LAB/MISSIONS/MISSION-E002.md"
+      ],
+      "releases": [
+        "LAB/RELEASES/RELEASE-E002-ADDENDUM-001.md",
+        "LAB/RELEASES/RELEASE-E002.md"
+      ],
+      "retention": "PRESERVE",
+      "schemas": [],
+      "seal_status": "SEALED_VALID"
+    },
+    {
+      "access": "LOCAL_FULL_PUBLIC_LIGHTWEIGHT",
+      "actual_files": 12,
+      "bytes": 35295255,
+      "claims": [
+        {
+          "authority": "LAB/DECISIONS/WRITEBACK-015.md",
+          "id": "C-8",
+          "relation": "ACCEPTED"
+        }
+      ],
+      "evidence_path": "LAB/EVIDENCE/E003",
+      "gate": "PASSED",
+      "integrity_findings": {
+        "extra": [],
+        "hash_mismatches": [],
+        "missing": []
+      },
+      "manifest_entries": 12,
+      "mission_id": "MISSION-E003",
+      "missions": [
+        "LAB/MISSIONS/MISSION-E003.md"
+      ],
+      "releases": [
+        "LAB/RELEASES/RELEASE-E003-ADDENDUM-001.md",
+        "LAB/RELEASES/RELEASE-E003.md"
+      ],
+      "retention": "PRESERVE",
+      "schemas": [],
+      "seal_status": "SEALED_VALID"
+    },
+    {
+      "access": "LOCAL_FULL_PUBLIC_LIGHTWEIGHT",
+      "actual_files": 14,
+      "bytes": 110653250,
+      "claims": [],
+      "evidence_path": "LAB/EVIDENCE/E004",
+      "gate": "FAILED",
+      "integrity_findings": {
+        "extra": [],
+        "hash_mismatches": [],
+        "missing": []
+      },
+      "manifest_entries": 14,
+      "mission_id": "MISSION-E004",
+      "missions": [
+        "LAB/MISSIONS/MISSION-E004.md",
+        "LAB/MISSIONS/MISSION-E004R.md"
+      ],
+      "releases": [
+        "LAB/RELEASES/RELEASE-E004.md",
+        "LAB/RELEASES/RELEASE-E004R.md"
+      ],
+      "retention": "PRESERVE",
+      "schemas": [],
+      "seal_status": "SEALED_VALID"
+    },
+    {
+      "access": "LOCAL_FULL_PUBLIC_LIGHTWEIGHT",
+      "actual_files": 14,
+      "bytes": 213144272,
+      "claims": [
+        {
+          "authority": "LAB/DECISIONS/WRITEBACK-018.md",
+          "id": "C-10",
+          "relation": "ACCEPTED"
+        },
+        {
+          "authority": "LAB/DECISIONS/WRITEBACK-018.md",
+          "id": "C-11",
+          "relation": "ACCEPTED"
+        }
+      ],
+      "evidence_path": "LAB/EVIDENCE/E004R",
+      "gate": "PASSED",
+      "integrity_findings": {
+        "extra": [],
+        "hash_mismatches": [],
+        "missing": []
+      },
+      "manifest_entries": 14,
+      "mission_id": "MISSION-E004R",
+      "missions": [
+        "LAB/MISSIONS/MISSION-E004R.md"
+      ],
+      "releases": [
+        "LAB/RELEASES/RELEASE-E004R.md"
+      ],
+      "retention": "PRESERVE",
+      "schemas": [],
+      "seal_status": "SEALED_VALID"
+    },
+    {
+      "access": "LOCAL_FULL_PUBLIC_LIGHTWEIGHT",
+      "actual_files": 23,
+      "bytes": 576936005,
+      "claims": [
+        {
+          "authority": "LAB/DECISIONS/WRITEBACK-021.md",
+          "id": "C-14",
+          "relation": "ACCEPTED"
+        }
+      ],
+      "evidence_path": "LAB/EVIDENCE/E005",
+      "gate": "PASSED",
+      "integrity_findings": {
+        "extra": [],
+        "hash_mismatches": [],
+        "missing": []
+      },
+      "manifest_entries": 23,
+      "mission_id": "MISSION-E005",
+      "missions": [
+        "LAB/MISSIONS/MISSION-E005.md"
+      ],
+      "releases": [
+        "LAB/RELEASES/RELEASE-E005.md"
+      ],
+      "retention": "PRESERVE",
+      "schemas": [],
+      "seal_status": "SEALED_VALID"
+    },
+    {
+      "access": "LOCAL_FULL_PUBLIC_LIGHTWEIGHT",
+      "actual_files": 7,
+      "bytes": 5487702,
+      "claims": [
+        {
+          "authority": "LAB/DECISIONS/WRITEBACK-015.md",
+          "id": "C-9",
+          "relation": "ACCEPTED"
+        }
+      ],
+      "evidence_path": "LAB/EVIDENCE/I001",
+      "gate": "PASSED",
+      "integrity_findings": {
+        "extra": [],
+        "hash_mismatches": [],
+        "missing": []
+      },
+      "manifest_entries": 7,
+      "mission_id": "MISSION-I001",
+      "missions": [
+        "LAB/MISSIONS/MISSION-I001.md"
+      ],
+      "releases": [
+        "LAB/RELEASES/RELEASE-I001.md"
+      ],
+      "retention": "PRESERVE",
+      "schemas": [],
+      "seal_status": "SEALED_VALID"
+    },
+    {
+      "access": "LOCAL_FULL_PUBLIC_LIGHTWEIGHT",
+      "actual_files": 8,
+      "bytes": 11963880,
+      "claims": [
+        {
+          "authority": "LAB/DECISIONS/WRITEBACK-018.md",
+          "id": "C-12",
+          "relation": "ACCEPTED"
+        }
+      ],
+      "evidence_path": "LAB/EVIDENCE/I002",
+      "gate": "INDETERMINATE",
+      "integrity_findings": {
+        "extra": [],
+        "hash_mismatches": [],
+        "missing": []
+      },
+      "manifest_entries": 8,
+      "mission_id": "MISSION-I002",
+      "missions": [
+        "LAB/MISSIONS/MISSION-I002.md"
+      ],
+      "releases": [
+        "LAB/RELEASES/RELEASE-I002.md"
+      ],
+      "retention": "PRESERVE",
+      "schemas": [],
+      "seal_status": "SEALED_VALID"
+    },
+    {
+      "access": "LOCAL_FULL_PUBLIC_LIGHTWEIGHT",
+      "actual_files": 6,
+      "bytes": 2135723,
+      "claims": [
+        {
+          "authority": "LAB/DECISIONS/WRITEBACK-019.md",
+          "id": "C-13",
+          "relation": "ACCEPTED"
+        }
+      ],
+      "evidence_path": "LAB/EVIDENCE/I003",
+      "gate": "PASSED",
+      "integrity_findings": {
+        "extra": [],
+        "hash_mismatches": [],
+        "missing": []
+      },
+      "manifest_entries": 6,
+      "mission_id": "MISSION-I003",
+      "missions": [
+        "LAB/MISSIONS/MISSION-I003.md"
+      ],
+      "releases": [
+        "LAB/RELEASES/RELEASE-I003.md"
+      ],
+      "retention": "PRESERVE",
+      "schemas": [],
+      "seal_status": "SEALED_VALID"
+    },
+    {
+      "access": "LOCAL_FULL_PUBLIC_LIGHTWEIGHT",
+      "actual_files": 1,
+      "bytes": 0,
+      "claims": [],
+      "evidence_path": "LAB/EVIDENCE/LAB",
+      "gate": "NOT_APPLICABLE",
+      "integrity_findings": {
+        "extra": [],
+        "hash_mismatches": [],
+        "missing": []
+      },
+      "manifest_entries": 0,
+      "mission_id": "MISSION-LAB",
+      "missions": [],
+      "releases": [],
+      "retention": "UNDECIDED",
+      "schemas": [],
+      "seal_status": "UNSEALED"
+    },
+    {
+      "access": "LOCAL_FULL_PUBLIC_LIGHTWEIGHT",
+      "actual_files": 12,
+      "bytes": 5560554,
+      "claims": [
+        {
+          "authority": "LAB/DECISIONS/WRITEBACK-007.md",
+          "id": "C-1",
+          "relation": "ACCEPTED"
+        }
+      ],
+      "evidence_path": "LAB/EVIDENCE/R001",
+      "gate": "PASSED",
+      "integrity_findings": {
+        "extra": [],
+        "hash_mismatches": [],
+        "missing": []
+      },
+      "manifest_entries": 12,
+      "mission_id": "MISSION-R001",
+      "missions": [
+        "LAB/MISSIONS/MISSION-R001.md"
+      ],
+      "releases": [
+        "LAB/RELEASES/RELEASE-R001.md"
+      ],
+      "retention": "PRESERVE",
+      "schemas": [],
+      "seal_status": "SEALED_VALID"
+    },
+    {
+      "access": "LOCAL_FULL_PUBLIC_LIGHTWEIGHT",
+      "actual_files": 13,
+      "bytes": 1265165,
+      "claims": [
+        {
+          "authority": "LAB/DECISIONS/WRITEBACK-007.md",
+          "id": "C-2",
+          "relation": "ACCEPTED"
+        }
+      ],
+      "evidence_path": "LAB/EVIDENCE/R002",
+      "gate": "PASSED",
+      "integrity_findings": {
+        "extra": [],
+        "hash_mismatches": [],
+        "missing": []
+      },
+      "manifest_entries": 13,
+      "mission_id": "MISSION-R002",
+      "missions": [
+        "LAB/MISSIONS/MISSION-R002.md"
+      ],
+      "releases": [
+        "LAB/RELEASES/RELEASE-R002-ADDENDUM-001.md",
+        "LAB/RELEASES/RELEASE-R002.md"
+      ],
+      "retention": "PRESERVE",
+      "schemas": [],
+      "seal_status": "SEALED_VALID"
+    }
+  ],
+  "generated_at": "2026-08-27T19:03:54.076843Z",
+  "schema_version": 1
+}

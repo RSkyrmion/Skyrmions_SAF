@@ -1,0 +1,117 @@
+{
+  "access": "LOCAL; lightweight subset may be public",
+  "created_at": "2026-08-28T12:44:24.690294Z",
+  "expected_outputs": [
+    {
+      "path": "TEST-RESULTS-R1.txt",
+      "status": "PRODUCED"
+    },
+    {
+      "path": "CURRENT-INVENTORY-R1.json",
+      "status": "PRODUCED"
+    },
+    {
+      "path": "CURRENT-CHECK-R1.json",
+      "status": "PRODUCED"
+    },
+    {
+      "path": "CATALOG-SNAPSHOT-R1.json",
+      "status": "PRODUCED"
+    },
+    {
+      "path": "GATE-RESULTS-R1.json",
+      "status": "PRODUCED"
+    },
+    {
+      "path": "AI-PROVENANCE-ADDENDUM-001.json",
+      "status": "PRODUCED"
+    }
+  ],
+  "links": {
+    "ai_provenance": "AI-PROVENANCE-ADDENDUM-001.json",
+    "gate": "GATE-RESULTS-R1.json",
+    "mission_addendum": "LAB/MISSIONS/MISSION-DATA-001-ADDENDUM-001.md",
+    "technical_record": "LAB/DECISIONS/WRITEBACK-033.md"
+  },
+  "mission_id": "MISSION-DATA-001",
+  "operational_state": "COMPLETE",
+  "resources": [
+    {
+      "bytes": 1441,
+      "generated_by": "scripts/complete_data001_evidence.py",
+      "media_type": "text/plain",
+      "path": "TEST-RESULTS-R1.txt",
+      "role": "LOG",
+      "sha256": "48d4250fc9cd86ed86ed6adcfc86af40dc5c90c53437b9feffbd12b4a6fd9ae2",
+      "supports_criterion": []
+    },
+    {
+      "bytes": 63118,
+      "generated_by": "scripts/complete_data001_evidence.py",
+      "media_type": "application/json",
+      "path": "CURRENT-INVENTORY-R1.json",
+      "role": "METADATA",
+      "sha256": "c8a0cf23d19775d156726855fa9e701d87d134cdf7383fe1913c69d6696be2fe",
+      "supports_criterion": []
+    },
+    {
+      "bytes": 7940,
+      "generated_by": "scripts/complete_data001_evidence.py",
+      "media_type": "application/json",
+      "path": "CURRENT-CHECK-R1.json",
+      "role": "METADATA",
+      "sha256": "3f1770601e4566c039a09410dbde26d8e33694a242c15415908a687dfee12a79",
+      "supports_criterion": []
+    },
+    {
+      "bytes": 16524,
+      "generated_by": "scripts/complete_data001_evidence.py",
+      "media_type": "application/json",
+      "path": "CATALOG-SNAPSHOT-R1.json",
+      "role": "METADATA",
+      "sha256": "f81edbb38fadf625fe0725d5dc201bd7348d53b1bc3d684998faec906a59b1fb",
+      "supports_criterion": []
+    },
+    {
+      "bytes": 964,
+      "generated_by": "scripts/complete_data001_evidence.py",
+      "media_type": "application/json",
+      "path": "GATE-RESULTS-R1.json",
+      "role": "METADATA",
+      "sha256": "f49839db1e75f359bf47ba579f6e7df2ec4c14b40c77e67893e2cff819ea0532",
+      "supports_criterion": [
+        "DA-0",
+        "DA-1",
+        "DA-10",
+        "DA-2",
+        "DA-3",
+        "DA-4",
+        "DA-5",
+        "DA-6",
+        "DA-7",
+        "DA-8",
+        "DA-9"
+      ]
+    },
+    {
+      "bytes": 1864,
+      "generated_by": "scripts/complete_data001_evidence.py",
+      "media_type": "application/json",
+      "path": "AI-PROVENANCE-ADDENDUM-001.json",
+      "role": "METADATA",
+      "sha256": "92163fd4003253dc56c950dc86bc07b8d38c5f0981d42fcce150c9e7b2aa9e94",
+      "supports_criterion": []
+    }
+  ],
+  "retention": "PRESERVE",
+  "rights": "UNDECIDED",
+  "schema_version": 1,
+  "supersedes": {
+    "document": "EVIDENCE-MANIFEST.json",
+    "scope": [
+      "operational_state",
+      "gate_pointer"
+    ]
+  },
+  "title": "R1 append-only correction and resumption snapshot"
+}

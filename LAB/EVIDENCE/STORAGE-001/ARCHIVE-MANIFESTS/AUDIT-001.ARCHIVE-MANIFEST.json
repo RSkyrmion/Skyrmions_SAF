@@ -1,0 +1,108 @@
+{
+  "archive_bytes": 1012004,
+  "archive_file": "AUDIT-001.tar.zst",
+  "archive_format": "POSIX pax tar compressed by Zstandard",
+  "archive_sha256": "d844dde403e22b4c930e6ab2a3c275795da6293159e79a682ee21d6eade1d394",
+  "command": [
+    "tar",
+    "--sort=name",
+    "--format=posix",
+    "-cf",
+    "-",
+    "-C",
+    "/home/rodrigo/pesquisa/SAF",
+    "LAB/EVIDENCE/AUDIT-001",
+    "|",
+    "zstd",
+    "-1",
+    "-T0",
+    "-o",
+    "/tmp/fpm-storage-001-20260828/packages/AUDIT-001.tar.zst"
+  ],
+  "compression_lossless": true,
+  "created_at": "2026-08-28T13:49:44.431850Z",
+  "historical_seal_authority": "LAB/EVIDENCE/AUDIT-001/SHA256SUMS.txt",
+  "historical_seal_rederived": false,
+  "mission_id": "MISSION-STORAGE-001",
+  "payloads": [
+    {
+      "bytes": 2829,
+      "kind": "file",
+      "mode": 420,
+      "mtime_ns": 1787576485323894841,
+      "path": "AUDIT-001/RUN-001.txt",
+      "sha256": "10d550b8ded58b0d9f7e1fc2396677726e3360b9c9d49223dde275e2c6f3900d"
+    },
+    {
+      "bytes": 641,
+      "kind": "file",
+      "mode": 420,
+      "mtime_ns": 1787576485323894841,
+      "path": "AUDIT-001/SHA256SUMS.txt",
+      "sha256": "c63ae694e790eb5935e178f7128ee800096424c4a15b152c92f05db22224d902"
+    },
+    {
+      "bytes": 1298,
+      "kind": "file",
+      "mode": 420,
+      "mtime_ns": 1787335712301117687,
+      "path": "AUDIT-001/blind_prompt.txt",
+      "sha256": "f99b2345ff963f51e9668acd8ab865cbf860cb0dc925d1f8e9d163dd4e16f577"
+    },
+    {
+      "bytes": 1500,
+      "kind": "file",
+      "mode": 420,
+      "mtime_ns": 1787576112294460602,
+      "path": "AUDIT-001/blind_prompt_v2.txt",
+      "sha256": "2295dfb91758a4fe89e6a9cf03289a4885743931d7b6eca7dc2cf6581924c0ce"
+    },
+    {
+      "bytes": 972078,
+      "kind": "file",
+      "mode": 420,
+      "mtime_ns": 1787576112294460602,
+      "path": "AUDIT-001/endmatter_p8-8.png",
+      "sha256": "7db649b931556490083221d9c34d14f91f5f6976f2387d1ab202149810fca81e"
+    },
+    {
+      "bytes": 55254,
+      "kind": "file",
+      "mode": 420,
+      "mtime_ns": 1787576112294460602,
+      "path": "AUDIT-001/paper.txt",
+      "sha256": "3d1b874f5619a3bd3d593072b391fb979bbcacfe80f97acdc543c0c393dfab7b"
+    },
+    {
+      "bytes": 10310,
+      "kind": "file",
+      "mode": 420,
+      "mtime_ns": 1787576112294460602,
+      "path": "AUDIT-001/response.md",
+      "sha256": "4cb796f6567bed8c9fa7688a400e8caa76e11a9e5a1e43c9f274d2a2ef072e5b"
+    },
+    {
+      "bytes": 271,
+      "kind": "file",
+      "mode": 420,
+      "mtime_ns": 1787576112294460602,
+      "path": "AUDIT-001/stderr.log",
+      "sha256": "f855e4260d0ac2d8ab0ada066a5137ac477054eddeae819021694ba9feb1e790"
+    },
+    {
+      "bytes": 62955,
+      "kind": "file",
+      "mode": 420,
+      "mtime_ns": 1787576112294460602,
+      "path": "AUDIT-001/trace.jsonl",
+      "sha256": "5e3e96c9bb6d50f33588008a7b02e22d48c90837a38b359121836cb0151dace8"
+    }
+  ],
+  "retention": "TEMPORARY_COLD_COPY",
+  "schema_version": 1,
+  "source_bytes": 1107136,
+  "source_directory": "LAB/EVIDENCE/AUDIT-001",
+  "source_file_count": 9,
+  "source_seal_status": "SEALED_VALID",
+  "temporary_location": "/tmp/fpm-storage-001-20260828/packages/AUDIT-001.tar.zst"
+}
