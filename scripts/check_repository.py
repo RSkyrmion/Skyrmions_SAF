@@ -163,7 +163,12 @@ def main() -> int:
         )
 
     catalog = subprocess.run(
-        [sys.executable, "-B", str(ROOT / "scripts" / "build_data_catalog.py"), "--check"],
+        [
+            sys.executable,
+            "-B",
+            str(ROOT / "scripts" / "build_data_catalog.py"),
+            "--check-public",
+        ],
         cwd=ROOT,
         text=True,
         stdout=subprocess.PIPE,

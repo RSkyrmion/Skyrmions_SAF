@@ -200,7 +200,7 @@
       "bytes": 10258773,
       "claims": [],
       "evidence_path": "LAB/EVIDENCE/A008",
-      "gate": "UNKNOWN",
+      "gate": "PASSED_INCONCLUSIVE",
       "integrity_findings": {
         "extra": [],
         "hash_mismatches": [],
@@ -214,7 +214,7 @@
       "releases": [
         "LAB/RELEASES/RELEASE-A008.md"
       ],
-      "retention": "UNDECIDED",
+      "retention": "PRESERVE",
       "schemas": [],
       "seal_status": "SEALED_VALID"
     },
@@ -687,5 +687,5 @@
     }
   ],
   "schema_version": 1,
-  "source_fingerprint_sha256": "c37d902038361d6025995c340fdbd604123d62d769c386eb8abaab4f336502d9"
+  "source_fingerprint_sha256": "97f63ef9c4e6dea1ba3ed37705b673b43365ddd20ba7b2e6dbc201834172d4ac"
 }

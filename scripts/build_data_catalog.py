@@ -94,11 +94,66 @@ def build() -> tuple[dict[str, object], list[str]]:
     }, errors)
 
 
+def validate_public_snapshot() -> tuple[int, list[str]]:
+    """Validate the full catalog without requiring deliberately omitted evidence."""
+    errors: list[str] = []
+    try:
+        payload = json.loads(OUTPUT.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError) as exc:
+        return 0, [f"invalid or missing public catalog: {exc}"]
+
+    entries = payload.get("entries")
+    if not isinstance(entries, list):
+        return 0, ["public catalog entries must be an array"]
+    expected_fingerprint = hashlib.sha256(
+        json.dumps(entries, sort_keys=True, separators=(",", ":")).encode("utf-8")
+    ).hexdigest()
+    if payload.get("source_fingerprint_sha256") != expected_fingerprint:
+        errors.append("public catalog source fingerprint mismatch")
+
+    names: set[str] = set()
+    for entry in entries:
+        if not isinstance(entry, dict):
+            errors.append("public catalog entry must be an object")
+            continue
+        mission_id = entry.get("mission_id", "")
+        if not isinstance(mission_id, str) or not mission_id.startswith("MISSION-"):
+            errors.append(f"invalid mission id in public catalog: {mission_id!r}")
+            continue
+        name = mission_id.removeprefix("MISSION-")
+        if name in names:
+            errors.append(f"duplicate public catalog entry: {name}")
+        names.add(name)
+        if entry.get("evidence_path") != f"LAB/EVIDENCE/{name}":
+            errors.append(f"invalid evidence path in public catalog: {name}")
+
+    metadata = json.loads(METADATA.read_text(encoding="utf-8"))
+    errors.extend(validate_metadata(metadata, names))
+    curated_names = set(metadata.get("entries", {}))
+    for name in sorted(names - curated_names - {"LAB"}):
+        errors.append(f"public catalog entry lacks curated metadata: {name}")
+    for item in check_tree(EVIDENCE):
+        if item.directory not in names:
+            errors.append(f"published evidence directory absent from catalog: {item.directory}")
+    return len(entries), errors
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--output", type=Path, default=OUTPUT)
     parser.add_argument("--check", action="store_true")
+    parser.add_argument("--check-public", action="store_true")
     args = parser.parse_args()
+    if args.check and args.check_public:
+        parser.error("--check and --check-public are mutually exclusive")
+    if args.check_public:
+        count, errors = validate_public_snapshot()
+        if errors:
+            for error in errors:
+                print(f"ERROR: {error}", file=sys.stderr)
+            return 1
+        print(f"OK: {count} public catalog entries validated")
+        return 0
     payload, errors = build()
     if errors:
         for error in errors:

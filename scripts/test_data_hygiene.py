@@ -16,7 +16,7 @@ SCRIPTS = Path(__file__).resolve().parent
 ROOT = SCRIPTS.parent
 sys.path.insert(0, str(SCRIPTS))
 
-from build_data_catalog import build as build_catalog  # noqa: E402
+from build_data_catalog import build as build_catalog, validate_public_snapshot  # noqa: E402
 from check_evidence import check_directory, check_tree  # noqa: E402
 from export_data_package import create as create_export, validate as validate_export  # noqa: E402
 from seal_evidence import seal  # noqa: E402
@@ -238,6 +238,11 @@ class ReceiptExportCatalogTests(unittest.TestCase):
             for claim in item["claims"]:
                 if claim["relation"] == "ACCEPTED":
                     self.assertTrue((ROOT / claim["authority"]).is_file())
+
+    def test_public_catalog_without_omitted_payloads(self) -> None:
+        count, errors = validate_public_snapshot()
+        self.assertEqual(errors, [])
+        self.assertEqual(count, len(check_tree(ROOT / "LAB" / "EVIDENCE")))
 
     def test_integrations_use_recursive_rule(self) -> None:
         hook = (ROOT / ".claude" / "hooks" / "verify-evidence.sh").read_text(encoding="utf-8")

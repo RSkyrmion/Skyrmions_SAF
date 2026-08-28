@@ -7,6 +7,7 @@
     "A005": {"retention": "PRESERVE", "gate": "FAILED", "claims": [{"id": "C-15", "relation": "REVISITS", "authority": "LAB/DECISIONS/WRITEBACK-025.md"}]},
     "A005R": {"retention": "PRESERVE", "gate": "UNEVALUATED", "claims": [{"id": "C-15", "relation": "REVISITS", "authority": "LAB/DECISIONS/WRITEBACK-028.md"}]},
     "A005R2": {"retention": "PRESERVE", "gate": "FAILED_NONCONVERGENT", "claims": []},
+    "A008": {"retention": "PRESERVE", "gate": "PASSED_INCONCLUSIVE", "claims": []},
     "AUDIT-001": {"retention": "PRESERVE", "gate": "PARTIAL", "claims": [{"id": "C-3", "relation": "ACCEPTED", "authority": "LAB/DECISIONS/WRITEBACK-007.md"}]},
     "AUDIT-002": {"retention": "PRESERVE", "gate": "PASSED", "claims": [{"id": "C-5", "relation": "ACCEPTED", "authority": "LAB/DECISIONS/WRITEBACK-009.md"}]},
     "E001": {"retention": "PRESERVE", "gate": "PASSED", "claims": [{"id": "C-6", "relation": "ACCEPTED", "authority": "LAB/DECISIONS/WRITEBACK-009.md"}]},
